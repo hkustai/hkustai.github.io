@@ -1,69 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Bootstrap & Site CSS -->
-  <link rel="stylesheet" href="css/main.css"  />
+  <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/animate.css" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/font-awesome.min.css" />
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand|Work+Sans:400,700,800&display=swap" rel="stylesheet"/>
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Work+Sans:400,700,800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 
   <!-- WOW.js -->
   <script src="js/wow.min.js"></script>
   <script> new WOW().init(); </script>
 
-  <base target="_blank"/>
+  <base target="_blank" />
   <title>Research Group – Members</title>
 
   <style>
     /* --------- 统一成员卡片样式 --------- */
-    .member-card{
-      width:140px;                 /* 固定宽度避免姓名长短撑开 */
-      margin:0 auto;
-      text-align:center;
+    .member-card {
+      width: 140px;
+      /* 固定宽度避免姓名长短撑开 */
+      margin: 0 auto;
+      text-align: center;
     }
-    .member-card i{
-      color:#6c757d;
+
+    .member-card i {
+      color: #6c757d;
     }
-    .member-card p{
-      font-size:.9rem;
-      margin-bottom:.25rem;
-      white-space:nowrap;          /* 不换行 */
-      overflow:hidden;             /* 超出隐藏 */
-      text-overflow:ellipsis;      /* 省略号 */
+
+    .member-card p {
+      font-size: .9rem;
+      margin-bottom: .25rem;
+      white-space: nowrap;
+      /* 不换行 */
+      overflow: hidden;
+      /* 超出隐藏 */
+      text-overflow: ellipsis;
+      /* 省略号 */
     }
-    .member-year{
-      font-size:.8rem;
-      color:#888;
+
+    .member-year {
+      font-size: .8rem;
+      color: #888;
     }
 
     /* --------- 每行最多六列的栅格 --------- */
-    .member-grid{
-      display:grid;
-      gap:1.5rem;
-      justify-content:center;
-      grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+    .member-grid {
+      display: grid;
+      gap: 1.5rem;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     }
-    @media (min-width:992px){      /* ≥lg 时固定 6 列 */
-      .member-grid{ grid-template-columns:repeat(6,1fr); }
+
+    @media (min-width:992px) {
+
+      /* ≥lg 时固定 6 列 */
+      .member-grid {
+        grid-template-columns: repeat(6, 1fr);
+      }
     }
 
     /* --------- 章节标题 --------- */
-    .year-subtitle{
-      font-size:1.2rem;
-      color:#495057;
-      font-weight:600;
-      margin:2rem 0 1rem;
-      text-align:center;
+    .year-subtitle {
+      font-size: 1.2rem;
+      color: #495057;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+      text-align: center;
     }
-    .year-subtitle:first-child{ margin-top:0; }
+
+    .year-subtitle:first-child {
+      margin-top: 0;
+    }
   </style>
 </head>
 
@@ -71,11 +87,11 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm">
     <a class="d-flex align-items-center" href="index.html#" target="_self">
-      <img src="images/huixiong.jpg" class="rounded-circle mr-2" style="height:50px;" alt="HX"/>
+      <img src="images/huixiong.jpg" class="rounded-circle mr-2" style="height:50px;" alt="HX" />
       <span class="navbar-brand mb-0 h1">Hui Xiong</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -94,7 +110,7 @@
   <!-- Banner -->
   <header class="mt-5 pt-4">
     <img src="images/banner.jpg" alt="Group banner" class="img-fluid w-100"
-         style="max-height:250px;object-fit:cover;"/>
+      style="max-height:250px;object-fit:cover;" />
   </header>
 
   <!-- Main -->
@@ -105,11 +121,31 @@
     <section class="member-category my-5 wow slideInUp" data-wow-delay=".1s" id="postdocs">
       <h2 class="text-center mb-4">Postdoctoral Researchers</h2>
       <div class="member-grid">
-        <a href="members/liujunpeng.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Junpeng Liu</p><span class="member-year">2024</span></div></a>
-        <a href="members/yaojiajun.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Jiajun Yao</p><span class="member-year">2024</span></div></a>
-        <a href="members/jiaokeming.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Keming Jiao</p><span class="member-year">2024</span></div></a>
-        <a href="members/guanjiechao.html" target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Jiechao Guan</p><span class="member-year">2023</span></div></a>
-        <a href="members/jiangshuai.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Shuai Jiang</p><span class="member-year">2023</span></div></a>
+        <a href="members/liujunpeng.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Junpeng Liu</p><span class="member-year">2024</span>
+          </div>
+        </a>
+        <a href="members/yaojiajun.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Jiajun Yao</p><span class="member-year">2024</span>
+          </div>
+        </a>
+        <a href="members/jiaokeming.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Keming Jiao</p><span class="member-year">2024</span>
+          </div>
+        </a>
+        <a href="members/guanjiechao.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Jiechao Guan</p><span class="member-year">2023</span>
+          </div>
+        </a>
+        <a href="members/jiangshuai.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Shuai Jiang</p><span class="member-year">2023</span>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -120,57 +156,181 @@
       <!-- 2025 Cohort -->
       <h3 class="year-subtitle">2025</h3>
       <div class="member-grid">
-        <a href="members/zhangjiangfeng.html" target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Jiangfeng Zhang</p></div></a>
+        <a href="members/zhangjiangfeng.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Jiangfeng Zhang</p>
+          </div>
+        </a>
       </div>
 
       <!-- 2024 Cohort -->
       <h3 class="year-subtitle">2024</h3>
       <div class="member-grid">
-        <a href="members/yangcehao.html"     target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Cehao Yang</p></div></a>
-        <a href="members/linxueyuan.html"    target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Xueyuan Lin</p></div></a>
-        <a href="members/chenmeixi.html"     target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Meixi Chen</p></div></a>
-        <a href="members/cuiyi.html"         target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Yi Cui</p></div></a>
-        <a href="members/caitiefu.html"      target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Tiefu Cai</p></div></a>
-        <a href="members/xuyijie.html"       target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Yijie Xu</p></div></a>
-        <a href="members/wangzihan.html"     target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Zihan Wang</p></div></a>
-        <a href="members/chenjiujiu.html"    target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Jiujiu Chen</p></div></a>
-        <a href="members/zhangzhaofan.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Zhaofan Zhang</p></div></a>
-        <a href="members/xiayinghui.html"    target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Yinghui Xia</p></div></a>
-        <a href="members/yaohuizai.html"     target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Huizai Yao</p></div></a>
-        <a href="members/lipengteng.html"    target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Pengteng Li</p></div></a>
+        <a href="members/yangcehao.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Cehao Yang</p>
+          </div>
+        </a>
+        <a href="members/linxueyuan.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Xueyuan Lin</p>
+          </div>
+        </a>
+        <a href="members/chenmeixi.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Meixi Chen</p>
+          </div>
+        </a>
+        <a href="members/cuiyi.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Yi Cui</p>
+          </div>
+        </a>
+        <a href="members/caitiefu.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Tiefu Cai</p>
+          </div>
+        </a>
+        <a href="members/xuyijie.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Yijie Xu</p>
+          </div>
+        </a>
+        <a href="members/wangzihan.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Zihan Wang</p>
+          </div>
+        </a>
+        <a href="members/chenjiujiu.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Jiujiu Chen</p>
+          </div>
+        </a>
+        <a href="members/zhangzhaofan.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Zhaofan Zhang</p>
+          </div>
+        </a>
+        <a href="members/xiayinghui.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Yinghui Xia</p>
+          </div>
+        </a>
+        <a href="members/yaohuizai.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Huizai Yao</p>
+          </div>
+        </a>
+        <a href="members/lipengteng.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Pengteng Li</p>
+          </div>
+        </a>
       </div>
 
       <!-- 2023 Cohort -->
       <h3 class="year-subtitle">2023</h3>
       <div class="member-grid">
-        <a href="members/cengshiya.html"     target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Shiya Ceng</p></div></a>
-        <a href="members/zhangkaichen.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Kaichen Zhang</p></div></a>
-        <a href="members/caozidong.html"     target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Zidong Cao</p></div></a>
-        <a href="members/yangminghao.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Minghao Yang</p></div></a>
-        <a href="members/lisiyang.html"      target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Siyang Li</p></div></a>
-        <a href="members/xinhaoran.html"     target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Haoran Xin</p></div></a>
-        <a href="members/gongzheng.html"     target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Zheng Gong</p></div></a>
-        <a href="members/baihaotian.html"    target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Haotian Bai</p></div></a>
+        <a href="members/cengshiya.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Shiya Ceng</p>
+          </div>
+        </a>
+        <a href="members/zhangkaichen.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Kaichen Zhang</p>
+          </div>
+        </a>
+        <a href="members/caozidong.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Zidong Cao</p>
+          </div>
+        </a>
+        <a href="members/yangminghao.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Minghao Yang</p>
+          </div>
+        </a>
+        <a href="members/lisiyang.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Siyang Li</p>
+          </div>
+        </a>
+        <a href="members/xinhaoran.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Haoran Xin</p>
+          </div>
+        </a>
+        <a href="members/gongzheng.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Zheng Gong</p>
+          </div>
+        </a>
+        <a href="members/baihaotian.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Haotian Bai</p>
+          </div>
+        </a>
       </div>
 
       <!-- 2022 Cohort -->
       <h3 class="year-subtitle">2022</h3>
       <div class="member-grid">
-        <a href="members/zhujinjing.html"    target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Jinjing Zhu</p></div></a>
-        <a href="members/jiangwenzhao.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Wenzhao Jiang</p></div></a>
-        <a href="members/wangfuling.html"    target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Fuling Wang</p></div></a>
-        <a href="members/zhanghe.html"       target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>He Zhang</p></div></a>
-        <a href="https://weiyuguo.com/"      target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Weiyu Guo</p></div></a>
-        <a href="members/zhangweijia.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Weijia Zhang</p></div></a>
-        <a href="members/guchengyang.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Chengyang Gu</p></div></a>
+        <a href="members/zhujinjing.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Jinjing Zhu</p>
+          </div>
+        </a>
+        <a href="members/jiangwenzhao.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Wenzhao Jiang</p>
+          </div>
+        </a>
+        <a href="members/wangfuling.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Fuling Wang</p>
+          </div>
+        </a>
+        <a href="members/zhanghe.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>He Zhang</p>
+          </div>
+        </a>
+        <a href="https://weiyuguo.com/" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Weiyu Guo</p>
+          </div>
+        </a>
+        <a href="members/zhangweijia.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Weijia Zhang</p>
+          </div>
+        </a>
+        <a href="members/guchengyang.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Chengyang Gu</p>
+          </div>
+        </a>
       </div>
 
       <!-- 2021 Cohort -->
       <h3 class="year-subtitle">2021</h3>
       <div class="member-grid">
-        <a href="members/dailu.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Lu Dai</p></div></a>
-        <a href="members/wuhao.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Hao Wu</p></div></a>
-        <a href="members/sunqian.html" target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Qian Sun</p></div></a>
+        <a href="members/dailu.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Lu Dai</p>
+          </div>
+        </a>
+        <a href="members/wuhao.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Hao Wu</p>
+          </div>
+        </a>
+        <a href="members/sunqian.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Qian Sun</p>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -181,23 +341,71 @@
       <!-- 2024 Cohort -->
       <h3 class="year-subtitle">2024</h3>
       <div class="member-grid">
-        <a href="members/yanyizhou.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Yizhou Yan</p></div></a>
-        <a href="members/yaoxingbo.html" target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Xingbo Yao</p></div></a>
+        <a href="members/yanyizhou.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Yizhou Yan</p>
+          </div>
+        </a>
+        <a href="members/yaoxingbo.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Xingbo Yao</p>
+          </div>
+        </a>
       </div>
 
       <!-- 2023 Cohort -->
       <h3 class="year-subtitle">2023</h3>
       <div class="member-grid">
-        <a href="members/lijunyi.html"     target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Junyi Li</p></div></a>
-        <a href="members/liruochong.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Ruochong Li</p></div></a>
-        <a href="members/caiqianyi.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Qianyi Cai</p></div></a>
-        <a href="members/chenyiyu.html"    target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Yiyu Chen</p></div></a>
-        <a href="members/huzhengyu.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Zhengyu Hu</p></div></a>
-        <a href="members/xuzhao.html"      target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Zhao Xu</p></div></a>
-        <a href="members/huyuqi.html"      target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Yuqi Hu</p></div></a>
-        <a href="members/xiaojunren.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Junren Xiao</p></div></a>
-        <a href="members/wangshuang.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Shuang Wang</p></div></a>
-        <a href="members/raoziyang.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Ziyang Rao</p></div></a>
+        <a href="members/lijunyi.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Junyi Li</p>
+          </div>
+        </a>
+        <a href="members/liruochong.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Ruochong Li</p>
+          </div>
+        </a>
+        <a href="members/caiqianyi.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Qianyi Cai</p>
+          </div>
+        </a>
+        <a href="members/chenyiyu.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Yiyu Chen</p>
+          </div>
+        </a>
+        <a href="members/huzhengyu.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Zhengyu Hu</p>
+          </div>
+        </a>
+        <a href="members/xuzhao.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Zhao Xu</p>
+          </div>
+        </a>
+        <a href="members/huyuqi.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Yuqi Hu</p>
+          </div>
+        </a>
+        <a href="members/xiaojunren.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Junren Xiao</p>
+          </div>
+        </a>
+        <a href="members/wangshuang.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Shuang Wang</p>
+          </div>
+        </a>
+        <a href="members/raoziyang.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Ziyang Rao</p>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -205,9 +413,21 @@
     <section class="member-category my-5 wow slideInUp" data-wow-delay=".4s" id="visiting">
       <h2 class="text-center mb-4">Visiting Students &amp; Scholars</h2>
       <div class="member-grid">
-        <a href="members/liuhuijie.html"   target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Huijie Liu</p><span class="member-year">2024</span></div></a>
-        <a href="members/gaowen.html"      target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Wen Gao</p><span class="member-year">2024</span></div></a>
-        <a href="members/zhujianping.html" target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Jianping Zhu</p><span class="member-year">2024</span></div></a>
+        <a href="members/liuhuijie.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Huijie Liu</p><span class="member-year">2024</span>
+          </div>
+        </a>
+        <a href="members/gaowen.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Wen Gao</p><span class="member-year">2024</span>
+          </div>
+        </a>
+        <a href="members/zhujianping.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Jianping Zhu</p><span class="member-year">2024</span>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -215,8 +435,16 @@
     <section class="member-category my-5 wow slideInUp" data-wow-delay=".5s" id="alumni">
       <h2 class="text-center mb-4">Alumni</h2>
       <div class="member-grid">
-        <a href="members/yejinhui.html"  target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Jinhui Ye</p><span class="member-year">M.Phil. 2022</span></div></a>
-        <a href="members/hanjindong.html" target="_self"><div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i><p>Jindong Han</p><span class="member-year">Ph.D. 2021</span></div></a>
+        <a href="members/yejinhui.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Jinhui Ye</p><span class="member-year">M.Phil. 2022</span>
+          </div>
+        </a>
+        <a href="members/hanjindong.html" target="_self">
+          <div class="member-card"><i class="fas fa-user-circle fa-4x mb-2"></i>
+            <p>Jindong Han</p><span class="member-year">Ph.D. 2021</span>
+          </div>
+        </a>
       </div>
     </section>
   </main>
@@ -230,8 +458,15 @@
   </footer>
 
   <!-- Optional JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
