@@ -1,2 +1,1 @@
-Personal webpage of Steven Wu.
-[Link](https://zstevenwu.com/)
+Personal webpage of Hui Xiong.
