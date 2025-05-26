@@ -6,47 +6,81 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
 <!-- Bootstrap & Site CSS -->
-<link href="../css/main.css" rel="stylesheet" type="text/css"/>
+<link href="../css/main.css" rel="stylesheet"/>
 <link href="../css/animate.css" rel="stylesheet"/>
-<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link href="../css/bootstrap.min.css" rel="stylesheet"/>
+<link href="../css/font-awesome.min.css" rel="stylesheet"/>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Quicksand|Work+Sans:400,700,800&amp;display=swap" rel="stylesheet"/>
-<link href=".././images/favicon.png" rel="icon" type="image/png"/>
+<link href="../images/favicon.png" rel="icon" type="image/png"/>
 <!-- WOW.js -->
 <script src="../js/wow.min.js"></script>
-<script>new WOW().init();</script>
+<script> new WOW().init(); </script>
 <base target="_blank"/>
 <title>Research Group – Members</title>
 <style>
-      /* Helper utility to ensure icons and names align nicely */
-      .member-card i {
-        color: #6c757d;
+    /* --------- 统一成员卡片样式 --------- */
+    .member-card {
+      width: 140px;
+      /* 固定宽度避免姓名长短撑开 */
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .member-card i {
+      color: #6c757d;
+    }
+
+    .member-card p {
+      font-size: .9rem;
+      margin-bottom: .25rem;
+      white-space: nowrap;
+      /* 不换行 */
+      overflow: hidden;
+      /* 超出隐藏 */
+      text-overflow: ellipsis;
+      /* 省略号 */
+    }
+
+    .member-year {
+      font-size: .8rem;
+      color: #888;
+    }
+
+    /* --------- 每行最多六列的栅格 --------- */
+    .member-grid {
+      display: grid;
+      gap: 1.5rem;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    @media (min-width:992px) {
+
+      /* ≥lg 时固定 6 列 */
+      .member-grid {
+        grid-template-columns: repeat(6, 1fr);
       }
-      .member-card p {
-        font-size: 0.9rem;
-      }
-      .member-year {
-        font-size: 0.8rem;
-        color: #888;
-      }
-      .year-subtitle {
-        font-size: 1.2rem;
-        color: #495057;
-        font-weight: 600;
-        margin-top: 2rem;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-      .year-subtitle:first-child {
-        margin-top: 0;
-      }
-    </style>
+    }
+
+    /* --------- 章节标题 --------- */
+    .year-subtitle {
+      font-size: 1.2rem;
+      color: #495057;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+      text-align: center;
+    }
+
+    .year-subtitle:first-child {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm">
 <a class="d-flex align-items-center" href="../index.html#" target="_self">
-<img class="rounded-circle mr-2" src="../images/huixiong.jpg" style="height:50px;"/>
+<img alt="HX" class="rounded-circle mr-2" src="../images/huixiong.jpg" style="height:50px;"/>
 <span class="navbar-brand mb-0 h1">Hui Xiong</span>
 </a>
 <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarNav" data-toggle="collapse" type="button">
@@ -60,12 +94,12 @@
 <li class="nav-item"><a class="nav-link" href="../papers.html" target="_self">Papers</a></li>
 <li class="nav-item"><a class="nav-link" href="../index.html#teaching" target="_self">Teaching</a></li>
 <li class="nav-item"><a class="nav-link" href="../index.html#service" target="_self">Service</a></li>
-<li class="nav-item"><a class="nav-link" href="../index.html#talks" target="_self">Talks</a></li>
+<li class="nav-item"><a class="nav-link" href="../index.html#media" target="_self">Media</a></li>
 </ul>
 </div>
 </nav>
 <header class="mt-5 pt-4">
-<img alt="Group banner" class="img-fluid w-100" src="../images/banner.jpg" style="max-height: 250px; object-fit: cover;"/>
+<img alt="Group banner" class="img-fluid w-100" src="../images/banner.jpg" style="max-height:250px;object-fit:cover;"/>
 </header>
 <main class="container my-5">
   <h1 class="text-center mb-4 wow fadeIn">Zhao Xu</h1>
@@ -95,10 +129,14 @@
 
   </section>
 </main>
-<footer class="footer mt-auto py-3 bg-light">
-<div class="container d-flex justify-content-between align-items-center">
-<span class="text-muted">© 2025 Hui Xiong. Designed by VXG.</span>
-<a class="footer_link" href="#" target="_self">Back to Top</a>
+<footer class="footer mt-auto py-3">
+<div class="flex-container">
+<span class="flex-item text-muted">© 2025 Hui Xiong. Designed by VXG.</span>
+<div class="flex-item" style="width:20%"></div>
+<div class="flex-item"><a class="footer_link" href="#" target="_self">Back to Top</a></div>
+</div>
+<div class="text-center mt-2">
+<small class="text-muted">Original template adapted from <a href="https://zstevenwu.com/" target="_blank">Prof. Steven Wu</a>.</small>
 </div>
 </footer>
 </body>

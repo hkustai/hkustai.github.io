@@ -6,6 +6,7 @@ generate_members_en_links.py   • 2025-05-24
 ✓ /members/<slug>.html 继承 CSS/JS/图片 (全局补前缀)
 ✓ 首页中文名 → “名 姓”，卡片可点击
 ✓ Publications → Bootstrap 表格 (含 Notes，年份无 .0)
+✓ 支持部分成员跳转外部个人主页（如郭伟钰 → weiyuguo.com）
 """
 
 from pathlib import Path
@@ -30,6 +31,13 @@ DOUBLE_SURNAMES = {
     "子车","颛孙","司城","南宫"
 }
 
+# ───────── 特殊主页映射 ─────────
+SPECIAL_HOMEPAGES = {
+    "郭伟钰": "https://weiyuguo.com",
+    "管介超": "https://openreview.net/profile?id=%7EJiechao_Guan1",
+    "徐亦捷": "https://yjx.me"
+}
+
 # ───────── 工具函数 ─────────
 def slugify(cn_name: str) -> str:
     return "".join(lazy_pinyin(cn_name)).lower()
@@ -43,16 +51,11 @@ def en_name(cn_name: str) -> str:
     return f"{giv_en} {sur_en}"
 
 def is_local(path: str) -> bool:
-    """判定是否站点内部相对路径"""
     return path and not path.startswith((
         "http://", "https://", "//", "/", "data:", "#", "mailto:", "javascript:"
     ))
 
 def prefix_resources(html: str, prefix: str = "../") -> str:
-    """
-    给 html 片段中所有本地相对的 src/href/data-src 加前缀
-    (不重复加前缀；忽略绝对/协议/锚点路径)
-    """
     soup = BeautifulSoup(html, "html.parser")
     for tag in soup.find_all(True):
         for attr in ("src", "href", "data-src"):
@@ -60,7 +63,6 @@ def prefix_resources(html: str, prefix: str = "../") -> str:
                 path = tag[attr].strip()
                 if is_local(path) and not path.startswith(prefix):
                     tag[attr] = prefix + path
-        # 额外处理 style 内的 url(...)
         if tag.has_attr("style"):
             style = tag["style"]
             new_style = re.sub(
@@ -74,7 +76,6 @@ def prefix_resources(html: str, prefix: str = "../") -> str:
     return str(soup)
 
 def pub_table_html(sub_df: pd.DataFrame) -> str:
-    """成员出版物 → Bootstrap 表格 (Year/Title/Authors/Venue/Notes)"""
     cols = ["Year", "Title", "Authors", "Venue", "Notes"]
     view = (
         sub_df.rename(columns={
@@ -86,7 +87,6 @@ def pub_table_html(sub_df: pd.DataFrame) -> str:
         .loc[:, cols]
     )
 
-    # -- Year 去掉 .0 --
     def clean_year(y):
         if pd.isna(y) or y == "":
             return ""
@@ -96,14 +96,12 @@ def pub_table_html(sub_df: pd.DataFrame) -> str:
             return str(y)
     view["Year"] = view["Year"].apply(clean_year)
 
-    # -- 按年份逆序 (空值排最后) --
     view = view.sort_values(
         "Year",
         key=lambda s: pd.to_numeric(s, errors="coerce").fillna(0),
         ascending=False
     )
 
-    # -- 生成表格 HTML --
     head_row = "".join(f"<th>{c}</th>" for c in cols)
     body_rows = [
         "<tr>" + "".join(f"<td>{r[c] if pd.notna(r[c]) else ''}</td>" for c in cols) + "</tr>"
@@ -122,15 +120,11 @@ def pub_table_html(sub_df: pd.DataFrame) -> str:
 # ───────── 解析 group.html，提取片段并统一前缀 ─────────
 master_soup = BeautifulSoup(GROUP_HTML.read_text(encoding="utf-8"), "html.parser")
 
-# ① 处理 <head>
 head_soup = BeautifulSoup(str(master_soup.head), "html.parser")
-# 插 <base>
 if not head_soup.find("base"):
     head_soup.head.insert(0, head_soup.new_tag("base", href="../"))
-# 给 <head> 里资源补前缀
 head_sub_html = prefix_resources(str(head_soup.head), "../")
 
-# ② 处理 navbar / banner / footer（body 内片段同样补前缀）
 nav_html    = prefix_resources(str(master_soup.nav), "../")
 banner_html = prefix_resources(str(master_soup.find("header")), "../")
 footer_html = prefix_resources(str(master_soup.footer), "../")
@@ -174,10 +168,15 @@ df = pd.read_excel(EXCEL_FILE, sheet_name=0)
 slug_map, en_map = {}, {}
 
 for cn_name, sub in df.groupby("姓名"):
+    eng = en_name(cn_name)
+    en_map[cn_name] = eng
+
+    if cn_name in SPECIAL_HOMEPAGES:
+        print(f"✓ skipped {cn_name} (external homepage)")
+        continue
+
     slug = slugify(cn_name)
-    eng  = en_name(cn_name)
     slug_map[cn_name] = slug
-    en_map[cn_name]   = eng
 
     html = PAGE_TMPL.render(
         head=head_sub_html,
@@ -200,11 +199,15 @@ for card in master_soup.select(".member-card"):
     cn = p_tag.text.strip()
     p_tag.string.replace_with(en_map.get(cn, cn))
 
-    slug = slug_map.get(cn)
-    if slug and card.parent.name != "a":
-        card.wrap(master_soup.new_tag(
-            "a", href=f"members/{slug}.html", target="_self"
-        ))
+    if cn in SPECIAL_HOMEPAGES:
+        href = SPECIAL_HOMEPAGES[cn]
+    elif cn in slug_map:
+        href = f"members/{slug_map[cn]}.html"
+    else:
+        continue
+
+    if card.parent.name != "a":
+        card.wrap(master_soup.new_tag("a", href=href, target="_self"))
 
 # ───────── 输出新首页 ─────────
 new_home = ROOT / "group.html"
