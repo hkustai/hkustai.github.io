@@ -11,6 +11,14 @@ from bs4 import BeautifulSoup, NavigableString
 from jinja2 import Template
 from pypinyin import lazy_pinyin
 
+from pypinyin import load_phrases_dict, Style, pinyin
+
+# 指定“曾诗雅”的正确拼音（带声调）
+load_phrases_dict({
+    "曾诗雅": [['zēng'], ['shī'], ['yǎ']],
+    # 可继续添加其他名字
+})
+
 # ───────── 基础路径 ─────────
 ROOT = Path(__file__).parent
 GROUP_HTML = ROOT / "group.html"
@@ -71,7 +79,7 @@ SPECIAL_HOMEPAGES = {
 }
 
 # ───────── 手动处理成员（英文名，无需头像和主页自动设置）─────────
-MANUAL_MEMBERS = {"Ziyue Qiao", "Chao Wang", "Wenzhi Li", "Jindong Han", "Jinhui Ye"}
+MANUAL_MEMBERS = {"Ziyue Qiao", "Chao Wang", "Wenzhi Li", "Jindong Han", "Jinhui Ye", "Cehao Yang", "Xueyuan Lin"}
 
 
 # ───────── 工具函数 ─────────
