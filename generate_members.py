@@ -71,7 +71,7 @@ SPECIAL_HOMEPAGES = {
 }
 
 # ───────── 手动处理成员（英文名，无需头像和主页自动设置）─────────
-MANUAL_MEMBERS = {"Ziyue Qiao", "Chao Wang"}
+MANUAL_MEMBERS = {"Ziyue Qiao", "Chao Wang", "Wenzhi Li", "Jindong Han", "Jinhui Ye"}
 
 
 # ───────── 工具函数 ─────────
