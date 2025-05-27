@@ -19,80 +19,81 @@
 <base target="_blank"/>
 <title>Research Group – Members</title>
 <style>
-    /* --------- 统一成员卡片样式 --------- */
-    .member-card {
-      width: 140px;
-      /* 固定宽度避免姓名长短撑开 */
-      margin: 0 auto;
-      text-align: center;
-    }
+  /* --------- 统一成员卡片样式 --------- */
+  .member-card {
+    width: 180px; /* 放大卡片 */
+    margin: 0 auto;
+    text-align: center;
+  }
 
-    .member-card i {
-      color: #6c757d;
-    }
+  .member-card i {
+    color: #6c757d;
+  }
 
-    .member-card p {
-      font-size: .9rem;
-      margin-bottom: .25rem;
-      white-space: nowrap;
-      /* 不换行 */
-      overflow: hidden;
-      /* 超出隐藏 */
-      text-overflow: ellipsis;
-      /* 省略号 */
-    }
+  .member-card p {
+    font-size: 1rem;
+    margin-bottom: .25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-    .member-year {
-      font-size: .8rem;
-      color: #888;
-    }
+  .member-year {
+    font-size: .8rem;
+    color: #888;
+  }
 
-    /* --------- 每行最多六列的栅格 --------- */
+  /* --------- 成员头像 --------- */
+  .member-avatar {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .member-avatar i {
+    font-size: 120px;
+    line-height: 150px;
+    color: #6c757d;
+  }
+
+  /* --------- 每行最多 4 列的栅格，左对齐 --------- */
+  .member-grid {
+    display: grid;
+    gap: 1.5rem;
+    justify-content: start;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  @media (min-width: 992px) {
+    /* ≥lg 时强制固定 4 列，左对齐 */
     .member-grid {
-      display: grid;
-      gap: 1.5rem;
-      justify-content: center;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
     }
+  }
 
-    @media (min-width:992px) {
+  /* --------- 章节标题 --------- */
+  .year-subtitle {
+    font-size: 1.2rem;
+    color: #495057;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    text-align: center;
+  }
 
-      /* ≥lg 时固定 6 列 */
-      .member-grid {
-        grid-template-columns: repeat(6, 1fr);
-      }
-    }
-
-    /* --------- 章节标题 --------- */
-    .year-subtitle {
-      font-size: 1.2rem;
-      color: #495057;
-      font-weight: 600;
-      margin: 2rem 0 1rem;
-      text-align: center;
-    }
-
-    .year-subtitle:first-child {
-      margin-top: 0;
-    }
-  </style>
-<style>
-    .member-photo {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-  </style>
-<style id="member-photo-style">
-    .member-photo {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-  </style>
-
+  .year-subtitle:first-child {
+    margin-top: 0;
+  }
+</style>
 
 <style id="member-avatar-style">
 .member-avatar{width:120px;height:120px;margin:0 auto 8px;
@@ -418,30 +419,30 @@
 <div class="member-grid">
 <a href="members/yejinhui.html" target="_self">
 <div class="member-card"><div class="member-avatar"><img src="members/images/yejinhui.jpg"/></div>
-<p>Jinhui Ye</p><span class="member-year">M.Phil. 2022<br/>Research Intern@Shanghai AI Lab</span>
+<p>Jinhui Ye</p><span class="member-year">M.Phil. 2022<br/>Research Intern<br/>Shanghai AI Lab</span>
 </div>
 </a>
 <a href="members/hanjindong.html" target="_self">
 <div class="member-card"><div class="member-avatar"><img src="members/images/hanjindong.jpg"/></div>
-<p>Jindong Han</p><span class="member-year">Ph.D. 2021<br/>Associate Professor@Shandong University</span>
+<p>Jindong Han</p><span class="member-year">Ph.D. 2021<br/>Associate Prof.<br/>Shandong University</span>
 </div>
 </a>
 <a href="https://chaowang-ustc.github.io/" target="_blank">
 <div class="member-card">
 <div class="member-avatar"><img src="members/images/wangchao.png"/></div>
-<p>Chao Wang</p><span class="member-year">Postdoc 2022<br/>Tenure-track Associate Professor@USTC</span>
+<p>Chao Wang</p><span class="member-year">Postdoc 2022<br/>Tenure-track Associate Prof.<br/>USTC</span>
 </div>
 </a>
 <a href="https://qiaoziyue.com/" target="_blank">
 <div class="member-card">
 <div class="member-avatar"><img src="members/images/qiaoziyue.jpg"/></div>
-<p>Ziyue Qiao</p><span class="member-year">Postdoc 2022<br/>Assistant Professor@Great Bay University</span>
+<p>Ziyue Qiao</p><span class="member-year">Postdoc 2022<br/>Assistant Prof.<br/>Great Bay University</span>
 </div>
 </a>
 <a href="https://wenzhilics.github.io/" target="_blank">
 <div class="member-card">
 <div class="member-avatar"><img src="members/images/liwenzhi.jpg"/></div>
-<p>Wenzhi Li</p><span class="member-year">Visiting Student 2022<br/>Ph.D. Student@Cornell University</span>
+<p>Wenzhi Li</p><span class="member-year">Visiting Student 2022<br/>Ph.D. Student<br/>Cornell University</span>
 </div>
 </a>
 </div>
