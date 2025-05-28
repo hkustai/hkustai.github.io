@@ -20,8 +20,8 @@
 <style>
     /* --------- 统一成员卡片样式 --------- */
     .member-card {
-      width: 140px;
-      /* 固定宽度避免姓名长短撑开 */
+      width: 180px;
+      /* 放大卡片 */
       margin: 0 auto;
       text-align: center;
     }
@@ -31,14 +31,11 @@
     }
 
     .member-card p {
-      font-size: .9rem;
+      font-size: 1rem;
       margin-bottom: .25rem;
       white-space: nowrap;
-      /* 不换行 */
       overflow: hidden;
-      /* 超出隐藏 */
       text-overflow: ellipsis;
-      /* 省略号 */
     }
 
     .member-year {
@@ -46,19 +43,42 @@
       color: #888;
     }
 
-    /* --------- 每行最多六列的栅格 --------- */
+    /* --------- 成员头像 --------- */
+    .member-avatar {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .member-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .member-avatar i {
+      font-size: 120px;
+      line-height: 150px;
+      color: #6c757d;
+    }
+
+    /* --------- 每行最多 4 列的栅格，左对齐 --------- */
     .member-grid {
       display: grid;
       gap: 1.5rem;
-      justify-content: center;
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      justify-content: start;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     }
 
-    @media (min-width:992px) {
+    @media (min-width: 992px) {
 
-      /* ≥lg 时固定 6 列 */
+      /* ≥lg 时强制固定 4 列，左对齐 */
       .member-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
       }
     }
 
@@ -75,28 +95,29 @@
       margin-top: 0;
     }
   </style>
-<style>
-    .member-photo {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-  </style>
-<style id="member-photo-style">
-    .member-photo {
+<style id="member-avatar-style">
+    .member-avatar {
       width: 120px;
       height: 120px;
+      margin: 0 auto 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center
+    }
+
+    .member-avatar img {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      border-radius: 50%;
+      border-radius: 50%
+    }
+
+    .member-avatar i {
+      font-size: 96.0px;
+      line-height: 120px;
+      color: #6c757d
     }
   </style>
-<style id="member-avatar-style">
-.member-avatar{width:120px;height:120px;margin:0 auto 8px;
-               display:flex;justify-content:center;align-items:center}
-.member-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
-.member-avatar i{font-size:96.0px;line-height:120px;color:#6c757d}
-</style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow-sm">
