@@ -12,7 +12,7 @@ body, p, .about p, .news p, .papers p, .description p {
 h1 {
   font-family: 'Hiragino Sans GB', sans-serif;
   font-weight: 700;
-  color: #568e30;
+  color: #996600;
 }
 
 h1.text-center {
@@ -54,7 +54,7 @@ a:link, a:visited {
 }
 
 .nav-link:hover, .navbar-brand:hover {
-  background-color: #2b441e;
+  background-color: #003366;
   color: #f4f4f4;
   border-radius: 5px;
 }
@@ -261,8 +261,8 @@ a:link, a:visited {
 }
 
 .btn-outline-primary.talk {
-  border-color: #6a52ab;
-  color: #6a52ab;
+  border-color: #003366;
+  color: #003366;
 }
 
 .btn-outline-primary.slides {
