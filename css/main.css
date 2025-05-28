@@ -1,7 +1,6 @@
 /* Set general fonts */
-html, h2, h3, h4, h5, h6, a, span, div {
+html, h2, h3, h4, h5, h6, a, span, div, p, th, td {
   font-family: "PT Serif", "Quicksand", 'Hiragino Sans GB', Tahoma, Helvetica, Arial, sans-serif;
-  display: block;
 }
 
 body, p, .about p, .news p, .papers p, .description p {
@@ -290,63 +289,64 @@ a:link, a:visited {
   color: #317191;
 }
 
-/* --------- 美化访问学者表格 --------- */
 .visiting-table-container {
-  overflow-x: auto; /* 在小屏幕上，如果表格太宽，则允许水平滚动 */
-  border: 1px solid #dee2e6; /* 添加一个细微的边框 */
-  border-radius: 8px; /* 圆角，与页面其他元素风格统一 */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* 添加细微的阴影以提升质感 */
-  padding: 0; /* 容器不需要内边距 */
-  margin: 0 5% !important; /* 调整外边距以适应新设计 */
+  overflow-x: auto;                     /* 核心：在内容溢出时启用水平滚动 */
+  -webkit-overflow-scrolling: touch;    /* 为移动设备提供流畅的滚动体验 */
+  margin: 2rem 10%;                     /* 与页面其他部分 (.news, .papers) 的外边距保持一致 */
+  border-radius: 8px;                   /* 圆角设计，增加现代感 */
+  border: 1px solid #e9ecef;            /* 使用更柔和的边框颜色 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06); /* 稍微增强阴影，提升立体感 */
 }
 
+/* 2. 表格基础样式 */
 .table-visiting {
-  border-collapse: collapse; /* 移除单元格间距 */
-  margin-bottom: 0; /* 移除表格默认的下外边距 */
+  width: 100%;                          /* 表格宽度充满容器 */
+  border-collapse: collapse;            /* 移除单元格间距，使边框合并 */
+  margin-bottom: 0;                     /* 移除 Bootstrap 可能添加的默认下外边距 */
 }
 
+/* 3. 表头 (thead) 样式 */
 .table-visiting thead th {
-  background-color: #f8f9fa; /* 给表头一个非常浅的灰色背景 */
-  border-bottom: 2px solid #996600; /* 使用主题色作为表头底边框，加强视觉引导 */
-  color: #343a40; /* 加深表头字体颜色 */
-  font-weight: 700; /* 字体加粗 */
-  padding: 1rem; /* 增加内边距 */
-  text-align: left; /* 默认左对齐 */
-  font-family: 'Hiragino Sans GB', sans-serif; /* 与标题使用相同字体 */
+  background-color: #f8f9fa;            /* 清爽的浅灰色表头背景 */
+  border-bottom: 2px solid #996600;     /* 沿用你的主题色作为视觉强调 */
+  padding: 1rem 1.2rem;                 /* 增加左右内边距，让内容更舒展 */
+  font-weight: 700;                     /* 加粗字体 */
+  color: #212529;                       /* 更深的标题颜色，提高对比度 */
+  text-align: left;                     /* 文本左对齐 */
+  white-space: nowrap;                  /* 防止表头文字换行 */
+  font-family: 'Hiragino Sans GB', sans-serif;
 }
 
+/* 4. 表格主体 (tbody) 样式 */
 .table-visiting tbody td {
-  padding: 0.85rem 1rem; /* 增加单元格内边距 */
-  vertical-align: middle; /* 垂直居中 */
-  border-top: 1px solid #dee2e6; /* 统一使用顶部边框作为行分隔线 */
+  padding: 0.85rem 1.2rem;              /* 调整内边距，与表头对齐 */
+  vertical-align: middle;               /* 垂直居中对齐 */
+  border-top: 1px solid #e9ecef;        /* 使用柔和的颜色作为行分隔线 */
+  color: #495057;                       /* 为正文设置柔和的字体颜色 */
 }
 
-/* 斑马条纹效果 */
-.table-visiting tbody tr:nth-of-type(even) {
-  background-color: rgba(0, 0, 0, 0.03); /* 偶数行添加非常浅的背景色 */
+/* 斑马条纹：奇数行（比偶数行更直观）*/
+.table-visiting tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.02); /* 为奇数行设置非常淡的背景色 */
 }
 
-/* 鼠标悬停效果 */
+/* 鼠标悬停高亮 */
 .table-visiting tbody tr:hover {
-    background-color: rgba(153, 102, 0, 0.1); /* 鼠标悬停时高亮 */
-    cursor: default; /* 保持默认鼠标样式 */
+  background-color: rgba(153, 102, 0, 0.08); /* 使用主题色的半透明颜色作为高亮 */
+  cursor: default;
 }
 
+/* 5. 列的特定行为控制 (Column-specific behaviors) */
 
-/* --- 更新和新增的CSS规则 --- */
-
-/* 特定列的对齐与宽度优化 */
-
-/* 第1列: 姓名 (Name) */
-.table-visiting th:nth-child(1),
-.table-visiting td:nth-child(1) {
-  white-space: nowrap; /* 关键：让姓名列尽可能不换行 */
-}
-
-/* 第2列: 年份 (Year) */
+/* 年份列 (Year) - 第2列 */
 .table-visiting th:nth-child(2),
 .table-visiting td:nth-child(2) {
-  text-align: center;   /* 年份居中对齐 */
-  white-space: nowrap;  /* 防止年份换行 */
-  width: 1%;            /* 关键：让这一列的宽度仅由其内容决定，变得很窄 */
+  text-align: center; /* 居中对齐 */
+  width: 100px;       /* 给一个固定的最小宽度，而不是百分比 */
+}
+
+/* 职位列 (Position) - 第3列 */
+.table-visiting td:nth-child(3) {
+  /* 这一列内容可能很长，让它可以自然换行 */
+  white-space: normal;
 }

@@ -48,24 +48,31 @@
 
     /* --------- 成员头像 --------- */
     .member-avatar {
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      /* 统一尺寸 */
+      height: 120px;
+      /* 统一尺寸 */
       margin: 0 auto 8px;
       display: flex;
       justify-content: center;
       align-items: center;
+      overflow: hidden;
+      /* 确保图片不会溢出圆形边界 */
     }
 
     .member-avatar img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      /* 保持图片比例，填满容器 */
+      object-position: cover;
       border-radius: 50%;
     }
 
     .member-avatar i {
-      font-size: 120px;
-      line-height: 150px;
+      font-size: 96px;
+      /* 调整图标大小以适应容器 */
+      line-height: 120px;
       color: #6c757d;
     }
 
@@ -104,31 +111,7 @@
     .year-subtitle:first-child {
       margin-top: 0;
     }
-  </style>
-
-  <style id="member-avatar-style">
-    .member-avatar {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto 8px;
-      display: flex;
-      justify-content: center;
-      align-items: center
-    }
-
-    .member-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%
-    }
-
-    .member-avatar i {
-      font-size: 96.0px;
-      line-height: 120px;
-      color: #6c757d
-    }
-  </style>
+</style>
 </head>
 
 <body>
