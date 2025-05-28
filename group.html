@@ -23,7 +23,7 @@
   <style>
     /* --------- 统一成员卡片样式 --------- */
     .member-card {
-      width: 180px;
+      width: 280px;
       /* 放大卡片 */
       margin: 0 auto;
       text-align: center;
@@ -69,19 +69,26 @@
       color: #6c757d;
     }
 
-    /* --------- 每行最多 4 列的栅格，左对齐 --------- */
+    /* --------- 栅格：默认手机两列，PC 四列，缩小间距 --------- */
     .member-grid {
       display: grid;
-      gap: 1.5rem;
+      gap: 1rem;
+      /* 缩短成员之间的间距 */
       justify-content: start;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
+      /* 默认两列 */
     }
 
     @media (min-width: 992px) {
-
-      /* ≥lg 时强制固定 4 列，左对齐 */
       .member-grid {
         grid-template-columns: repeat(4, 1fr);
+        /* PC ≥992px 时四列 */
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      .member-grid {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
@@ -509,18 +516,20 @@
 
 
         <!-- Postdoc -->
-    
+
         <!-- Postdoc -->
         <a href="https://qiaoziyue.com/" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/qiaoziyue.jpg" /></div>
-            <p>Ziyue Qiao</p><span class="member-year">Postdoc 2022<br />Assistant Professor<br />Great Bay University</span>
+            <p>Ziyue Qiao</p><span class="member-year">Postdoc 2022<br />Assistant Professor<br />Great Bay
+              University</span>
           </div>
         </a>
         <a href="https://chaowang-ustc.github.io/" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/wangchao.png" /></div>
-            <p>Chao Wang</p><span class="member-year">Postdoc 2022<br />Tenure-track Assoc. Prof.<br />University of Science and Technology of China</span>
+            <p>Chao Wang</p><span class="member-year">Postdoc 2022<br />Tenure-track Assoc. Prof.<br />University of
+              Science and Technology of China</span>
           </div>
         </a>
         <a>
@@ -572,7 +581,8 @@
         <a href="members/hanjindong.html" target="_self">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/hanjindong.jpg" /></div>
-            <p>Jindong Han</p><span class="member-year">Ph.D. 2021<br />Associate Professor<br />Shandong University</span>
+            <p>Jindong Han</p><span class="member-year">Ph.D. 2021<br />Associate Professor<br />Shandong
+              University</span>
           </div>
         </a>
         <a>
@@ -584,7 +594,8 @@
         <a>
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/zhangshengming.jpg" /></div>
-            <p>Shengming Zhang</p><span class="member-year">Ph.D. 2019<br />Postdoc<br />Peking Union Medical College Hospital</span>
+            <p>Shengming Zhang</p><span class="member-year">Ph.D. 2019<br />Postdoc<br />Peking Union Medical College
+              Hospital</span>
           </div>
         </a>
         <a href="https://yuanzx33033.github.io/zixuan/" target="_blank">
@@ -596,7 +607,8 @@
         <a href="https://zhangdenghui.site/" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/zhangdenghui.jpeg" /></div>
-            <p>Denghui Zhang</p><span class="member-year">Ph.D. 2018<br />Assistant Professor<br />Stevens Institute of Technology</span>
+            <p>Denghui Zhang</p><span class="member-year">Ph.D. 2018<br />Assistant Professor<br />Stevens Institute of
+              Technology</span>
           </div>
         </a>
         <a>
@@ -620,25 +632,29 @@
         <a href="http://www.is.cityu.edu.hk/staff/junmiliu/" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/liujunming.jpg" /></div>
-            <p>Junming Liu</p><span class="member-year">Ph.D. 2015<br>Assistant Professor<br>City University of Hong Kong</span>
+            <p>Junming Liu</p><span class="member-year">Ph.D. 2015<br>Assistant Professor<br>City University of Hong
+              Kong</span>
           </div>
         </a>
         <a href="https://research.nottingham.edu.cn/en/persons/qingxin-meng" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/mengqingxin.jpg" /></div>
-            <p>Qingxin Meng</p><span class="member-year">Ph.D. 2014<br>Assistant Professor<br>University of Nottingham Ningbo China</span>
+            <p>Qingxin Meng</p><span class="member-year">Ph.D. 2014<br>Assistant Professor<br>University of Nottingham
+              Ningbo China</span>
           </div>
         </a>
         <a>
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/razzakfarid.jpeg" /></div>
-            <p>Farid Razzak</p><span class="member-year">Ph.D. 2013<br>Financial Quantitative Data Scientist (SME)<br>U.S. Securities and Exchange Commission</span>
+            <p>Farid Razzak</p><span class="member-year">Ph.D. 2013<br>Financial Quantitative Data Scientist
+              (SME)<br>U.S. Securities and Exchange Commission</span>
           </div>
         </a>
         <a href="https://hzhong.site/" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/zhonghao.png" /></div>
-            <p>Hao Zhong</p><span class="member-year">Ph.D. 2013<br>Associate Professor<br>ESCP Business School (Paris)</span>
+            <p>Hao Zhong</p><span class="member-year">Ph.D. 2013<br>Associate Professor<br>ESCP Business School
+              (Paris)</span>
           </div>
         </a>
         <a>
@@ -650,19 +666,22 @@
         <a>
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/vittconstantine.jpeg" /></div>
-            <p>Constantine Vitt</p><span class="member-year">Ph.D. 2012<br>Vice President of Data Science<br>Relay Delivery</span>
+            <p>Constantine Vitt</p><span class="member-year">Ph.D. 2012<br>Vice President of Data Science<br>Relay
+              Delivery</span>
           </div>
         </a>
         <a href="https://business.gmu.edu/profiles/jyang53" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/yangjingyuan.jpg" /></div>
-            <p>Jingyuan Yang</p><span class="member-year">Ph.D. 2012<br>Assistant Professor<br>George Mason University</span>
+            <p>Jingyuan Yang</p><span class="member-year">Ph.D. 2012<br>Assistant Professor<br>George Mason
+              University</span>
           </div>
         </a>
         <a href="https://faculty.engineering.asu.edu/yanjiefu/" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/fuyanjie.jpg" /></div>
-            <p>Yanjie Fu</p><span class="member-year">Ph.D. 2012<br>Associate Professor<br>Arizona State University</span>
+            <p>Yanjie Fu</p><span class="member-year">Ph.D. 2012<br>Associate Professor<br>Arizona State
+              University</span>
           </div>
         </a>
         <a href="https://ittc.ku.edu/~zyao/" target="_blank">
@@ -680,13 +699,15 @@
         <a href="https://datamining.utk.edu/" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/liuchuanren.jpg" /></div>
-            <p>Chuanren Liu</p><span class="member-year">Ph.D. 2011<br>Associate Professor<br>University of Tennessee</span>
+            <p>Chuanren Liu</p><span class="member-year">Ph.D. 2011<br>Associate Professor<br>University of
+              Tennessee</span>
           </div>
         </a>
         <a href="https://www.business.rutgers.edu/faculty/meng-qu" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/qumeng.jpeg" /></div>
-            <p>Meng Qu</p><span class="member-year">Ph.D. 2010<br>Assistant Professor<br>Rutgers, the State University of New Jersey</span>
+            <p>Meng Qu</p><span class="member-year">Ph.D. 2010<br>Asst. Prof. of Professional Practice<br>Rutgers
+              University</span>
           </div>
         </a>
         <a>
@@ -698,7 +719,8 @@
         <a href="https://www.stonybrook.edu/commcms/business/about/_faculty/profile/kxiao" target="_blank">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/xiaokeli.jpg" /></div>
-            <p>Keli Xiao</p><span class="member-year">Ph.D. in Finance 2009<br>Associate Professor<br>Stony Brook University</span>
+            <p>Keli Xiao</p><span class="member-year">Ph.D. in Finance 2009<br>Associate Professor<br>Stony Brook
+              University</span>
           </div>
         </a>
         <a href="https://eller.arizona.edu/people/yong-ge" target="_blank">
@@ -713,11 +735,11 @@
             <p>Wenjun Zhou</p><span class="member-year">Ph.D. 2006<br>Professor<br>University of Tennessee</span>
           </div>
         </a>
-    
+
       </div>
     </section>
 
-      </div>
+    </div>
     </section>
     <!-- --------- Visiting --------- -->
     <section class="member-category my-5 wow slideInUp" data-wow-delay=".4s" id="visiting">
@@ -747,78 +769,366 @@
               <td>2024</td>
               <td>Visiting Student</td>
             </tr>
-            <tr><td>Yuanbo Xu</td><td>2017-2019</td><td>Visiting Student, Jilin University; Now Assistant Professor</td></tr>
-            <tr><td>Ning Fu</td><td>2018-2019</td><td>Visiting Professor, Northwestern Polytechnical University</td></tr>
-            <tr><td>Yang Yang</td><td>2018-2019</td><td>Visiting Professor, Nanjing University of Science and Technology</td></tr>
-            <tr><td>Nengjun Zhu</td><td>2018-2019</td><td>Visiting Student, Shanghai Jiao Tong University</td></tr>
-            <tr><td>Dawen Xia</td><td>2019</td><td>Visiting Professor, Guizhou Minzu University</td></tr>
-            <tr><td>Yunfeng Xu</td><td>2019</td><td>Visiting Professor</td></tr>
-            <tr><td>Haoyi Zhou</td><td>2019</td><td>Visiting Student, Beihang University</td></tr>
-            <tr><td>Xiaonan Gao</td><td>2019</td><td>Visiting Student, Beijing Institute of Technology</td></tr>
-            <tr><td>Shan Jiang</td><td>2019</td><td>Visiting Student, Tianjin University</td></tr>
-            <tr><td>Xiaolong Deng</td><td>2018</td><td>Visiting Professor, Beijing University of Posts and Telecommunications</td></tr>
-            <tr><td>Fei Yi</td><td>2017-2018</td><td>Visiting Student, Huawei; Now Researcher</td></tr>
-            <tr><td>Jingjing Gu</td><td>2017-2018</td><td>Visiting Professor, Nanjing University of Aeronautics &amp; Astronautics</td></tr>
-            <tr><td>Fuzhen Zhuang</td><td>2017-2018</td><td>Visiting Professor, Institute of Computing Technology, CAS</td></tr>
-            <tr><td>Xiping Liu</td><td>2017-2018</td><td>Visiting Professor, Jiangxi University of Finance and Economics</td></tr>
-            <tr><td>Ya Yang</td><td>2017-2018</td><td>Visiting Professor, Beijing University of Posts and Telecommunications</td></tr>
-            <tr><td>Xiaoyi Deng</td><td>2017-2018</td><td>Visiting Professor, Huaqiao University</td></tr>
-            <tr><td>Xiao Zhang</td><td>2017-2018</td><td>Visiting Student, PhD, Nanjing University</td></tr>
-            <tr><td>Kun Yuan</td><td>2017-2018</td><td>Visiting Student, PhD, Beihang University</td></tr>
-            <tr><td>Renjun Hu</td><td>2017-2018</td><td>Visiting Student, PhD, Beihang University</td></tr>
-            <tr><td>Haochao Ying</td><td>2017-2018</td><td>Visiting Student, PhD, Zhejiang University</td></tr>
-            <tr><td>Huang Xu</td><td>2015-2017</td><td>Visiting Student, PhD, Northwestern Polytechnical University</td></tr>
-            <tr><td>Pengpeng Zhao</td><td>2016-2017</td><td>Visiting Professor, Soochow University</td></tr>
-            <tr><td>Deqing Wang</td><td>2016-2017</td><td>Visiting Professor, Beihang University</td></tr>
-            <tr><td>Chen Zhang</td><td>2016-2017</td><td>Visiting Professor, Institue of Software Chinese Academy of Sciences</td></tr>
-            <tr><td>Huang Li</td><td>2016-2017</td><td>Visiting Professor, South-Central University for Nationalities</td></tr>
-            <tr><td>Rui Ding</td><td>2016-2017</td><td>Visiting Student (Master)</td></tr>
-            <tr><td>Shuying Liu</td><td>2017</td><td>Master</td></tr>
-            <tr><td>Xinjiang Lu</td><td>2014-2016</td><td>Visiting Student, PhD, Northwestern Polytechnical University</td></tr>
-            <tr><td>Jie Liu</td><td>2015-2016</td><td>Visiting Professor, Nankai University</td></tr>
-            <tr><td>Yaoyao Zuo</td><td>2015-2016</td><td>Visiting Professor, Guangdong University of Technology</td></tr>
-            <tr><td>Yanhong Guo</td><td>2015-2016</td><td>Visiting Professor, Dalian University of Technology</td></tr>
-            <tr><td>Dowen Du (Bowen Du)</td><td>2015-2016</td><td>Visiting Professor, Beihang University</td></tr>
-            <tr><td>Leilei Sun</td><td>2015-2016</td><td>Visiting Student, PhD, Dalian University of Technology</td></tr>
-            <tr><td>Gayathri Sridharan</td><td>2015</td><td>Master, Credit Suisse</td></tr>
-            <tr><td>Namratha Nandyal</td><td>2015</td><td>Master, PwC</td></tr>
-            <tr><td>Ling Yin</td><td>2014-2015</td><td>Visiting Professor, South China Agricultural University</td></tr>
-            <tr><td>Xiaolin Li</td><td>2014-2015</td><td>Visiting Professor, Nanjing University</td></tr>
-            <tr><td>Chu Guan</td><td>2014-2015</td><td>Visiting Student</td></tr>
-            <tr><td>Jiadi Du</td><td>2014-2015</td><td>Master Student</td></tr>
-            <tr><td>Jing Sun</td><td>2014-2015</td><td>Visiting Student</td></tr>
-            <tr><td>Hongting Niu</td><td>2013-2014</td><td>Visiting Professor, Beihang University</td></tr>
-            <tr><td>Bo Jin</td><td>2013-2014</td><td>Visiting Professor, Dalian University of Technology</td></tr>
-            <tr><td>Yuanchun Zhou</td><td>2013-2014</td><td>Visiting Student, PhD</td></tr>
-            <tr><td>Tong Xu</td><td>2013-2014</td><td>Visiting Student, PhD, Univ. of Sci. and Tech. of China</td></tr>
-            <tr><td>Guannan Liu</td><td>2013-2014</td><td>Visiting Student, PhD, Tsinghua University</td></tr>
-            <tr><td>Xue Bai</td><td>2012-2013</td><td>Visiting Student, PhD, Fudan University</td></tr>
-            <tr><td>Hengshu Zhu</td><td>2012-2013</td><td>Visiting Student, PhD, Univ. of Sci. and Tech. of China</td></tr>
-            <tr><td>LiYang Tang</td><td>2012-2013</td><td>Visiting Student, PhD</td></tr>
-            <tr><td>Aimin Feng</td><td>2011-2012</td><td>Visiting Professor, Nanjing University of Aeronautics and Astronautics</td></tr>
-            <tr><td>Chang Tan</td><td>2011-2012</td><td>Visiting Student, PhD, Univ. of Sci. and Tech. of China</td></tr>
-            <tr><td>Mr. Ramin Kholoussi</td><td>2012</td><td>Master</td></tr>
-            <tr><td>Ms. Jing Li</td><td>2012</td><td>Master</td></tr>
-            <tr><td>Ms. Liwen Xing</td><td>2012</td><td>Master</td></tr>
-            <tr><td>Ms. Srideepthi Narla</td><td>2012</td><td>Master</td></tr>
-            <tr><td>Ishita Chokshi</td><td>2009-2011</td><td>Master</td></tr>
-            <tr><td>Chunyu Luo</td><td>2010-2011</td><td>Visiting Student, PhD, Dalian University of Technology</td></tr>
-            <tr><td>Qi Liu</td><td>2010-2011</td><td>Visiting Student, PhD, Univ. of Sci. and Tech. of China</td></tr>
-            <tr><td>Mengjia Wang</td><td>2008-2010</td><td>Master</td></tr>
-            <tr><td>Yanchi Liu</td><td>2009-2010</td><td>Visiting Ph.D. Student</td></tr>
-            <tr><td>Qi Yan</td><td>-</td><td>Visiting Student, Beihang University</td></tr>
-            <tr><td>Xuehua Wang</td><td>-</td><td>Visiting Professor, Dalian University of Technology</td></tr>
-            <tr><td>Xiaojun Quan</td><td>-</td><td>Visiting Student, PhD</td></tr>
-            <tr><td>Huikai Ma</td><td>-</td><td>Master</td></tr>
-            <tr><td>Elinor Volansky</td><td>-</td><td>Master</td></tr>
-            <tr><td>Jyotsna Sahirdayan</td><td>-</td><td>Master</td></tr>
-            <tr><td>Lakshmi Sahithi Dantu</td><td>-</td><td>Master</td></tr>
-            <tr><td>UmaMaheswari Jayapalan</td><td>-</td><td>Master</td></tr>
-            <tr><td>Rachana Ravi</td><td>-</td><td>Master</td></tr>
-            <tr><td>Sadaf Hussain</td><td>-</td><td>Master, IEEE</td></tr>
-            <tr><td>Yili He</td><td>-</td><td>Visiting Student, Master</td></tr>
-            <tr><td>Angela Chen</td><td>-</td><td>Undergraduate</td></tr>
-            <tr><td>Islam Taman</td><td>-</td><td>Undergraduate</td></tr>
+            <tr>
+              <td>Yuanbo Xu</td>
+              <td>2017-2019</td>
+              <td>Visiting Student, Jilin University; Now Assistant Professor</td>
+            </tr>
+            <tr>
+              <td>Ning Fu</td>
+              <td>2018-2019</td>
+              <td>Visiting Professor, Northwestern Polytechnical University</td>
+            </tr>
+            <tr>
+              <td>Yang Yang</td>
+              <td>2018-2019</td>
+              <td>Visiting Professor, Nanjing University of Science and Technology</td>
+            </tr>
+            <tr>
+              <td>Nengjun Zhu</td>
+              <td>2018-2019</td>
+              <td>Visiting Student, Shanghai Jiao Tong University</td>
+            </tr>
+            <tr>
+              <td>Dawen Xia</td>
+              <td>2019</td>
+              <td>Visiting Professor, Guizhou Minzu University</td>
+            </tr>
+            <tr>
+              <td>Yunfeng Xu</td>
+              <td>2019</td>
+              <td>Visiting Professor</td>
+            </tr>
+            <tr>
+              <td>Haoyi Zhou</td>
+              <td>2019</td>
+              <td>Visiting Student, Beihang University</td>
+            </tr>
+            <tr>
+              <td>Xiaonan Gao</td>
+              <td>2019</td>
+              <td>Visiting Student, Beijing Institute of Technology</td>
+            </tr>
+            <tr>
+              <td>Shan Jiang</td>
+              <td>2019</td>
+              <td>Visiting Student, Tianjin University</td>
+            </tr>
+            <tr>
+              <td>Xiaolong Deng</td>
+              <td>2018</td>
+              <td>Visiting Professor, Beijing University of Posts and Telecommunications</td>
+            </tr>
+            <tr>
+              <td>Fei Yi</td>
+              <td>2017-2018</td>
+              <td>Visiting Student, Huawei; Now Researcher</td>
+            </tr>
+            <tr>
+              <td>Jingjing Gu</td>
+              <td>2017-2018</td>
+              <td>Visiting Professor, Nanjing University of Aeronautics &amp; Astronautics</td>
+            </tr>
+            <tr>
+              <td>Fuzhen Zhuang</td>
+              <td>2017-2018</td>
+              <td>Visiting Professor, Institute of Computing Technology, CAS</td>
+            </tr>
+            <tr>
+              <td>Xiping Liu</td>
+              <td>2017-2018</td>
+              <td>Visiting Professor, Jiangxi University of Finance and Economics</td>
+            </tr>
+            <tr>
+              <td>Ya Yang</td>
+              <td>2017-2018</td>
+              <td>Visiting Professor, Beijing University of Posts and Telecommunications</td>
+            </tr>
+            <tr>
+              <td>Xiaoyi Deng</td>
+              <td>2017-2018</td>
+              <td>Visiting Professor, Huaqiao University</td>
+            </tr>
+            <tr>
+              <td>Xiao Zhang</td>
+              <td>2017-2018</td>
+              <td>Visiting Student, PhD, Nanjing University</td>
+            </tr>
+            <tr>
+              <td>Kun Yuan</td>
+              <td>2017-2018</td>
+              <td>Visiting Student, PhD, Beihang University</td>
+            </tr>
+            <tr>
+              <td>Renjun Hu</td>
+              <td>2017-2018</td>
+              <td>Visiting Student, PhD, Beihang University</td>
+            </tr>
+            <tr>
+              <td>Haochao Ying</td>
+              <td>2017-2018</td>
+              <td>Visiting Student, PhD, Zhejiang University</td>
+            </tr>
+            <tr>
+              <td>Huang Xu</td>
+              <td>2015-2017</td>
+              <td>Visiting Student, PhD, Northwestern Polytechnical University</td>
+            </tr>
+            <tr>
+              <td>Pengpeng Zhao</td>
+              <td>2016-2017</td>
+              <td>Visiting Professor, Soochow University</td>
+            </tr>
+            <tr>
+              <td>Deqing Wang</td>
+              <td>2016-2017</td>
+              <td>Visiting Professor, Beihang University</td>
+            </tr>
+            <tr>
+              <td>Chen Zhang</td>
+              <td>2016-2017</td>
+              <td>Visiting Professor, Institue of Software Chinese Academy of Sciences</td>
+            </tr>
+            <tr>
+              <td>Huang Li</td>
+              <td>2016-2017</td>
+              <td>Visiting Professor, South-Central University for Nationalities</td>
+            </tr>
+            <tr>
+              <td>Rui Ding</td>
+              <td>2016-2017</td>
+              <td>Visiting Student (Master)</td>
+            </tr>
+            <tr>
+              <td>Shuying Liu</td>
+              <td>2017</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Xinjiang Lu</td>
+              <td>2014-2016</td>
+              <td>Visiting Student, PhD, Northwestern Polytechnical University</td>
+            </tr>
+            <tr>
+              <td>Jie Liu</td>
+              <td>2015-2016</td>
+              <td>Visiting Professor, Nankai University</td>
+            </tr>
+            <tr>
+              <td>Yaoyao Zuo</td>
+              <td>2015-2016</td>
+              <td>Visiting Professor, Guangdong University of Technology</td>
+            </tr>
+            <tr>
+              <td>Yanhong Guo</td>
+              <td>2015-2016</td>
+              <td>Visiting Professor, Dalian University of Technology</td>
+            </tr>
+            <tr>
+              <td>Dowen Du (Bowen Du)</td>
+              <td>2015-2016</td>
+              <td>Visiting Professor, Beihang University</td>
+            </tr>
+            <tr>
+              <td>Leilei Sun</td>
+              <td>2015-2016</td>
+              <td>Visiting Student, PhD, Dalian University of Technology</td>
+            </tr>
+            <tr>
+              <td>Gayathri Sridharan</td>
+              <td>2015</td>
+              <td>Master, Credit Suisse</td>
+            </tr>
+            <tr>
+              <td>Namratha Nandyal</td>
+              <td>2015</td>
+              <td>Master, PwC</td>
+            </tr>
+            <tr>
+              <td>Ling Yin</td>
+              <td>2014-2015</td>
+              <td>Visiting Professor, South China Agricultural University</td>
+            </tr>
+            <tr>
+              <td>Xiaolin Li</td>
+              <td>2014-2015</td>
+              <td>Visiting Professor, Nanjing University</td>
+            </tr>
+            <tr>
+              <td>Chu Guan</td>
+              <td>2014-2015</td>
+              <td>Visiting Student</td>
+            </tr>
+            <tr>
+              <td>Jiadi Du</td>
+              <td>2014-2015</td>
+              <td>Master Student</td>
+            </tr>
+            <tr>
+              <td>Jing Sun</td>
+              <td>2014-2015</td>
+              <td>Visiting Student</td>
+            </tr>
+            <tr>
+              <td>Hongting Niu</td>
+              <td>2013-2014</td>
+              <td>Visiting Professor, Beihang University</td>
+            </tr>
+            <tr>
+              <td>Bo Jin</td>
+              <td>2013-2014</td>
+              <td>Visiting Professor, Dalian University of Technology</td>
+            </tr>
+            <tr>
+              <td>Yuanchun Zhou</td>
+              <td>2013-2014</td>
+              <td>Visiting Student, PhD</td>
+            </tr>
+            <tr>
+              <td>Tong Xu</td>
+              <td>2013-2014</td>
+              <td>Visiting Student, PhD, Univ. of Sci. and Tech. of China</td>
+            </tr>
+            <tr>
+              <td>Guannan Liu</td>
+              <td>2013-2014</td>
+              <td>Visiting Student, PhD, Tsinghua University</td>
+            </tr>
+            <tr>
+              <td>Xue Bai</td>
+              <td>2012-2013</td>
+              <td>Visiting Student, PhD, Fudan University</td>
+            </tr>
+            <tr>
+              <td>Hengshu Zhu</td>
+              <td>2012-2013</td>
+              <td>Visiting Student, PhD, Univ. of Sci. and Tech. of China</td>
+            </tr>
+            <tr>
+              <td>LiYang Tang</td>
+              <td>2012-2013</td>
+              <td>Visiting Student, PhD</td>
+            </tr>
+            <tr>
+              <td>Aimin Feng</td>
+              <td>2011-2012</td>
+              <td>Visiting Professor, Nanjing University of Aeronautics and Astronautics</td>
+            </tr>
+            <tr>
+              <td>Chang Tan</td>
+              <td>2011-2012</td>
+              <td>Visiting Student, PhD, Univ. of Sci. and Tech. of China</td>
+            </tr>
+            <tr>
+              <td>Mr. Ramin Kholoussi</td>
+              <td>2012</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Ms. Jing Li</td>
+              <td>2012</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Ms. Liwen Xing</td>
+              <td>2012</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Ms. Srideepthi Narla</td>
+              <td>2012</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Ishita Chokshi</td>
+              <td>2009-2011</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Chunyu Luo</td>
+              <td>2010-2011</td>
+              <td>Visiting Student, PhD, Dalian University of Technology</td>
+            </tr>
+            <tr>
+              <td>Qi Liu</td>
+              <td>2010-2011</td>
+              <td>Visiting Student, PhD, Univ. of Sci. and Tech. of China</td>
+            </tr>
+            <tr>
+              <td>Mengjia Wang</td>
+              <td>2008-2010</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Yanchi Liu</td>
+              <td>2009-2010</td>
+              <td>Visiting Ph.D. Student</td>
+            </tr>
+            <tr>
+              <td>Qi Yan</td>
+              <td>-</td>
+              <td>Visiting Student, Beihang University</td>
+            </tr>
+            <tr>
+              <td>Xuehua Wang</td>
+              <td>-</td>
+              <td>Visiting Professor, Dalian University of Technology</td>
+            </tr>
+            <tr>
+              <td>Xiaojun Quan</td>
+              <td>-</td>
+              <td>Visiting Student, PhD</td>
+            </tr>
+            <tr>
+              <td>Huikai Ma</td>
+              <td>-</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Elinor Volansky</td>
+              <td>-</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Jyotsna Sahirdayan</td>
+              <td>-</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Lakshmi Sahithi Dantu</td>
+              <td>-</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>UmaMaheswari Jayapalan</td>
+              <td>-</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Rachana Ravi</td>
+              <td>-</td>
+              <td>Master</td>
+            </tr>
+            <tr>
+              <td>Sadaf Hussain</td>
+              <td>-</td>
+              <td>Master, IEEE</td>
+            </tr>
+            <tr>
+              <td>Yili He</td>
+              <td>-</td>
+              <td>Visiting Student, Master</td>
+            </tr>
+            <tr>
+              <td>Angela Chen</td>
+              <td>-</td>
+              <td>Undergraduate</td>
+            </tr>
+            <tr>
+              <td>Islam Taman</td>
+              <td>-</td>
+              <td>Undergraduate</td>
+            </tr>
           </tbody>
         </table>
       </div>
