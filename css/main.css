@@ -333,9 +333,20 @@ a:link, a:visited {
 }
 
 
-/* 特定列的对齐方式 */
+/* --- 更新和新增的CSS规则 --- */
+
+/* 特定列的对齐与宽度优化 */
+
+/* 第1列: 姓名 (Name) */
+.table-visiting th:nth-child(1),
+.table-visiting td:nth-child(1) {
+  white-space: nowrap; /* 关键：让姓名列尽可能不换行 */
+}
+
+/* 第2列: 年份 (Year) */
 .table-visiting th:nth-child(2),
 .table-visiting td:nth-child(2) {
-  text-align: center; /* "Year" 列居中对齐 */
-  white-space: nowrap; /* 防止年份换行 */
+  text-align: center;   /* 年份居中对齐 */
+  white-space: nowrap;  /* 防止年份换行 */
+  width: 1%;            /* 关键：让这一列的宽度仅由其内容决定，变得很窄 */
 }
