@@ -1,9 +1,25 @@
 /* Set general fonts */
-html, h2, h3, h4, h5, h6, a, span, div, p, th, td {
+html,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+div,
+p,
+th,
+td {
   font-family: "PT Serif", "Quicksand", 'Hiragino Sans GB', Tahoma, Helvetica, Arial, sans-serif;
 }
 
-body, p, .about p, .news p, .papers p, .description p {
+body,
+p,
+.about p,
+.news p,
+.papers p,
+.description p {
   font-family: 'PT Serif', serif;
 }
 
@@ -19,7 +35,8 @@ h1.text-center {
   font-weight: 700;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   /* color: #008b96; */
 }
 
@@ -42,7 +59,8 @@ a:link, a:visited {
   padding-right: 0.5rem;
 }
 
-.nav-link, .navbar-brand {
+.nav-link,
+.navbar-brand {
   color: grey;
   cursor: pointer;
   padding: 8px;
@@ -52,7 +70,8 @@ a:link, a:visited {
   margin-right: 1em !important;
 }
 
-.nav-link:hover, .navbar-brand:hover {
+.nav-link:hover,
+.navbar-brand:hover {
   background-color: #003366;
   color: #f4f4f4;
   border-radius: 5px;
@@ -204,7 +223,8 @@ a:link, a:visited {
   font-family: 'PT Serif', serif;
 }
 
-.paper span, .about span {
+.paper span,
+.about span {
   font-family: 'Hiragino Sans GB', sans-serif !important;
   display: inline;
   font-weight: bold;
@@ -290,49 +310,71 @@ a:link, a:visited {
 }
 
 .visiting-table-container {
-  overflow-x: auto;                     /* 核心：在内容溢出时启用水平滚动 */
-  -webkit-overflow-scrolling: touch;    /* 为移动设备提供流畅的滚动体验 */
-  margin: 2rem 10%;                     /* 与页面其他部分 (.news, .papers) 的外边距保持一致 */
-  border-radius: 8px;                   /* 圆角设计，增加现代感 */
-  border: 1px solid #e9ecef;            /* 使用更柔和的边框颜色 */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06); /* 稍微增强阴影，提升立体感 */
+  overflow-x: auto;
+  /* 核心：在内容溢出时启用水平滚动 */
+  -webkit-overflow-scrolling: touch;
+  /* 为移动设备提供流畅的滚动体验 */
+  margin: 2rem 10%;
+  /* 与页面其他部分 (.news, .papers) 的外边距保持一致 */
+  border-radius: 8px;
+  /* 圆角设计，增加现代感 */
+  border: 1px solid #e9ecef;
+  /* 使用更柔和的边框颜色 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  /* 稍微增强阴影，提升立体感 */
 }
 
 /* 2. 表格基础样式 */
 .table-visiting {
-  width: 100%;                          /* 表格宽度充满容器 */
-  border-collapse: collapse;            /* 移除单元格间距，使边框合并 */
-  margin-bottom: 0;                     /* 移除 Bootstrap 可能添加的默认下外边距 */
+  width: 100%;
+  /* 表格宽度充满容器 */
+  border-collapse: collapse;
+  /* 移除单元格间距，使边框合并 */
+  margin-bottom: 0;
+  /* 移除 Bootstrap 可能添加的默认下外边距 */
 }
 
 /* 3. 表头 (thead) 样式 */
 .table-visiting thead th {
-  background-color: #f8f9fa;            /* 清爽的浅灰色表头背景 */
-  border-bottom: 2px solid #996600;     /* 沿用你的主题色作为视觉强调 */
-  padding: 1rem 1.2rem;                 /* 增加左右内边距，让内容更舒展 */
-  font-weight: 700;                     /* 加粗字体 */
-  color: #212529;                       /* 更深的标题颜色，提高对比度 */
-  text-align: left;                     /* 文本左对齐 */
-  white-space: nowrap;                  /* 防止表头文字换行 */
+  background-color: #f8f9fa;
+  /* 清爽的浅灰色表头背景 */
+  border-bottom: 2px solid #996600;
+  /* 沿用你的主题色作为视觉强调 */
+  padding: 1rem 1.2rem;
+  /* 增加左右内边距，让内容更舒展 */
+  font-weight: 700;
+  /* 加粗字体 */
+  color: #212529;
+  /* 更深的标题颜色，提高对比度 */
+  text-align: left;
+  /* 文本左对齐 */
+  white-space: nowrap;
+  /* 防止表头文字换行 */
   font-family: 'Hiragino Sans GB', sans-serif;
 }
 
 /* 4. 表格主体 (tbody) 样式 */
 .table-visiting tbody td {
-  padding: 0.85rem 1.2rem;              /* 调整内边距，与表头对齐 */
-  vertical-align: middle;               /* 垂直居中对齐 */
-  border-top: 1px solid #e9ecef;        /* 使用柔和的颜色作为行分隔线 */
-  color: #495057;                       /* 为正文设置柔和的字体颜色 */
+  padding: 0.85rem 1.2rem;
+  /* 调整内边距，与表头对齐 */
+  vertical-align: middle;
+  /* 垂直居中对齐 */
+  border-top: 1px solid #e9ecef;
+  /* 使用柔和的颜色作为行分隔线 */
+  color: #495057;
+  /* 为正文设置柔和的字体颜色 */
 }
 
 /* 斑马条纹：奇数行（比偶数行更直观）*/
 .table-visiting tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.02); /* 为奇数行设置非常淡的背景色 */
+  background-color: rgba(0, 0, 0, 0.02);
+  /* 为奇数行设置非常淡的背景色 */
 }
 
 /* 鼠标悬停高亮 */
 .table-visiting tbody tr:hover {
-  background-color: rgba(153, 102, 0, 0.08); /* 使用主题色的半透明颜色作为高亮 */
+  background-color: rgba(153, 102, 0, 0.08);
+  /* 使用主题色的半透明颜色作为高亮 */
   cursor: default;
 }
 
@@ -341,12 +383,26 @@ a:link, a:visited {
 /* 年份列 (Year) - 第2列 */
 .table-visiting th:nth-child(2),
 .table-visiting td:nth-child(2) {
-  text-align: center; /* 居中对齐 */
-  width: 100px;       /* 给一个固定的最小宽度，而不是百分比 */
+  text-align: center;
+  /* 居中对齐 */
+  width: 100px;
+  /* 给一个固定的最小宽度，而不是百分比 */
 }
 
 /* 职位列 (Position) - 第3列 */
 .table-visiting td:nth-child(3) {
   /* 这一列内容可能很长，让它可以自然换行 */
   white-space: normal;
+}
+
+@media (max-width: 768px) {
+
+  .visiting-table-container {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+
+  .table-visiting thead th {
+    white-space: normal;
+  }
 }

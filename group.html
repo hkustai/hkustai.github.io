@@ -21,10 +21,12 @@
   <base target="_blank" />
   <title>Research Group – Members</title>
   <style>
-    /* --------- 统一成员卡片样式 --------- */
+    /* --------- 统一成员卡片样式 (已优化) --------- */
     .member-card {
-      width: 280px;
-      /* 放大卡片 */
+      width: 100%;
+      /* 核心修复：让卡片宽度自适应，填充其网格单元 */
+      max-width: 280px;
+      /* 核心修复：设置最大宽度，防止在大屏幕上过宽 */
       margin: 0 auto;
       text-align: center;
     }
@@ -49,29 +51,25 @@
     /* --------- 成员头像 --------- */
     .member-avatar {
       width: 120px;
-      /* 统一尺寸 */
       height: 120px;
-      /* 统一尺寸 */
       margin: 0 auto 8px;
       display: flex;
       justify-content: center;
       align-items: center;
       overflow: hidden;
-      /* 确保图片不会溢出圆形边界 */
     }
 
     .member-avatar img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      /* 保持图片比例，填满容器 */
-      object-position: cover;
+      object-position: center;
+      /* 修正了原始代码中的 object-position */
       border-radius: 50%;
     }
 
     .member-avatar i {
       font-size: 96px;
-      /* 调整图标大小以适应容器 */
       line-height: 120px;
       color: #6c757d;
     }
@@ -80,24 +78,42 @@
     .member-grid {
       display: grid;
       gap: 1rem;
-      /* 缩短成员之间的间距 */
       justify-content: start;
       grid-template-columns: repeat(2, 1fr);
       /* 默认两列 */
     }
 
+    /* PC ≥992px 时四列 */
     @media (min-width: 992px) {
       .member-grid {
         grid-template-columns: repeat(4, 1fr);
-        /* PC ≥992px 时四列 */
       }
     }
 
+    /* 平板 768px-991px 时三列 */
     @media (min-width: 768px) and (max-width: 991px) {
       .member-grid {
         grid-template-columns: repeat(3, 1fr);
       }
     }
+
+    /* --- 新增：针对手机等小屏幕的响应式优化 --- */
+
+    /* 在普通手机屏幕上 (宽度 ≤ 767px) */
+    @media (max-width: 767px) {
+      .member-grid {
+        gap: 0.5rem;
+        /* 缩小卡片间距，以容纳内容 */
+      }
+    }
+
+    /* 在非常窄的手机屏幕上 (宽度 ≤ 360px)，变为单列显示 */
+    @media (max-width: 360px) {
+      .member-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
 
     /* --------- 章节标题 --------- */
     .year-subtitle {
@@ -123,7 +139,7 @@
     </a>
     <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
       data-target="#navbarNav" data-toggle="collapse" type="button">
-      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
@@ -193,13 +209,13 @@
             <p>Jiangfeng Zhang</p>
           </div>
         </a>
-         <a href="https://tianfuwang.tech/" target="_self">
+        <a href="https://tianfuwang.tech/" target="_self">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/wangtianfu.png" /></div>
             <p>Tianfu Wang</p>
           </div>
         </a>
-         <a target="_self">
+        <a target="_self">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/wuyin.png" /></div>
             <p>Yin Wu</p>
@@ -429,7 +445,7 @@
             <span class="member-year">Co-supervised by<br>Prof. Yize Chen</span>
           </div>
         </a>
-         <a href="members/dailu.html" target="_self">
+        <a href="members/dailu.html" target="_self">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/dailu.jpeg" /></div>
             <p>Lu Dai</p>
@@ -465,49 +481,49 @@
             <div class="member-avatar"><img src="members/images/yanyizhou.png" /></div>
             <p>Yizhou Yan</p>
           </div>
-        <a href="https://jacksonha7.github.io/" target="_self">
-          <div class="member-card">
-            <div class="member-avatar"><img src="members/images/hejianxiang.jpeg" /></div>
-            <p>Jianxiang He</p>
-          </div>
-        </a>
-        <a href="https://sisuolv.github.io/" target="_self">
-          <div class="member-card">
-            <div class="member-avatar"><img src="members/images/lyusisuo.jpeg" /></div>
-            <p>Sisuo Lyu</p>
-          </div>
-        </a>
-        <a target="_self">
-          <div class="member-card">
-            <div class="member-avatar"><img src="members/images/lusirong.jpeg" /></div>
-            <p>Sirong Lu</p>
-          </div>
-        </a>
-        <a href="https://zeyun-deng.github.io/" target="_self">
-          <div class="member-card">
-            <div class="member-avatar"><img src="members/images/dengzeyun.jpeg" /></div>
-            <p>Zeyun Deng</p>
-            <span class="member-year">Co-supervised by<br>Prof. Chaosu Li</span>
-          </div>
-        </a>
-        <a href="https://figerhaowang.github.io/" target="_self">
-          <div class="member-card">
-            <div class="member-avatar"><img src="members/images/wanghao.jpeg" /></div>
-            <p>Hao Wang</p>
-          </div>
-        </a>
-        <a target="_self">
-          <div class="member-card">
-            <div class="member-avatar"><img src="members/images/wangshaoguang.jpeg" /></div>
-            <p>Shaoguang Wang</p>
-          </div>
-        </a>
-        <a href="https://xingboyao.github.io/" target="_self">
-          <div class="member-card">
-            <div class="member-avatar"><img src="members/images/yaoxingbo.jpeg" /></div>
-            <p>Xingbo Yao</p>
-          </div>
-        </a>
+          <a href="https://jacksonha7.github.io/" target="_self">
+            <div class="member-card">
+              <div class="member-avatar"><img src="members/images/hejianxiang.jpeg" /></div>
+              <p>Jianxiang He</p>
+            </div>
+          </a>
+          <a href="https://sisuolv.github.io/" target="_self">
+            <div class="member-card">
+              <div class="member-avatar"><img src="members/images/lyusisuo.jpeg" /></div>
+              <p>Sisuo Lyu</p>
+            </div>
+          </a>
+          <a target="_self">
+            <div class="member-card">
+              <div class="member-avatar"><img src="members/images/lusirong.jpeg" /></div>
+              <p>Sirong Lu</p>
+            </div>
+          </a>
+          <a href="https://zeyun-deng.github.io/" target="_self">
+            <div class="member-card">
+              <div class="member-avatar"><img src="members/images/dengzeyun.jpeg" /></div>
+              <p>Zeyun Deng</p>
+              <span class="member-year">Co-supervised by<br>Prof. Chaosu Li</span>
+            </div>
+          </a>
+          <a href="https://figerhaowang.github.io/" target="_self">
+            <div class="member-card">
+              <div class="member-avatar"><img src="members/images/wanghao.jpeg" /></div>
+              <p>Hao Wang</p>
+            </div>
+          </a>
+          <a target="_self">
+            <div class="member-card">
+              <div class="member-avatar"><img src="members/images/wangshaoguang.jpeg" /></div>
+              <p>Shaoguang Wang</p>
+            </div>
+          </a>
+          <a href="https://xingboyao.github.io/" target="_self">
+            <div class="member-card">
+              <div class="member-avatar"><img src="members/images/yaoxingbo.jpeg" /></div>
+              <p>Xingbo Yao</p>
+            </div>
+          </a>
       </div>
       <!-- 2023 Cohort -->
       <h3 class="year-subtitle">2023</h3>
@@ -518,7 +534,8 @@
             <p>Junyi Li</p>
           </div>
         </a>
-        <a href="https://wobbly-aster-254.notion.site/YUQI-ZHOU-s-Portfolio-207884458793808099bde7447609af98" target="_self">
+        <a href="https://wobbly-aster-254.notion.site/YUQI-ZHOU-s-Portfolio-207884458793808099bde7447609af98"
+          target="_self">
           <div class="member-card">
             <div class="member-avatar"><img src="members/images/zhouyuqi.jpeg" /></div>
             <p>Yuqi Zhou</p>
@@ -1237,7 +1254,7 @@
     </div>
   </footer>
   <!-- Optional JavaScript -->
-    <script type="text/javascript" src='js/jquery-3.7.1.min.js'></script>
+  <script type="text/javascript" src='js/jquery-3.7.1.min.js'></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
