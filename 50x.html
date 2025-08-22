@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Error - AILAB HKUST-GZ</title>
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+            color: #495057;
+        }
+        .error-container {
+            max-width: 600px;
+            padding: 40px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            color: #dc3545; /* 使用Bootstrap中的危险颜色，表示严重错误 */
+            line-height: 1;
+        }
+        .error-message {
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            font-family: 'Hiragino Sans GB', sans-serif;
+        }
+        .error-description {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        .btn-home {
+            background-color: #003366; /* 使用您导航栏悬停的颜色 */
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            transition: background-color 0.2s ease;
+        }
+        .btn-home:hover {
+            background-color: #002244;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-code">50x</div>
+        <h2 class="error-message">Internal Server Error</h2>
+        <p class="error-description">
+            We're sorry, but something went wrong on our end. Our team has been notified. Please try again in a few moments.
+        </p>
+        <a href="/" class="btn-home">Return to Homepage</a>
+    </div>
+</body>
+</html>
