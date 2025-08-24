@@ -1,0 +1,158 @@
+name: Compress images (lossless)
+
+on:
+  push:
+    paths:
+      - "members/images/**"   # 该目录有变动就触发
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compress:
+    if: github.actor != 'github-actions[bot]'   # 避免循环触发
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install tools (pngcrush, jpegtran, file)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pngcrush libjpeg-turbo-progs file
+
+      - name: Detect changed images
+        id: changes
+        shell: bash
+        run: |
+          set -e
+          BEFORE_SHA="${{ github.event.before }}"
+          if [ -z "$BEFORE_SHA" ] || [ "$BEFORE_SHA" = "0000000000000000000000000000000000000000" ]; then
+            BEFORE_SHA="$(git rev-parse HEAD^ || echo '')"
+          fi
+
+          # 本次推送中，目录下扩展名为 png/jpg/jpeg 的变更文件
+          mapfile -t FILES < <(git diff --name-only "$BEFORE_SHA" "${{ github.sha }}" -- members/images \
+                               | grep -Ei '\.(png|jpe?g)$' || true)
+
+          echo "Found ${#FILES[@]} changed image(s)."
+          printf '%s\0' "${FILES[@]}" > changed-files.txt
+          echo "count=${#FILES[@]}" >> "$GITHUB_OUTPUT"
+
+      - name: Compress changed images (auto-parallel, MIME aware)
+        if: steps.changes.outputs.count != '0'
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          TMP_DIR="$(mktemp -d)"
+          RESULTS="$TMP_DIR/results.log"
+
+          # 动态并行度：按 runner CPU 核数决定，至少为 1
+          PARALLEL="$(nproc 2>/dev/null || getconf _NPROCESSORS_ONLN 2>/dev/null || echo 1)"
+          if ! [[ "$PARALLEL" =~ ^[0-9]+$ ]] || [ "$PARALLEL" -lt 1 ]; then PARALLEL=1; fi
+          echo "Using $PARALLEL parallel workers"
+
+          compress_one() {
+            f="$1"
+            [ -f "$f" ] || exit 0
+
+            # 真实 MIME 判别，避免“Not a JPEG file: starts with 0x52 0x49”
+            mime="$(file -b --mime-type "$f" || echo '')"
+            case "$mime" in
+              image/png|image/x-png|image/jpeg|image/pjpeg) ;;
+              *)
+                echo "⚠️  跳过：$(basename "$f") 真实类型 '$mime'（非 PNG/JPEG）"
+                exit 0
+                ;;
+            esac
+
+            tmpfile="$(mktemp -p "$TMP_DIR")"
+            before_bytes=$(stat -c%s "$f")
+            before_kb=$(( (before_bytes + 1023) / 1024 ))
+
+            if [[ "$mime" == image/png* ]]; then
+              pngcrush -brute -q "$f" "$tmpfile" >/dev/null 2>&1 || exit 0
+            else
+              jpegtran -optimize -progressive -copy none "$f" > "$tmpfile" || exit 0
+            fi
+
+            # 仅当更小才覆盖
+            if [ -s "$tmpfile" ]; then
+              after_bytes_tmp=$(stat -c%s "$tmpfile")
+              if [ "$after_bytes_tmp" -lt "$before_bytes" ]; then
+                mv "$tmpfile" "$f"
+              else
+                rm -f "$tmpfile"
+              fi
+            fi
+
+            after_bytes=$(stat -c%s "$f")
+            after_kb=$(( (after_bytes + 1023) / 1024 ))
+            saved_kb=$(( before_kb - after_kb ))
+            denom=$(( before_kb > 0 ? before_kb : 1 ))
+            percent=$(( 100 * after_kb / denom ))  # 新尺寸占原尺寸的百分比（越小越好）
+
+            printf "%s|%d|%d|%d|%d\n" "$f" "$before_kb" "$after_kb" "$saved_kb" "$percent" >> "$RESULTS"
+            echo "✓ $(basename "$f"): ${before_kb}KB → ${after_kb}KB (saved ${saved_kb}KB, ${percent}%)"
+          }
+          export -f compress_one
+          export TMP_DIR RESULTS
+
+          # 并行执行
+          files=()
+          while IFS= read -r -d '' line; do files+=("$line"); done < changed-files.txt
+          printf '%s\0' "${files[@]}" | xargs -0 -n1 -P"$PARALLEL" bash -c 'compress_one "$@"' _
+
+          # 汇总
+          total_before=0; total_after=0
+          if [ -f "$RESULTS" ]; then
+            while IFS="|" read -r f b a s p; do
+              total_before=$((total_before + b))
+              total_after=$((total_after + a))
+            done < "$RESULTS"
+          fi
+          total_saved=$((total_before - total_after))
+          total_percent=$(( total_before > 0 ? (100 * total_after / total_before) : 0 ))
+
+          echo "TOTAL_BEFORE=$total_before"   >> $GITHUB_ENV
+          echo "TOTAL_AFTER=$total_after"     >> $GITHUB_ENV
+          echo "TOTAL_SAVED=$total_saved"     >> $GITHUB_ENV
+          echo "TOTAL_PERCENT=$total_percent" >> $GITHUB_ENV
+          echo "PARALLEL_USED=$PARALLEL"      >> $GITHUB_ENV
+
+      - name: Commit and push if improved
+        if: steps.changes.outputs.count != '0'
+        shell: bash
+        run: |
+          set -e
+          if ! git diff --quiet; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            msg="chore: lossless compress images in members/images
+Workers: ${PARALLEL_USED}
+Total: ${TOTAL_BEFORE}KB → ${TOTAL_AFTER}KB (saved ${TOTAL_SAVED}KB, ${TOTAL_PERCENT}%)
+[skip ci]"
+            git add members/images
+            git commit -m "$msg"
+            git push
+          else
+            echo "No size improvement; skip commit."
+          fi
+
+      - name: Final summary
+        if: steps.changes.outputs.count != '0'
+        shell: bash
+        run: |
+          echo "-------------------------------------------"
+          echo "Parallel workers: ${PARALLEL_USED}"
+          echo "Summary (KB):"
+          echo "Before: ${TOTAL_BEFORE}KB"
+          echo "After : ${TOTAL_AFTER}KB"
+          echo "Saved : ${TOTAL_SAVED}KB"
+          echo "New size is ${TOTAL_PERCENT}% of original"
+          echo "-------------------------------------------"
