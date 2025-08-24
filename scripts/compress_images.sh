@@ -86,7 +86,7 @@ if [[ -s "$LIST_TGT" ]]; then
   COUNT="$(tr -cd '\0' < "$LIST_TGT" | wc -c | awk '{print $1}')"
 fi
 if [ "$COUNT" -eq 0 ]; then
-  echo "未找到待处理图片（模式：$MODE）"
+  echo "未找到待处理图片（模式：${MODE:-added})"
   rm -rf "$TMP_DIR"; exit 0
 fi
 
