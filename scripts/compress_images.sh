@@ -55,7 +55,7 @@ RESULTS="$TMP_DIR/results.log"
 
 collect_added() {
   local list_all="$TMP_DIR/all.zlist"; : > "$list_all"
-  git diff --cached --name-only -z --diff-filter=A -- "$IMG_DIR" >>"$list_all" || true
+  git diff --cached --name-only -z --diff-filter=AM -- "$IMG_DIR" >>"$list_all" || true
   git ls-files --others -z --exclude-standard -- "$IMG_DIR"     >>"$list_all" || true
   if [[ ! -s "$list_all" ]]; then
     local cur base range
