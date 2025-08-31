@@ -1911,6 +1911,90 @@
       }
     })();
   </script>
+
+  <!-- Async lazy loader for member images to avoid blocking -->
+  <script>
+    (function () {
+      var defaultSrc = 'members/images/default.jpg';
+      var placeholder = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120"></svg>';
+
+      function prepare(img) {
+        if (!img) return;
+        // Ensure async decode and low fetch priority
+        img.setAttribute('decoding', 'async');
+        img.setAttribute('loading', 'lazy');
+        img.setAttribute('fetchpriority', 'low');
+      }
+
+      function inProximity(el) {
+        var r = el.getBoundingClientRect();
+        var vh = window.innerHeight || document.documentElement.clientHeight;
+        // Preload a bit before entering viewport
+        return r.top < vh * 1.5 && r.bottom > -vh * 0.5;
+      }
+
+      function stageForLazy(img) {
+        if (img.dataset.lazyReady === '1') return;
+        // Only stage images not near the viewport
+        if (!inProximity(img)) {
+          img.dataset.src = img.getAttribute('src') || '';
+          if (img.dataset.src) {
+            img.setAttribute('src', placeholder);
+          }
+        }
+        img.dataset.lazyReady = '1';
+      }
+
+      function loadReal(img) {
+        if (!img || img.dataset.loaded === '1') return;
+        var real = img.dataset.src;
+        if (!real) return;
+        img.onerror = function () { this.src = defaultSrc; };
+        img.onload = function () { this.dataset.loaded = '1'; };
+        img.src = real;
+      }
+
+      function init() {
+        var imgs = document.querySelectorAll('.member-avatar img');
+        for (var i = 0; i < imgs.length; i++) {
+          var img = imgs[i];
+          prepare(img);
+          stageForLazy(img);
+        }
+
+        if ('IntersectionObserver' in window) {
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                loadReal(entry.target);
+                io.unobserve(entry.target);
+              }
+            });
+          }, { rootMargin: '200px 0px' });
+          for (var j = 0; j < imgs.length; j++) {
+            io.observe(imgs[j]);
+          }
+        } else {
+          // Fallback: load when scrolled into view
+          var onScroll = function () {
+            for (var k = 0; k < imgs.length; k++) {
+              var im = imgs[k];
+              if (!im.dataset.loaded && inProximity(im)) loadReal(im);
+            }
+          };
+          window.addEventListener('scroll', onScroll, { passive: true });
+          window.addEventListener('resize', onScroll);
+          onScroll();
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
 </body>
 
 </html>
