@@ -12,12 +12,17 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/font-awesome.min.css" rel="stylesheet" />
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand|Work+Sans:400,700,800&amp;display=swap"
-    rel="stylesheet" />
-  <link rel="icon" type="image/png" href="./favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Work+Sans:400,700,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
   <!-- WOW.js -->
-  <script src="js/wow.min.js"></script>
-  <script> new WOW().init(); </script>
+  <script defer src="js/wow.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.WOW) new WOW().init();
+    });
+  </script>
   <base target="_blank" rel="noopener noreferrer" />
   <title>Research Group – Members</title>
   <style>
@@ -569,7 +574,8 @@
         </a>
         <a href="https://cloud.tencent.com/tvp/member/819" target="_blank" rel="noopener noreferrer">
           <div class="member-card">
-            <div class="member-avatar"><img loading="lazy" src="members/images/chenbenfeng.jpg" alt="Benfeng Chen" /></div>
+            <div class="member-avatar"><img loading="lazy" src="members/images/chenbenfeng.jpg" alt="Benfeng Chen" />
+            </div>
             <p>Benfeng Chen</p>
             <span class="member-year">Part-time Ph.D.</span>
           </div>
@@ -1877,15 +1883,15 @@
   </footer>
   <!-- Optional JavaScript -->
   <script defer type="text/javascript" src='js/jquery-3.7.1.min.js'></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
   <!-- add in custom jquery code -->
-  <script defer type="text/javascript" src='js/effects.js'></script>
+  <!-- <script defer type="text/javascript" src='js/effects.js'></script> -->
   <script defer type="text/javascript" src='js/main.js'></script>
   <script>
     // Set a fallback image for all member avatars (applies to both HKUST and USTC, auto fallback)
