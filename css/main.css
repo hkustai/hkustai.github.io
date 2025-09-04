@@ -384,9 +384,11 @@ a:visited {
 .table-visiting th:nth-child(2),
 .table-visiting td:nth-child(2) {
   text-align: center;
-  /* 居中对齐 */
-  width: 100px;
-  /* 给一个固定的最小宽度，而不是百分比 */
+  width: 100px;                 /* 你原来的设定保留 */
+  white-space: nowrap;          /* 关键：不换行 */
+  font-variant-numeric: tabular-nums; /* 数字等宽，更整齐 */
+  font-size: clamp(0.9rem, 1.6vw + 0.2rem, 1rem);  /* 小屏稍微变小 */
+  line-height: 1.2;
 }
 
 /* 职位列 (Position) - 第3列 */
@@ -403,6 +405,10 @@ a:visited {
   }
 
   .table-visiting thead th {
+    white-space: normal;
+  }
+
+  .table-visiting thead th:not(:nth-child(2)) {
     white-space: normal;
   }
 }
