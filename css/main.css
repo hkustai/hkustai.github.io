@@ -93,7 +93,6 @@ a:visited {
   background-size: cover;
   background-position: center;
   text-align: center;
-  vertical-align: middle;
   display: block;
 }
 
@@ -384,10 +383,14 @@ a:visited {
 .table-visiting th:nth-child(2),
 .table-visiting td:nth-child(2) {
   text-align: center;
-  width: 100px;                 /* 你原来的设定保留 */
-  white-space: nowrap;          /* 关键：不换行 */
-  font-variant-numeric: tabular-nums; /* 数字等宽，更整齐 */
-  font-size: clamp(0.9rem, 1.6vw + 0.2rem, 1rem);  /* 小屏稍微变小 */
+  width: 100px;
+  /* 你原来的设定保留 */
+  white-space: nowrap;
+  /* 关键：不换行 */
+  font-variant-numeric: tabular-nums;
+  /* 数字等宽，更整齐 */
+  font-size: clamp(0.9rem, 1.6vw + 0.2rem, 1rem);
+  /* 小屏稍微变小 */
   line-height: 1.2;
 }
 
@@ -410,5 +413,12 @@ a:visited {
 
   .table-visiting thead th:not(:nth-child(2)) {
     white-space: normal;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate__animated {
+    animation: none !important;
+    transition: none !important;
   }
 }
