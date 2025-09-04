@@ -26,14 +26,13 @@
   <base target="_blank" rel="noopener noreferrer" />
   <title>Research Group – Members</title>
   <style>
-    /* --------- 统一成员卡片样式 (已优化) --------- */
+    /* Unified member card */
     .member-card {
       width: 100%;
       max-width: 280px;
       margin: 0 auto;
       text-align: center;
       position: relative;
-      /* 供徽标定位 */
     }
 
     .member-card i {
@@ -53,7 +52,7 @@
       color: #888;
     }
 
-    /* --------- 成员头像 --------- */
+    /* Avatar */
     .member-avatar {
       width: 120px;
       height: 120px;
@@ -78,7 +77,7 @@
       color: #6c757d;
     }
 
-    /* --------- 栅格：默认手机两列，PC 四列，缩小间距 --------- */
+    /* Grid */
     .member-grid {
       display: grid;
       gap: 1rem;
@@ -110,7 +109,7 @@
       }
     }
 
-    /* --------- 章节标题 --------- */
+    /* Section subtitles */
     .year-subtitle {
       font-size: 1.2rem;
       color: #495057;
@@ -123,7 +122,7 @@
       margin-top: 0;
     }
 
-    /* --------- USTC 徽标（Badge）--------- */
+    /* Visible USTC badge only */
     .member-badge {
       position: absolute;
       top: 8px;
@@ -138,12 +137,63 @@
       background-clip: padding-box;
     }
 
-    /* 使用 USTC 标志颜色（深蓝） */
     .badge-ustc {
       background-color: #003A8C;
       color: #ffffff;
       border-color: rgba(255, 255, 255, 0.15);
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04) inset;
+    }
+
+    /* Search bar */
+    .member-search-wrap {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 0 1.25rem;
+    }
+
+    .member-search {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      background: #ffffff;
+      border: 1px solid #e3e6ea;
+      border-radius: 999px;
+      padding: .35rem .5rem .35rem .75rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+    }
+
+    .member-search input[type="text"] {
+      border: none;
+      outline: none;
+      width: 220px;
+      font-size: .95rem;
+    }
+
+    .member-search select {
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: .9rem;
+      padding-right: .25rem;
+    }
+
+    .member-search .btn-clear {
+      border: none;
+      outline: none;
+      background: #f1f3f5;
+      border-radius: 999px;
+      padding: .35rem .6rem;
+      font-size: .85rem;
+      cursor: pointer;
+    }
+
+    .member-search .btn-clear:active {
+      transform: translateY(1px);
+    }
+
+    /* Hidden state for filtered items and empty blocks/sections */
+    .is-hidden {
+      display: none !important;
     }
   </style>
 </head>
@@ -180,38 +230,56 @@
   <!-- Main -->
   <main class="container my-5">
     <h1 class="text-center mb-4 wow fadeIn">Our Research Group</h1>
+
+    <!-- Member search (between title and Postdoctoral Researchers) -->
+    <div class="member-search-wrap">
+      <form id="member-search" class="member-search" action="#" onsubmit="return false" role="search"
+        aria-label="Search members">
+        <input type="text" id="member-query" placeholder="Search name..." aria-label="Search by name" />
+        <select id="member-affiliation" aria-label="Filter by affiliation">
+          <option value="">All</option>
+          <option value="hkust">HKUST</option>
+          <option value="rutgers">Rutgers</option>
+          <option value="ustc">USTC</option>
+        </select>
+        <button type="button" class="btn-clear" id="member-clear" aria-label="Clear search">Clear</button>
+      </form>
+    </div>
+
     <!-- --------- Postdocs --------- -->
     <section class="member-category my-5 wow slideInUp" data-wow-delay=".1s" id="postdocs">
       <h2 class="text-center mb-4">Postdoctoral Researchers</h2>
       <div class="member-grid">
-        <a href="https://sites.google.com/view/runwei-guan" target="_blank" rel="noopener noreferrer">
+        <a href="https://sites.google.com/view/runwei-guan" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/guanrunwei.jpg" alt="Runwei Guan" />
             </div>
             <p>Runwei Guan</p>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=3Zvbs_QAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=3Zvbs_QAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/liujunpeng.jpg" alt="Junpeng Liu" />
             </div>
             <p>Junpeng Liu</p>
           </div>
         </a>
-        <a href="members/yaojiajun.html" target="_blank" rel="noopener noreferrer">
+        <a href="members/yaojiajun.html" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/yaojiajun.jpg" alt="Jiajun Yao" /></div>
             <p>Jiajun Yao</p>
           </div>
         </a>
-        <a href="members/jiaokeming.html" target="_blank" rel="noopener noreferrer">
+        <a href="members/jiaokeming.html" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/jiaokeming.jpeg" alt="Keming Jiao" />
             </div>
             <p>Keming Jiao</p>
           </div>
         </a>
-        <a href="members/jiangshuai.html" target="_blank" rel="noopener noreferrer">
+        <a href="members/jiangshuai.html" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/jiangshuai.jpg" alt="Shuai Jiang" />
             </div>
@@ -226,73 +294,74 @@
       <!-- 2025 Cohort -->
       <h3 class="year-subtitle">2025</h3>
       <div class="member-grid">
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/linheyi.jpg" alt="Heyi Lin" /></div>
             <p>Heyi Lin</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhanghaiyi.jpg" alt="Haiyi Zhang" />
             </div>
             <p>Haiyi Zhang</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/liudavid.jpg" alt="David Louis Liu" />
             </div>
             <p>David Louis Liu</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhangjiangfeng.jpeg"
                 alt="Jiangfeng Zhang" /></div>
             <p>Jiangfeng Zhang</p>
           </div>
         </a>
-        <a href="https://tianfuwang.tech/" target="_blank" rel="noopener noreferrer">
+        <a href="https://tianfuwang.tech/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wangtianfu.png" alt="Tianfu Wang" />
             </div>
             <p>Tianfu Wang</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wuyin.png" alt="Yin Wu" /></div>
             <p>Yin Wu</p>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xiaojunren.jpg" alt="Junren Xiao" />
             </div>
             <p>Junren Xiao</p>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chenshu.jpg" alt="Shu Chen" /></div>
             <p>Shu Chen</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wenzhijian.jpg" alt="Zhijian Wen" />
             </div>
             <p>Zhijian Wen</p>
           </div>
         </a>
-        <a href="https://openreview.net/profile?id=~Qianyi_Cai1" target="_blank" rel="noopener noreferrer">
+        <a href="https://openreview.net/profile?id=~Qianyi_Cai1" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/caiqianyi.jpg" alt="Qianyi Cai" /></div>
             <p>Qianyi Cai</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/miaoruiyao.jpg" alt="Ruiyao Miao" />
             </div>
@@ -303,7 +372,7 @@
       <!-- 2024 Cohort -->
       <h3 class="year-subtitle">2024</h3>
       <div class="member-grid">
-        <a href="https://cehao628.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://cehao628.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar">
               <img loading="lazy" src="members/images/yangcehao.jpg" alt="Cehao Yang" />
@@ -312,7 +381,7 @@
             <span class="member-year">Joint PhD with<br>IDEA</span>
           </div>
         </a>
-        <a href="https://linxueyuan.online/" target="_blank" rel="noopener noreferrer">
+        <a href="https://linxueyuan.online/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/linxueyuan.png" alt="Xueyuan Lin" />
             </div>
@@ -320,38 +389,39 @@
             <span class="member-year">Joint PhD with<br>IDEA</span>
           </div>
         </a>
-        <a href="https://meixichentracy.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://meixichentracy.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chenmeixi.jpeg" alt="Meixi Chen" /></div>
             <p>Meixi Chen</p>
             <span class="member-year">Co-supervised by<br>Prof. Ying-Cong Chen</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/cuiyi.jpeg" alt="Yi Cui" /></div>
             <p>Yi Cui</p>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/caitiefu.png" alt="Tiefu Cai" /></div>
             <p>Tiefu Cai</p>
           </div>
         </a>
-        <a href="https://yjx.me" target="_blank" rel="noopener noreferrer">
+        <a href="https://yjx.me" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xuyijie.png" alt="Yijie Xu" /></div>
             <p>Yijie Xu</p>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wangzihan.jpeg" alt="Zihan Wang" /></div>
             <p>Zihan Wang</p>
           </div>
         </a>
-        <a href="https://openreview.net/profile?id=~Jiujiu_Chen1" target="_blank" rel="noopener noreferrer">
+        <a href="https://openreview.net/profile?id=~Jiujiu_Chen1" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chenjiujiu.jpeg" alt="Jiujiu Chen" />
             </div>
@@ -359,7 +429,7 @@
             <span class="member-year">Co-supervised by<br>Prof. Sihong Xie</span>
           </div>
         </a>
-        <a href="https://zhangzhaofan.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://zhangzhaofan.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhangzhaofan.jpeg" alt="Zhaofan Zhang" />
             </div>
@@ -367,20 +437,22 @@
             <span class="member-year">Co-supervised by<br>Prof. Sihong Xie</span>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=KF2XbN0AAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=KF2XbN0AAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/yaohuizai.jpg" alt="Huizai Yao" /></div>
             <p>Huizai Yao</p>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=u--xUoIAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=u--xUoIAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/lipengteng.png" alt="Pengteng Li" />
             </div>
             <p>Pengteng Li</p>
           </div>
         </a>
-        <a href="https://luckyfan-cs.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://luckyfan-cs.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/liufan.jpeg" alt="Fan Liu" /></div>
             <p>Fan Liu</p>
@@ -391,88 +463,91 @@
       <!-- 2023 Cohort -->
       <h3 class="year-subtitle">2023</h3>
       <div class="member-grid">
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zengshiya.jpg" alt="Shiya Zeng" /></div>
             <p>Shiya Zeng</p>
           </div>
         </a>
-        <a href="members/zhangkaichen.html" target="_blank" rel="noopener noreferrer">
+        <a href="members/zhangkaichen.html" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhangkaichen.jpg" alt="Kaichen Zhang" />
             </div>
             <p>Kaichen Zhang</p>
           </div>
         </a>
-        <a href="https://caozidong.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://caozidong.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/caozidong.jpeg" alt="Zidong Cao" /></div>
             <p>Zidong Cao</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wongselina.jpg" alt="Selina Wong" />
             </div>
             <p>Selina Wong</p>
           </div>
         </a>
-        <a href="members/yangminghao.html" target="_blank" rel="noopener noreferrer">
+        <a href="members/yangminghao.html" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/yangminghao.png" alt="Minghao Yang" />
             </div>
             <p>Minghao Yang</p>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=oXA7mVEAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=oXA7mVEAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/lisiyang.png" alt="Siyang Li" /></div>
             <p>Siyang Li</p>
             <span class="member-year">Co-supervised by<br>Prof. Yize Chen</span>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=IIUxf68AAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=IIUxf68AAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xinhaoran.jpeg" alt="Haoran Xin" /></div>
             <p>Haoran Xin</p>
             <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=CQuOLaUAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=CQuOLaUAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/gongzheng.jpeg" alt="Zheng Gong" /></div>
             <p>Zheng Gong</p>
             <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
           </div>
         </a>
-        <a href="https://hbai98.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://hbai98.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/baihaotian.jpeg" alt="Haotian Bai" />
             </div>
             <p>Haotian Bai</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/mawenzong.jpg" alt="Wenzong Ma" /></div>
             <p>Wenzong Ma</p>
           </div>
         </a>
-        <a href="members/xiayinghui.html" target="_blank" rel="noopener noreferrer">
+        <a href="members/xiayinghui.html" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xiayinghui.jpg" alt="Yinghui Xia" />
             </div>
             <p>Yinghui Xia</p>
           </div>
         </a>
-        <a href="http://davidqiu.com" target="_blank" rel="noopener noreferrer">
+        <a href="http://davidqiu.com" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/qiudicong.png" alt="Dicong Qiu" /></div>
             <p>Dicong Qiu</p>
             <span class="member-year">Co-supervised by<br>Prof. Junwei Liang</span>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xionghao.png" alt="Hao Xiong" /></div>
             <p>Hao Xiong</p>
@@ -499,14 +574,16 @@
       <!-- 2022 Cohort -->
       <h3 class="year-subtitle">2022</h3>
       <div class="member-grid">
-        <a href="https://scholar.google.com/citations?user=EVpo9eQAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=EVpo9eQAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhujinjing.jpeg" alt="Jinjing Zhu" />
             </div>
             <p>Jinjing Zhu</p>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=MxrzJswAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=MxrzJswAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/jiangwenzhao.jpeg" alt="Wenzhao Jiang" />
             </div>
@@ -514,7 +591,8 @@
             <span class="member-year">Co-supervised by<br>Prof. Hao Liu</span>
           </div>
         </a>
-        <a href="https://openreview.net/profile?id=~Fuling_WANG3" target="_blank" rel="noopener noreferrer">
+        <a href="https://openreview.net/profile?id=~Fuling_WANG3" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wangfuling.jpg" alt="Fuling Wang" />
             </div>
@@ -522,27 +600,29 @@
             <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=SnTE2BYAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=SnTE2BYAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhanghe.jpg" alt="He Zhang" /></div>
             <p>He Zhang</p>
             <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
           </div>
         </a>
-        <a href="https://weiyuguo.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://weiyuguo.com" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/guoweiyu.jpeg" alt="Weiyu Guo" /></div>
             <p>Weiyu Guo</p>
             <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
           </div>
         </a>
-        <a href="https://yunfanlu.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://yunfanlu.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/luyunfan.jpeg" alt="Yunfan Lu" /></div>
             <p>Yunfan Lu</p>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=lSi3CIoAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=lSi3CIoAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhangweijia.jpg" alt="Weijia Zhang" />
             </div>
@@ -550,7 +630,8 @@
             <span class="member-year">Co-supervised by<br>Prof. Hao Liu</span>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=sDZf3BgAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=sDZf3BgAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/guchengyang.jpeg" alt="Chengyang Gu" />
             </div>
@@ -558,21 +639,23 @@
             <span class="member-year">Co-supervised by<br>Prof. Yize Chen</span>
           </div>
         </a>
-        <a href="https://scholar.google.com/citations?user=_A6E8eEAAAAJ" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.com/citations?user=_A6E8eEAAAAJ" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/dailu.jpeg" alt="Lu Dai" /></div>
             <p>Lu Dai</p>
             <span class="member-year">Co-supervised by<br>Prof. Hao Liu</span>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chijing.jpg" alt="Jing Chi" /></div>
             <p>Jing Chi</p>
             <span class="member-year">Part-time Ph.D.</span>
           </div>
         </a>
-        <a href="https://cloud.tencent.com/tvp/member/819" target="_blank" rel="noopener noreferrer">
+        <a href="https://cloud.tencent.com/tvp/member/819" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chenbenfeng.jpg" alt="Benfeng Chen" />
             </div>
@@ -607,13 +690,14 @@
       <!-- 2021 Cohort -->
       <h3 class="year-subtitle">2021</h3>
       <div class="member-grid">
-        <a href="members/wuhao.html" target="_blank" rel="noopener noreferrer">
+        <a href="members/wuhao.html" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wuhao.jpg" alt="Hao Wu" /></div>
             <p>Hao Wu</p>
           </div>
         </a>
-        <a href="https://openreview.net/profile?id=~Qian_Sun4" target="_blank" rel="noopener noreferrer">
+        <a href="https://openreview.net/profile?id=~Qian_Sun4" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/sunqian.jpg" alt="Qian Sun" /></div>
             <p>Qian Sun</p>
@@ -665,34 +749,34 @@
       <!-- 2025 Cohort -->
       <h3 class="year-subtitle">2025</h3>
       <div class="member-grid">
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/jianghaiqi.jpeg" alt="Haiqi Jiang" />
             </div>
             <p>Haiqi Jiang</p>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/caofanpu.jpeg" alt="Fanpu Cao" /></div>
             <p>Fanpu Cao</p>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chenxiaoyu.jpeg" alt="Xiaoyu Chen" />
             </div>
             <p>Xiaoyu Chen</p>
           </div>
         </a>
-        <a href="https://hq-king.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://hq-king.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wanghanqing.jpeg" alt="Hanqing Wang" />
             </div>
             <p>Hanqing Wang</p>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/machengwei.png" alt="Chengwei Ma" />
             </div>
@@ -736,52 +820,52 @@
       <!-- 2024 Cohort -->
       <h3 class="year-subtitle">2024</h3>
       <div class="member-grid">
-        <a href="https://jacksonha7.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://jacksonha7.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/hejianxiang.jpeg" alt="Jianxiang He" />
             </div>
             <p>Jianxiang He</p>
           </div>
         </a>
-        <a href="https://sisuolv.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://sisuolv.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/lyusisuo.jpeg" alt="Sisuo Lyu" /></div>
             <p>Sisuo Lyu</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/lusirong.jpeg" alt="Sirong Lu" /></div>
             <p>Sirong Lu</p>
           </div>
         </a>
-        <a href="https://zeyun-deng.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://zeyun-deng.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/dengzeyun.jpeg" alt="Zeyun Deng" /></div>
             <p>Zeyun Deng</p>
             <span class="member-year">Co-supervised by<br>Prof. Chaosu Li</span>
           </div>
         </a>
-        <a href="https://figerhaowang.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://figerhaowang.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wanghao.jpeg" alt="Hao Wang" /></div>
             <p>Hao Wang</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wangshaoguang.jpeg"
                 alt="Shaoguang Wang" /></div>
             <p>Shaoguang Wang</p>
           </div>
         </a>
-        <a href="https://xingboyao.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://xingboyao.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/yaoxingbo.jpeg" alt="Xingbo Yao" /></div>
             <p>Xingbo Yao</p>
           </div>
         </a>
-        <a target="_self">
+        <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/mayusen.jpg" alt="Yusen Ma" /></div>
             <p>Yusen Ma</p>
@@ -829,7 +913,8 @@
       <!-- 2023 -->
       <h3 class="year-subtitle">2023</h3>
       <div class="member-grid">
-        <a href="https://cse.sysu.edu.cn/en/teacher/GuanJiechao" target="_blank" rel="noopener noreferrer">
+        <a href="https://cse.sysu.edu.cn/en/teacher/GuanJiechao" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/guanjiechao.jpeg" alt="Jiechao Guan" />
             </div>
@@ -841,21 +926,21 @@
       <!-- 2022 -->
       <h3 class="year-subtitle">2022</h3>
       <div class="member-grid">
-        <a href="https://chaowang-ustc.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://chaowang-ustc.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wangchao.png" alt="Chao Wang" /></div>
             <p>Chao Wang</p>
             <span class="member-year">Tenure-track Associate Professor, USTC</span>
           </div>
         </a>
-        <a href="https://qiaoziyue.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://qiaoziyue.com/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/qiaoziyue.jpg" alt="Ziyue Qiao" /></div>
             <p>Ziyue Qiao</p>
             <span class="member-year">Assistant Professor, Great Bay University</span>
           </div>
         </a>
-        <a href="https://wenzhilics.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://wenzhilics.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/liwenzhi.jpg" alt="Wenzhi Li" /></div>
             <p>Wenzhi Li</p>
@@ -863,7 +948,7 @@
           </div>
         </a>
         <a href="https://scholar.google.com.hk/citations?user=4lqwlQ0AAAAJ&oi=ao" target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/dengjinliang.jpg" alt="Jinliang Deng" />
             </div>
@@ -875,7 +960,7 @@
       <!-- 2021 -->
       <h3 class="year-subtitle">2021</h3>
       <div class="member-grid">
-        <a href="https://hanjindong.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://hanjindong.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/hanjindong.jpg" alt="Jindong Han" />
             </div>
@@ -961,7 +1046,7 @@
 
       <h3 class="year-subtitle">2016</h3>
       <div class="member-grid">
-        <a target="_self" rel="noopener noreferrer">
+        <a target="_self" rel="noopener noreferrer" data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar">
               <img loading="lazy" src="members/images/tengmingfei.jpeg" alt="Mingfei Teng" />
@@ -971,7 +1056,7 @@
           </div>
         </a>
 
-        <a href="https://yanchiliu.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://yanchiliu.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar">
               <img loading="lazy" src="members/images/liuyanchi.jpg" alt="Yanchi Liu" />
@@ -995,7 +1080,8 @@
       <!-- 2015 -->
       <h3 class="year-subtitle">2015</h3>
       <div class="member-grid">
-        <a href="http://www.is.cityu.edu.hk/staff/junmiliu/" target="_blank" rel="noopener noreferrer">
+        <a href="http://www.is.cityu.edu.hk/staff/junmiliu/" target="_blank" rel="noopener noreferrer"
+          data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/liujunming.jpg" alt="Junming Liu" />
             </div>
@@ -1006,7 +1092,8 @@
       <!-- 2014 -->
       <h3 class="year-subtitle">2014</h3>
       <div class="member-grid">
-        <a href="https://research.nottingham.edu.cn/en/persons/qingxin-meng" target="_blank" rel="noopener noreferrer">
+        <a href="https://research.nottingham.edu.cn/en/persons/qingxin-meng" target="_blank" rel="noopener noreferrer"
+          data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/mengqingxin.jpg" alt="Qingxin Meng" />
             </div>
@@ -1018,20 +1105,20 @@
       <!-- 2013 -->
       <h3 class="year-subtitle">2013</h3>
       <div class="member-grid">
-        <a>
+        <a data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/razzakfarid.jpeg" alt="Farid Razzak" />
             </div>
             <p>Farid Razzak</p><span class="member-year">Financial Quantitative Data Scientist (SME), U.S. SEC</span>
           </div>
         </a>
-        <a href="https://hzhong.site/" target="_blank" rel="noopener noreferrer">
+        <a href="https://hzhong.site/" target="_blank" rel="noopener noreferrer" data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhonghao.png" alt="Hao Zhong" /></div>
             <p>Hao Zhong</p><span class="member-year">Associate Professor, ESCP Business School (Paris)</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chencan.jpg" alt="Can Chen" /></div>
             <p>Can Chen</p><span class="member-year">Chairperson of the Board, LineZone Data</span>
@@ -1041,21 +1128,23 @@
       <!-- 2012 -->
       <h3 class="year-subtitle">2012</h3>
       <div class="member-grid">
-        <a>
+        <a data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/vittconstantine.jpeg"
                 alt="Constantine Vitt" /></div>
             <p>Constantine Vitt</p><span class="member-year">Vice President of Data Science, Relay Delivery</span>
           </div>
         </a>
-        <a href="https://business.gmu.edu/profiles/jyang53" target="_blank" rel="noopener noreferrer">
+        <a href="https://business.gmu.edu/profiles/jyang53" target="_blank" rel="noopener noreferrer"
+          data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/yangjingyuan.jpg" alt="Jingyuan Yang" />
             </div>
             <p>Jingyuan Yang</p><span class="member-year">Assistant Professor, George Mason University</span>
           </div>
         </a>
-        <a href="https://faculty.engineering.asu.edu/yanjiefu/" target="_blank" rel="noopener noreferrer">
+        <a href="https://faculty.engineering.asu.edu/yanjiefu/" target="_blank" rel="noopener noreferrer"
+          data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/fuyanjie.jpg" alt="Yanjie Fu" /></div>
             <p>Yanjie Fu</p><span class="member-year">Associate Professor, Arizona State University</span>
@@ -1065,19 +1154,19 @@
       <!-- 2011 -->
       <h3 class="year-subtitle">2011</h3>
       <div class="member-grid">
-        <a href="https://ittc.ku.edu/~zyao/" target="_blank" rel="noopener noreferrer">
+        <a href="https://ittc.ku.edu/~zyao/" target="_blank" rel="noopener noreferrer" data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/yaozijun.jpg" alt="Zijun Yao" /></div>
             <p>Zijun Yao</p><span class="member-year">Assistant Professor, University of Kansas</span>
           </div>
         </a>
-        <a href="https://binbenliu.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://binbenliu.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/liubin.jpg" alt="Bin Liu" /></div>
             <p>Bin Liu</p><span class="member-year">Associate Professor, West Virginia University</span>
           </div>
         </a>
-        <a href="https://datamining.utk.edu/" target="_blank" rel="noopener noreferrer">
+        <a href="https://datamining.utk.edu/" target="_blank" rel="noopener noreferrer" data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/liuchuanren.jpg" alt="Chuanren Liu" />
             </div>
@@ -1088,7 +1177,8 @@
       <!-- 2010 -->
       <h3 class="year-subtitle">2010</h3>
       <div class="member-grid">
-        <a href="https://www.business.rutgers.edu/faculty/meng-qu" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.business.rutgers.edu/faculty/meng-qu" target="_blank" rel="noopener noreferrer"
+          data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/qumeng.jpeg" alt="Meng Qu" /></div>
             <p>Meng Qu</p><span class="member-year">Assistant Professor of Professional Practice, Rutgers
@@ -1099,7 +1189,7 @@
       <!-- 2009 -->
       <h3 class="year-subtitle">2009</h3>
       <div class="member-grid">
-        <a>
+        <a data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/lizhongmou.jpeg" alt="Zhongmou Li" />
             </div>
@@ -1107,7 +1197,7 @@
           </div>
         </a>
         <a href="https://www.stonybrook.edu/commcms/business/about/_faculty/profile/kxiao" target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer" data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xiaokeli.jpg" alt="Keli Xiao" /></div>
             <p>Keli Xiao</p><span class="member-year">Associate Professor, Stony Brook University</span>
@@ -1117,7 +1207,8 @@
       <!-- 2008 -->
       <h3 class="year-subtitle">2008</h3>
       <div class="member-grid">
-        <a href="https://eller.arizona.edu/people/yong-ge" target="_blank" rel="noopener noreferrer">
+        <a href="https://eller.arizona.edu/people/yong-ge" target="_blank" rel="noopener noreferrer"
+          data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/geyong.jpg" alt="Yong Ge" /></div>
             <p>Yong Ge</p><span class="member-year">Associate Professor, University of Arizona</span>
@@ -1127,7 +1218,7 @@
       <!-- 2006 -->
       <h3 class="year-subtitle">2006</h3>
       <div class="member-grid">
-        <a href="https://volweb.utk.edu/~wzhou4/" target="_blank" rel="noopener noreferrer">
+        <a href="https://volweb.utk.edu/~wzhou4/" target="_blank" rel="noopener noreferrer" data-affiliation="rutgers">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhouwenjun.jpg" alt="Wenjun Zhou" />
             </div>
@@ -1143,28 +1234,28 @@
       <h3 class="year-subtitle">2023</h3>
       <div class="member-grid">
         <!-- HKUST(GZ) MPhil 2023 (Stay in Group for Ph.D.) -->
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wuyin.png" alt="Yin Wu" /></div>
             <p>Yin Wu</p>
             <span class="member-year">Ph.D. Student, HKUST (Guangzhou)</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chenshu.jpg" alt="Shu Chen" /></div>
             <p>Shu Chen</p>
             <span class="member-year">Ph.D. Student, HKUST (Guangzhou)</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/caiqianyi.jpg" alt="Qianyi Cai" /></div>
             <p>Qianyi Cai</p>
             <span class="member-year">Ph.D. Student, HKUST (Guangzhou)</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xiaojunren.jpg" alt="Junren Xiao" />
             </div>
@@ -1172,21 +1263,21 @@
             <span class="member-year">Ph.D. Student, HKUST (Guangzhou)</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/gaomingze.jpeg" alt="Mingze Gao" /></div>
             <p>Mingze Gao</p>
             <span class="member-year">Data Scientist, Xiaohongshu (Rednote)</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/yangyiqian.jpg" alt="Yiqian Yang" />
             </div>
             <p>Yiqian Yang</p>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/gaoshenghao.jpg" alt="Shenghao Gao" />
             </div>
@@ -1194,14 +1285,14 @@
           </div>
         </a>
         <a href="https://wobbly-aster-254.notion.site/YUQI-ZHOU-s-Portfolio-207884458793808099bde7447609af98"
-          target="_self">
+          target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhouyuqi.jpeg" alt="Yuqi Zhou" /></div>
             <p>Yuqi Zhou</p>
             <span class="member-year">HR – Recruitment &amp; Workforce Planning, China Merchants Bank (Shenzhen)</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wangshuang.jpeg" alt="Shuang Wang" />
             </div>
@@ -1209,40 +1300,41 @@
             <span class="member-year">Digital Systems &amp; Software Development Engineer, ZTE (Shenzhen)</span>
           </div>
         </a>
-        <a href="https://www.ziyangrao.com/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.ziyangrao.com/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/raoziyang.jpg" alt="Ziyang Rao" /></div>
             <p>Ziyang Rao</p>
             <span class="member-year">Ph.D. Student, University of Tübingen &amp; MPI-IS</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chenyiyu.png" alt="Yiyu Chen" /></div>
             <p>Yiyu Chen</p>
             <span class="member-year">Information &amp; Communications, China Southern Power Grid</span>
           </div>
         </a>
-        <a href="https://aleeehu.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://aleeehu.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/huyuqi.jpg" alt="Yuqi Hu" /></div>
             <p>Yuqi Hu</p>
           </div>
         </a>
-        <a href="https://terrylee77.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://terrylee77.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/lijunyi.jpg" alt="Junyi Li" /></div>
             <p>Junyi Li</p>
             <span class="member-year">Ph.D. Student, HKUST (Guangzhou)</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zengting.jpg" alt="Ting Zeng" /></div>
             <p>Ting Zeng</p>
           </div>
         </a>
-        <a href="https://openreview.net/profile?id=~Ruochong_Li1" target="_blank" rel="noopener noreferrer">
+        <a href="https://openreview.net/profile?id=~Ruochong_Li1" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/liruochong.png" alt="Ruochong Li" />
             </div>
@@ -1250,28 +1342,29 @@
             <span class="member-year">Embodied AI Algorithm Engineer &amp; PM, Lingchu Intelligence</span>
           </div>
         </a>
-        <a href="https://daviswang0.github.io/" target="_blank" rel="noopener noreferrer">
+        <a href="https://daviswang0.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/wangling.jpeg" alt="Ling Wang" /></div>
             <p>Ling Wang</p>
             <span class="member-year">Ph.D. Student, The Hong Kong Polytechnic University</span>
           </div>
         </a>
-        <a>
+        <a data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/huzhengyu.jpeg" alt="Zhengyu Hu" /></div>
             <p>Zhengyu Hu</p>
             <span class="member-year">Visiting Student, University of Cambridge</span>
           </div>
         </a>
-        <a href="https://zhaohsu.top/" target="_blank" rel="noopener noreferrer">
+        <a href="https://zhaohsu.top/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xuzhao.jpg" alt="Zhao Xu" /></div>
             <p>Zhao Xu</p>
             <span class="member-year">Ph.D. Student, University of California, Los Angeles</span>
           </div>
         </a>
-        <a href="https://openreview.net/profile?id=~Hongbin_Lin4" target="_blank" rel="noopener noreferrer">
+        <a href="https://openreview.net/profile?id=~Hongbin_Lin4" target="_blank" rel="noopener noreferrer"
+          data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/linhongbin.jpeg" alt="Hongbin Lin" />
             </div>
@@ -1280,9 +1373,75 @@
           </div>
         </a>
       </div>
-      <!-- USTC -->
+      <!-- 2022 -->
       <h3 class="year-subtitle">2022</h3>
       <div class="member-grid">
+        <!-- HKUST (show before USTC) -->
+        <a href="members/yangcehao.html" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
+          <div class="member-card">
+            <div class="member-avatar"><img loading="lazy" src="members/images/yangcehao.jpg" alt="Cehao Yang" /></div>
+            <p>Cehao Yang</p>
+            <span class="member-year">M.Phil. 2022<br />Ph.D. Student<br />HKUST (Guangzhou)</span>
+          </div>
+        </a>
+        <a href="members/caitiefu.html" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
+          <div class="member-card">
+            <div class="member-avatar"><img loading="lazy" src="members/images/caitiefu.png" alt="Tiefu Cai" /></div>
+            <p>Tiefu Cai</p>
+            <span class="member-year">M.Phil. 2022<br />Ph.D. Student<br />HKUST (Guangzhou)</span>
+          </div>
+        </a>
+        <a href="https://yjx.me" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
+          <div class="member-card">
+            <div class="member-avatar"><img loading="lazy" src="members/images/xuyijie.png" alt="Yijie Xu" /></div>
+            <p>Yijie Xu</p>
+            <span class="member-year">M.Phil. 2022<br />Ph.D. Student<br />HKUST (Guangzhou)</span>
+          </div>
+        </a>
+        <a data-affiliation="hkust">
+          <div class="member-card">
+            <div class="member-avatar"><img loading="lazy" src="members/images/chenyiran.jpeg" alt="Yiran Chen" /></div>
+            <p>Yiran Chen</p><span class="member-year">M.Phil. 2022<br />Ph.D. Student<br />Fudan University</span>
+          </div>
+        </a>
+        <a data-affiliation="hkust">
+          <div class="member-card">
+            <div class="member-avatar"><img loading="lazy" src="members/images/qiangliangliang.jpeg"
+                alt="Liangliang Qiang" /></div>
+            <p>Liangliang Qiang</p><span class="member-year">M.Phil. 2022<br />Ph.D. Student<br />Tsinghua
+              University</span>
+          </div>
+        </a>
+        <a data-affiliation="hkust">
+          <div class="member-card">
+            <div class="member-avatar"><img loading="lazy" src="members/images/zhaokai.jpeg" alt="Kai Zhao" /></div>
+            <p>Kai Zhao</p><span class="member-year">M.Phil. 2022<br />Data Scientist<br />Cigna Healthcare</span>
+          </div>
+        </a>
+        <a data-affiliation="hkust">
+          <div class="member-card">
+            <div class="member-avatar"><img loading="lazy" src="members/images/zhaojunjie.png" alt="Junjie Zhao" />
+            </div>
+            <p>Junjie Zhao</p><span class="member-year">M.Phil. 2022<br />Ph.D. Student<br />University of Hong
+              Kong</span>
+          </div>
+        </a>
+        <a data-affiliation="hkust">
+          <div class="member-card">
+            <div class="member-avatar"><img loading="lazy" src="members/images/zhangzhouyi.jpeg" alt="Zhouyi Zhang" />
+            </div>
+            <p>Zhouyi Zhang</p><span class="member-year">M.Phil. 2022<br />AIGC Algorithm Engineer<br />Miracle
+              Miles</span>
+          </div>
+        </a>
+        <a href="https://jhuiye.com/" target="_self" data-affiliation="hkust">
+          <div class="member-card">
+            <div class="member-avatar"><img loading="lazy" src="members/images/yejinhui.jpg" alt="Jinhui Ye" /></div>
+            <p>Jinhui Ye</p><span class="member-year">M.Phil. 2022<br />Ph.D. Student<br />HKUST</span>
+          </div>
+        </a>
+
+        <!-- USTC -->
         <a data-affiliation="ustc" target="_self">
           <div class="member-card">
             <span class="member-badge badge-ustc">USTC</span>
@@ -1301,7 +1460,7 @@
           </div>
         </a>
       </div>
-      <!-- USTC -->
+      <!-- 2021 -->
       <h3 class="year-subtitle">2021</h3>
       <div class="member-grid">
         <a data-affiliation="ustc" target="_self">
@@ -1473,6 +1632,7 @@
         </a>
       </div>
     </section>
+
     <!-- --------- Visiting --------- -->
     <section class="member-category my-5 wow slideInUp" data-wow-delay=".6s" id="visiting">
       <h2 class="text-center mb-4">Visiting Students &amp; Scholars</h2>
@@ -1894,7 +2054,7 @@
   <!-- <script defer type="text/javascript" src='js/effects.js'></script> -->
   <script defer type="text/javascript" src='js/main.js'></script>
   <script>
-    // Set a fallback image for all member avatars (applies to both HKUST and USTC, auto fallback)
+    // Fallback image for member avatars
     (function () {
       var defaultSrc = 'members/images/default.jpg';
       function setDefault(img) {
@@ -1910,9 +2070,7 @@
           setDefault(img);
           return;
         }
-        img.onerror = function () {
-          setDefault(this);
-        };
+        img.onerror = function () { setDefault(this); };
       }
       function initFallback() {
         var imgs = document.querySelectorAll('.member-avatar img');
@@ -1922,6 +2080,144 @@
         document.addEventListener('DOMContentLoaded', initFallback);
       } else {
         initFallback();
+      }
+    })();
+
+    // Search and filter by affiliation and name; hide empty year blocks and sections; keep filtering if new nodes appear
+    (function () {
+      function norm(s) { return (s || '').toLowerCase().trim(); }
+
+      function inMemberScope() {
+        return document.querySelectorAll(
+          '#postdocs .member-grid > a, #phd .member-grid > a, #masters .member-grid > a, #placements-phd .member-grid > a, #placements-master .member-grid > a'
+        );
+      }
+
+      var nameCache = new WeakMap();
+      function getName(a) {
+        if (nameCache.has(a)) return nameCache.get(a);
+        var el = a.querySelector('.member-card p');
+        var name = el ? (el.textContent || '') : '';
+        name = name.replace(/\s+/g, ' ').trim();
+        nameCache.set(a, name);
+        return name;
+      }
+
+      function hideEmptyYearBlocks(section) {
+        var children = Array.prototype.slice.call(section.children);
+        for (var i = 0; i < children.length; i++) {
+          var node = children[i];
+          if (node.classList && node.classList.contains('year-subtitle')) {
+            var grid = null;
+            for (var j = i + 1; j < children.length; j++) {
+              if (children[j].classList && children[j].classList.contains('member-grid')) {
+                grid = children[j];
+                break;
+              }
+              if (children[j].tagName && /^H[12]$/.test(children[j].tagName)) break;
+            }
+            if (grid) {
+              var items = grid.querySelectorAll('a');
+              var anyVisible = false;
+              for (var k = 0; k < items.length; k++) {
+                if (!items[k].classList.contains('is-hidden')) { anyVisible = true; break; }
+              }
+              if (anyVisible) {
+                node.classList.remove('is-hidden');
+                grid.classList.remove('is-hidden');
+              } else {
+                node.classList.add('is-hidden');
+                grid.classList.add('is-hidden');
+              }
+            }
+          }
+        }
+      }
+
+      function hideEmptySections() {
+        var sections = ['#postdocs', '#phd', '#masters', '#placements-phd', '#placements-master'];
+        sections.forEach(function (sel) {
+          var sec = document.querySelector(sel);
+          if (!sec) return;
+          var visible = sec.querySelector('a:not(.is-hidden)') !== null;
+          if (visible) sec.classList.remove('is-hidden');
+          else sec.classList.add('is-hidden');
+        });
+      }
+
+      function hideEmptyTopGrids() {
+        var sections = ['#postdocs', '#phd', '#masters', '#placements-phd', '#placements-master'];
+        sections.forEach(function (sel) {
+          var sec = document.querySelector(sel);
+          if (!sec) return;
+          var grids = sec.querySelectorAll(':scope > .member-grid');
+          grids.forEach(function (grid) {
+            var items = grid.querySelectorAll('a');
+            var anyVisible = false;
+            for (var i = 0; i < items.length; i++) {
+              if (!items[i].classList.contains('is-hidden')) { anyVisible = true; break; }
+            }
+            if (anyVisible) grid.classList.remove('is-hidden'); else grid.classList.add('is-hidden');
+          });
+          hideEmptyYearBlocks(sec);
+        });
+        hideEmptySections();
+      }
+
+      function applyFilter() {
+        var q = norm(document.getElementById('member-query').value);
+        var aff = norm(document.getElementById('member-affiliation').value);
+        var anchors = inMemberScope();
+
+        Array.prototype.forEach.call(anchors, function (a) {
+          var aAff = norm(a.getAttribute('data-affiliation') || '');
+          var name = norm(getName(a));
+          var okAff = !aff || (aAff === aff);
+          var okName = !q || name.indexOf(q) !== -1;
+          if (okAff && okName) a.classList.remove('is-hidden');
+          else a.classList.add('is-hidden');
+        });
+
+        hideEmptyTopGrids();
+      }
+
+      function clearFilter() {
+        document.getElementById('member-query').value = '';
+        document.getElementById('member-affiliation').value = '';
+        applyFilter();
+        document.getElementById('member-query').focus();
+      }
+
+      function init() {
+        var q = document.getElementById('member-query');
+        var sel = document.getElementById('member-affiliation');
+        var clr = document.getElementById('member-clear');
+
+        q.addEventListener('input', applyFilter);
+        sel.addEventListener('change', applyFilter);
+        clr.addEventListener('click', clearFilter);
+
+        // Observe DOM additions to keep filtering in sync if content is injected later
+        var observer = new MutationObserver(function (mutations) {
+          var needsRefresh = false;
+          mutations.forEach(function (m) {
+            if (m.addedNodes && m.addedNodes.length) needsRefresh = true;
+          });
+          if (needsRefresh) {
+            nameCache = new WeakMap();
+            applyFilter();
+          }
+        });
+
+        observer.observe(document.querySelector('main'), { childList: true, subtree: true });
+
+        applyFilter();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
       }
     })();
   </script>
