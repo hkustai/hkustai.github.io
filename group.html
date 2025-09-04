@@ -50,6 +50,23 @@
     .member-year {
       font-size: .8rem;
       color: #888;
+      line-height: 1.3;
+
+      /* 多行截断（标准写法 + 兼容 -webkit-） */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-clamp: 2;
+      /* 标准属性 */
+      display: -webkit-box;
+      /* 兼容旧实现需要 */
+      -webkit-box-orient: vertical;
+      /* 兼容旧实现需要 */
+      -webkit-line-clamp: 2;
+      /* 旧的私有属性 */
+
+      /* 防止长词把布局撑坏 */
+      overflow-wrap: anywhere;
+      hyphens: auto;
     }
 
     /* Avatar */
@@ -385,7 +402,7 @@
               <img loading="lazy" src="members/images/yangcehao.jpg" alt="Cehao Yang" />
             </div>
             <p>Cehao Yang</p>
-            <span class="member-year">Joint PhD with<br>IDEA</span>
+            <span class="member-year">Joint PhD with<wbr> IDEA</span>
           </div>
         </a>
         <a href="https://linxueyuan.online/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
@@ -393,14 +410,14 @@
             <div class="member-avatar"><img loading="lazy" src="members/images/linxueyuan.png" alt="Xueyuan Lin" />
             </div>
             <p>Xueyuan Lin</p>
-            <span class="member-year">Joint PhD with<br>IDEA</span>
+            <span class="member-year">Joint PhD with<wbr> IDEA</span>
           </div>
         </a>
         <a href="https://meixichentracy.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/chenmeixi.jpeg" alt="Meixi Chen" /></div>
             <p>Meixi Chen</p>
-            <span class="member-year">Co-supervised by<br>Prof. Ying-Cong Chen</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Ying-Cong Chen</span>
           </div>
         </a>
         <a data-affiliation="hkust">
@@ -433,7 +450,7 @@
             <div class="member-avatar"><img loading="lazy" src="members/images/chenjiujiu.jpeg" alt="Jiujiu Chen" />
             </div>
             <p>Jiujiu Chen</p>
-            <span class="member-year">Co-supervised by<br>Prof. Sihong Xie</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Sihong Xie</span>
           </div>
         </a>
         <a href="https://zhangzhaofan.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
@@ -441,7 +458,7 @@
             <div class="member-avatar"><img loading="lazy" src="members/images/zhangzhaofan.jpeg" alt="Zhaofan Zhang" />
             </div>
             <p>Zhaofan Zhang</p>
-            <span class="member-year">Co-supervised by<br>Prof. Sihong Xie</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Sihong Xie</span>
           </div>
         </a>
         <a href="https://scholar.google.com/citations?user=KF2XbN0AAAAJ" target="_blank" rel="noopener noreferrer"
@@ -463,7 +480,7 @@
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/liufan.jpeg" alt="Fan Liu" /></div>
             <p>Fan Liu</p>
-            <span class="member-year">Co-supervised by<br>Prof. Hao Liu</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Hao Liu</span>
           </div>
         </a>
       </div>
@@ -508,7 +525,7 @@
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/lisiyang.png" alt="Siyang Li" /></div>
             <p>Siyang Li</p>
-            <span class="member-year">Co-supervised by<br>Prof. Yize Chen</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Yize Chen</span>
           </div>
         </a>
         <a href="https://scholar.google.com/citations?user=IIUxf68AAAAJ" target="_blank" rel="noopener noreferrer"
@@ -516,7 +533,7 @@
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xinhaoran.jpeg" alt="Haoran Xin" /></div>
             <p>Haoran Xin</p>
-            <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Ying Sun</span>
           </div>
         </a>
         <a href="https://scholar.google.com/citations?user=CQuOLaUAAAAJ" target="_blank" rel="noopener noreferrer"
@@ -524,7 +541,7 @@
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/gongzheng.jpeg" alt="Zheng Gong" /></div>
             <p>Zheng Gong</p>
-            <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Ying Sun</span>
           </div>
         </a>
         <a href="https://hbai98.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
@@ -551,14 +568,14 @@
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/qiudicong.png" alt="Dicong Qiu" /></div>
             <p>Dicong Qiu</p>
-            <span class="member-year">Co-supervised by<br>Prof. Junwei Liang</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Junwei Liang</span>
           </div>
         </a>
         <a target="_self" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/xionghao.png" alt="Hao Xiong" /></div>
             <p>Hao Xiong</p>
-            <span class="member-year">Co-supervised by<br>Prof. Jiadong Yu</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Jiadong Yu</span>
           </div>
         </a>
         <!-- USTC additions -->
@@ -595,7 +612,7 @@
             <div class="member-avatar"><img loading="lazy" src="members/images/jiangwenzhao.jpeg" alt="Wenzhao Jiang" />
             </div>
             <p>Wenzhao Jiang</p>
-            <span class="member-year">Co-supervised by<br>Prof. Hao Liu</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Hao Liu</span>
           </div>
         </a>
         <a href="https://openreview.net/profile?id=~Fuling_WANG3" target="_blank" rel="noopener noreferrer"
@@ -604,7 +621,7 @@
             <div class="member-avatar"><img loading="lazy" src="members/images/wangfuling.jpg" alt="Fuling Wang" />
             </div>
             <p>Fuling Wang</p>
-            <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Ying Sun</span>
           </div>
         </a>
         <a href="https://scholar.google.com/citations?user=SnTE2BYAAAAJ" target="_blank" rel="noopener noreferrer"
@@ -612,14 +629,14 @@
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/zhanghe.jpg" alt="He Zhang" /></div>
             <p>He Zhang</p>
-            <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Ying Sun</span>
           </div>
         </a>
         <a href="https://weiyuguo.com" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/guoweiyu.jpeg" alt="Weiyu Guo" /></div>
             <p>Weiyu Guo</p>
-            <span class="member-year">Co-supervised by<br>Prof. Ying Sun</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Ying Sun</span>
           </div>
         </a>
         <a href="https://yunfanlu.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
@@ -634,7 +651,7 @@
             <div class="member-avatar"><img loading="lazy" src="members/images/zhangweijia.jpg" alt="Weijia Zhang" />
             </div>
             <p>Weijia Zhang</p>
-            <span class="member-year">Co-supervised by<br>Prof. Hao Liu</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Hao Liu</span>
           </div>
         </a>
         <a href="https://scholar.google.com/citations?user=sDZf3BgAAAAJ" target="_blank" rel="noopener noreferrer"
@@ -643,7 +660,7 @@
             <div class="member-avatar"><img loading="lazy" src="members/images/guchengyang.jpeg" alt="Chengyang Gu" />
             </div>
             <p>Chengyang Gu</p>
-            <span class="member-year">Co-supervised by<br>Prof. Yize Chen</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Yize Chen</span>
           </div>
         </a>
         <a href="https://scholar.google.com/citations?user=_A6E8eEAAAAJ" target="_blank" rel="noopener noreferrer"
@@ -651,7 +668,7 @@
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/dailu.jpeg" alt="Lu Dai" /></div>
             <p>Lu Dai</p>
-            <span class="member-year">Co-supervised by<br>Prof. Hao Liu</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Hao Liu</span>
           </div>
         </a>
         <a target="_self" data-affiliation="hkust">
@@ -850,7 +867,7 @@
           <div class="member-card">
             <div class="member-avatar"><img loading="lazy" src="members/images/dengzeyun.jpeg" alt="Zeyun Deng" /></div>
             <p>Zeyun Deng</p>
-            <span class="member-year">Co-supervised by<br>Prof. Chaosu Li</span>
+            <span class="member-year">Co-supervised by<wbr> Prof. Chaosu Li</span>
           </div>
         </a>
         <a href="https://figerhaowang.github.io/" target="_blank" rel="noopener noreferrer" data-affiliation="hkust">
