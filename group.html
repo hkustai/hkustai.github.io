@@ -195,6 +195,11 @@
     .is-hidden {
       display: none !important;
     }
+
+    /* Ensure sections are visible while filtering (override WOW.js) */
+    .is-filter-active .wow {
+      visibility: visible !important;
+    }
   </style>
 </head>
 
@@ -2168,6 +2173,10 @@
         var q = norm(document.getElementById('member-query').value);
         var aff = norm(document.getElementById('member-affiliation').value);
         var anchors = inMemberScope();
+
+        // Toggle body state to override WOW visibility during active filtering
+        var hasFilter = !!q || !!aff;
+        document.body.classList.toggle('is-filter-active', hasFilter);
 
         Array.prototype.forEach.call(anchors, function (a) {
           var aAff = norm(a.getAttribute('data-affiliation') || '');
