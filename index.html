@@ -30,6 +30,17 @@
   <script>
     new WOW().init();
   </script>
+  <script>
+    // Ensure all links use rel="noopener noreferrer"
+    (function enforceNoopener() {
+      try {
+        var links = document.querySelectorAll('a');
+        links.forEach(function (a) {
+          a.setAttribute('rel', 'noopener noreferrer');
+        });
+      } catch (e) { /* no-op */ }
+    })();
+  </script>
 
   <script>
     window.addEventListener("pageshow", function () {
