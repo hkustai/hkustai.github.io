@@ -9,10 +9,10 @@
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
 
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet">
 
     <link href="https://fonts.geekzu.org/css2?family=PT+Serif:wght@400;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Work+Sans:400,700;800&display=swap" rel="stylesheet">
@@ -51,7 +51,6 @@
             margin-bottom: 0;
         }
 
-        /* Mobile-friendly table: turn rows into cards */
         /* Mobile-friendly table: turn rows into cards */
         @media (max-width: 576px) {
             .table-mobile thead {
@@ -418,71 +417,6 @@
         .coach-block {
             max-width: 980px;
             margin: 0 auto;
-        }
-
-        /* Mobile-friendly table: turn rows into cards */
-        @media (max-width: 576px) {
-            .table-mobile thead {
-                display: none;
-            }
-
-            .table-mobile tbody tr {
-                display: block;
-                margin-bottom: 12px;
-                padding: 10px 12px;
-                border-radius: 14px;
-                background: #fff;
-                border: 1px solid rgba(0, 0, 0, 0.08);
-            }
-
-            /* keep your color accents on the left for mobile cards */
-            .table-mobile tbody tr.row-gold {
-                border-left: 6px solid rgba(212, 175, 55, 0.65);
-            }
-
-            .table-mobile tbody tr.row-silver {
-                border-left: 6px solid rgba(176, 176, 176, 0.65);
-            }
-
-            .table-mobile tbody tr.row-bronze {
-                border-left: 6px solid rgba(205, 127, 50, 0.65);
-            }
-
-            .table-mobile tbody tr.row-special {
-                border-left: 6px solid rgba(220, 53, 69, 0.60);
-            }
-
-            /* remove old accent rule that targets td */
-            .table-mobile tbody tr.row-gold td,
-            .table-mobile tbody tr.row-silver td,
-            .table-mobile tbody tr.row-bronze td,
-            .table-mobile tbody tr.row-special td {
-                border-left: 0 !important;
-            }
-
-            .table-mobile tbody td {
-                display: grid;
-                grid-template-columns: 110px 1fr;
-                gap: 10px;
-                padding: 8px 0;
-                border: 0;
-                border-bottom: 1px dashed rgba(0, 0, 0, 0.10);
-            }
-
-            .table-mobile tbody td:last-child {
-                border-bottom: 0;
-            }
-
-            .table-mobile tbody td::before {
-                content: attr(data-label);
-                font-weight: 800;
-                opacity: 0.78;
-            }
-
-            /* make badges wrap nicely on phones */
-            .table-mobile .name-badges {
-                justify-content: flex-start;
-            }
         }
     </style>
 
