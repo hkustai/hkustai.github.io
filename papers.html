@@ -38,6 +38,7 @@
       display: inline-block;
       position: relative;
     }
+
     #backToTopBtn {
       display: none;
       position: fixed;
@@ -63,6 +64,7 @@
       display: flex;
       justify-content: center;
       gap: 10px;
+      flex-wrap: wrap;
     }
     .pub-tab-btn {
       border: 1px solid #007bff;
@@ -147,6 +149,8 @@
       <button class="pub-tab-btn active" data-target="section-books" type="button">Books</button>
       <button class="pub-tab-btn" data-target="section-journals" type="button">Journal Papers</button>
       <button class="pub-tab-btn" data-target="section-confs" type="button">Conference Papers / Preprints</button>
+      <button class="pub-tab-btn" data-target="section-workshops" type="button">Workshop Papers</button>
+      <button class="pub-tab-btn" data-target="section-patents" type="button">Patents</button>
     </div>
 
 <div class="row wow slideInUp pub-section" id="section-books">
@@ -154,27 +158,6 @@
     <h4 style="font-size:140%">Books</h4>
   </div>
   <div class="col-md-10">
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=20&amp;pagesize=80&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:Qs68GpkTGbMC">Killing two birds with one stone: A spatio-temporal
-                                                    prompt for the inductive traffic extrapolation</a></h5>
-      <p>
-        L Ding, Z Tang, DS Le Zhang, C Wang, Z Tao, J Zhou,
-                                                    Y Zhang, H Xiong<br>
-        <i>International Conference on Database Systems for
-                                                    Advanced Applications. Springer, 2025 (<b>DASFAA</b>)</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:o4Qvs5Y5TLQC">Anti-Interpolation: An Attack Facilitator Hiding
-                                                    Adversaries Into Images</a></h5>
-      <p>
-        J Chen, H Xiong, H Zheng, Z Ming, Y Liu<br>
-        <i>IEEE Transactions on Circuits and Systems II:
-                                                    Express Briefs 68 (7), 2670-2674, 2021</i>
-      </p>
-      <br>
-    </div>
     <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:XDrR66g3YHsC">Big data in complex and social networks</a></h5>
       <p>
@@ -435,6 +418,15 @@
       <br>
     </div>
     <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:WTSGYGHz1bkC">Hierarchical deep reinforcement learning for
+                                                    computation offloading in autonomous multi-robot systems</a></h5>
+      <p>
+        W Gao, Z Yu, L Wang, H Cui, B Guo, H Xiong<br>
+        <i>IEEE Robotics and Automation Letters, 2024</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:EcS_2O1c4Q0C">Towards task sampler learning for meta-learning</a></h5>
       <p>
         J Wang, W Qiang, X Su, C Zheng, F Sun, H Xiong<br>
@@ -484,6 +476,17 @@
         D Shen, C Qin, Q Zhang, H Zhu, H Xiong<br>
         <i>IEEE Transactions on Neural Networks and Learning
                                                     Systems, 2024</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:8rLWgkbgOXQC">A survey on large language models for
+                                                    recommendation</a></h5>
+      <p>
+        L Wu, Z Zheng, Z Qiu, H Wang, H Gu, T Shen, C Qin,
+                                                    C Zhu, H Zhu, Q Liu, ...<br>
+        <i>World Wide Web 27 (5), 60,
+                                                        2024</i>
       </p>
       <br>
     </div>
@@ -640,16 +643,6 @@
         Z Qiao, P Wang, P Wang, Z Ning, Y Fu, Y Du, Y Zhou,
                                                     J Huang, XS Hua, ...<br>
         <i>ACM Transactions on the Web 18 (2), 1-26, 2024</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:ZpgFv6i7Z4gC">Event camera demosaicing via swin transformer and
-                                                    pixel-focus loss</a></h5>
-      <p>
-        Y Lu, Y Xu, W Ma, W Guo, H Xiong<br>
-        <i>Proceedings of the IEEE/CVF Conference on Computer
-                                                    Vision and Pattern, 2024 (<b>Proc. IEEE</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -878,16 +871,6 @@
         J Han, H Liu, H Zhu, H Xiong<br>
         <i>IEEE Transactions on Knowledge and Data Engineering
                                                     35 (11), 11515-11528, 2023 (<b>TKDE</b>) <span class="ccf-a-badge">CCF-A</span></i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:VBDT71xRUdcC">Cloth2body: Generating 3d human body mesh from 2d
-                                                    clothing</a></h5>
-      <p>
-        L Dai, L Ma, S Qian, H Liu, Z Liu, H Xiong<br>
-        <i>Proceedings of the IEEE/CVF International
-                                                    Conference on Computer Vision, 2023 (<b>Proc. IEEE</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -1373,6 +1356,16 @@
       <br>
     </div>
     <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:o4Qvs5Y5TLQC">Anti-Interpolation: An Attack Facilitator Hiding
+                                                    Adversaries Into Images</a></h5>
+      <p>
+        J Chen, H Xiong, H Zheng, Z Ming, Y Liu<br>
+        <i>IEEE Transactions on Circuits and Systems II:
+                                                    Express Briefs 68 (7), 2670-2674, 2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:gNZucvRojEcC">Smoothing adversarial training for GNN</a></h5>
       <p>
         J Chen, X Lin, H Xiong, Y Wu, H Zheng, Q Xuan<br>
@@ -1575,6 +1568,15 @@
       <br>
     </div>
     <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:W2uZP3ddy8sC">Matching of social events and users: a two-way
+                                                    selection perspective</a></h5>
+      <p>
+        Z Yin, T Xu, H Zhu, C Zhu, E Chen, H Xiong<br>
+        <i>World Wide Web 23 (2), 853-871, 2020</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:3_LpOwP6eMYC">An enhanced neural network approach to person-job
                                                     fit in talent recruitment</a></h5>
       <p>
@@ -1609,6 +1611,16 @@
       <p>
         Y Xu, Y Yang, J Han, E Wang, J Ming, H Xiong<br>
         <i>Information Sciences 505, 265-281, 2019</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:ijdKiLOsEJMC">Time-aware metric embedding with asymmetric
+                                                    projection for successive POI recommendation</a></h5>
+      <p>
+        H Ying, J Wu, G Xu, Y Liu, T Liang, X Zhang, H
+                                                    Xiong<br>
+        <i>World Wide Web 22 (5), 2209-2224, 2019</i>
       </p>
       <br>
     </div>
@@ -1649,6 +1661,25 @@
         Q Liu, Z Huang, Y Yin, E Chen, H Xiong, Y Su, G Hu<br>
         <i>IEEE Transactions on Knowledge and Data Engineering
                                                     33 (1), 100-115, 2019 (<b>TKDE</b>) <span class="ccf-a-badge">CCF-A</span></i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:DXE8ND7PrJAC">Recurrent convolutional neural network for
+                                                    sequential recommendation</a></h5>
+      <p>
+        C Xu, P Zhao, Y Liu, J Xu, VSS S. Sheng, Z Cui, X
+                                                    Zhou, H Xiong<br>
+        <i>Proceedings of the Web Conference, 2019 (<b>WWW</b>) <span class="ccf-a-badge">CCF-A</span></i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:z8nqeaKD1nsC">Large-scale talent flow forecast with dynamic
+                                                    latent factor model?</a></h5>
+      <p>
+        L Zhang, H Zhu, T Xu, C Zhu, C Qin, H Xiong, E Chen<br>
+        <i>Proceedings of the Web Conference, 2019 (<b>WWW</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -1817,6 +1848,16 @@
       <br>
     </div>
     <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:X9ykpCP0fEIC">Learning to recommend accurate and diverse
+                                                    items</a></h5>
+      <p>
+        P Cheng, S Wang, J Ma, J Sun, H Xiong<br>
+        <i>Proceedings of the 26th international conference on
+                                                    World Wide Web, 183-192, 2017</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:oPLKW5k6eA4C">Traffic light recognition based on prior knowledge
                                                     and optimized threshold segmentation</a></h5>
       <p>
@@ -1842,6 +1883,15 @@
         G Liu, Y Fu, G Chen, H Xiong, C Chen<br>
         <i>ACM Transactions on Knowledge Discovery from Data
                                                     (<b>TKDD</b>) 11 (3), 1-26, 2017</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:Hck25ST_3aIC">Discerning individual interests and shared
+                                                    interests for social user profiling</a></h5>
+      <p>
+        E Chen, G Zeng, P Luo, H Zhu, J Tian, H Xiong<br>
+        <i>World Wide Web 20 (2), 417-435, 2017</i>
       </p>
       <br>
     </div>
@@ -1949,12 +1999,40 @@
       <br>
     </div>
     <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:prdVHNxh-e8C">Locating targets through mention in Twitter</a></h5>
+      <p>
+        L Tang, Z Ni, H Xiong, H Zhu<br>
+        <i>World Wide Web 18 (4), 1019-1049, 2015</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:nPTYJWkExTIC">Remix in 3D printing: What your sources say about
+                                                    you</a></h5>
+      <p>
+        S Papadimitriou, E Papalexakis, B Liu, H Xiong<br>
+        <i>Proceedings of the 24th International Conference on
+                                                    World Wide Web, 367-368, 2015</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:MhiOAD_qIWkC">Mining mobile user preferences for personalized
                                                     context-aware recommendation</a></h5>
       <p>
         H Zhu, E Chen, H Xiong, K Yu, H Cao, J Tian<br>
         <i>ACM Transactions on Intelligent Systems and
                                                     Technology (TIST) 5 (4), 1-27, 2014 (<b>ACM TIST</b>)</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:1DsIQWDZLl8C">Topic formation and development: a core-group
+                                                    evolving process</a></h5>
+      <p>
+        T Qian, Q Li, B Liu, H Xiong, J Srivastava, PCY
+                                                    Sheu<br>
+        <i>World Wide Web 17 (6), 1343-1373, 2014</i>
       </p>
       <br>
     </div>
@@ -2005,6 +2083,15 @@
         H Zhu, C Liu, Y Ge, H Xiong, E Chen<br>
         <i>IEEE transactions on cybernetics 45 (7),
                                                     1303-1314, 2014</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:LhH-TYMQEocC">Ranking user authority with relevant knowledge
+                                                    categories for expert finding</a></h5>
+      <p>
+        H Zhu, E Chen, H Xiong, H Cao, J Tian<br>
+        <i>World Wide Web 17 (5), 1081-1107, 2014</i>
       </p>
       <br>
     </div>
@@ -2349,6 +2436,16 @@
       <br>
     </div>
     <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:WAzi4Gm8nLoC">Three approximation algorithms for energy-efficient
+                                                    query dissemination in sensor database system</a></h5>
+      <p>
+        Z Zhang, X Gao, X Zhang, W Wu, H Xiong<br>
+        <i>International Conference on Database and Expert
+                                                    Systems Applications, 807-821, 2009</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:L8Ckcad2t8MC">Characterizing pattern preserving clustering</a></h5>
       <p>
         H Xiong, M Steinbach, A Ruslim, V Kumar<br>
@@ -2581,7 +2678,7 @@
         W Wu, Z Pan, K Fu, C Wang, L Chen, Y Bai, T Wang, Z
                                                     Wang, H Xiong<br>
         <i>Proceedings of the 2025 Conference on Empirical
-                                                    Methods in Natural Language, 2025</i>
+                                                    Methods in Natural Language ..., 2025</i>
       </p>
       <br>
     </div>
@@ -2671,8 +2768,7 @@
                                                     utilizing composition pattern modeling</a></h5>
       <p>
         T Ma, S Wang, Z Zheng, H Xiong<br>
-        <i>Proceedings of the Thirty-Fourth International
-                                                    Joint Conference on, 2025</i>
+        <i>Proceedings of the International Joint Conference on Artificial Intelligence, 2025 (<b>IJCAI</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -2787,15 +2883,6 @@
       <p>
         S Lai, Z Xu, W Zhang, H Liu, H Xiong<br>
         <i>Proceedings of the ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2025 (<b>KDD</b>) <span class="ccf-a-badge">CCF-A</span></i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=20&amp;pagesize=80&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:jvrRlaHg2sAC">Deoforant ball for shoes</a></h5>
-      <p>
-        H Xiong<br>
-        <i>US Patent App. 19/094,225,
-                                                        2025</i>
       </p>
       <br>
     </div>
@@ -3242,6 +3329,17 @@
       <br>
     </div>
     <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=20&amp;pagesize=80&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:Qs68GpkTGbMC">Killing two birds with one stone: A spatio-temporal
+                                                    prompt for the inductive traffic extrapolation</a></h5>
+      <p>
+        L Ding, Z Tang, DS Le Zhang, C Wang, Z Tao, J Zhou,
+                                                    Y Zhang, H Xiong<br>
+        <i>International Conference on Database Systems for
+                                                    Advanced Applications. Springer, 2025 (<b>DASFAA</b>)</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=20&amp;pagesize=80&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:TuM7UPshZo8C">Spatio-Temporal Fuzzy-oriented Multi-Modal
                                                     Meta-Learning for Fine-grained Emotion Recognition</a></h5>
       <p>
@@ -3351,15 +3449,6 @@
         Y Wang, H Xiong<br>
         <i>US Patent 12,165,059,
                                                         2024</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:WTSGYGHz1bkC">Hierarchical deep reinforcement learning for
-                                                    computation offloading in autonomous multi-robot systems</a></h5>
-      <p>
-        W Gao, Z Yu, L Wang, H Cui, B Guo, H Xiong<br>
-        <i>IEEE Robotics and Automation Letters, 2024</i>
       </p>
       <br>
     </div>
@@ -3478,16 +3567,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:M7C5BM2v8n8C">Data processing method</a></h5>
-      <p>
-        HAO Siyuan, L Zhang, Z Jingbo, S Zhang, C Qin, H
-                                                    Xiong<br>
-        <i>US Patent App. 18/741,744,
-                                                        2024</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:pe4chHNxNLUC">Channel-aware Contrastive Conditional Diffusion for
                                                     Multivariate Probabilistic Time Series Forecasting</a></h5>
       <p>
@@ -3551,17 +3630,6 @@
       <p>
         Z Qiao, M Xiao, W Guo, X Luo, H Xiong<br>
         <i>Pattern Recognition 153, 110498, 2024 (<b>PR</b>)</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:8rLWgkbgOXQC">A survey on large language models for
-                                                    recommendation</a></h5>
-      <p>
-        L Wu, Z Zheng, Z Qiu, H Wang, H Gu, T Shen, C Qin,
-                                                    C Zhu, H Zhu, Q Liu, ...<br>
-        <i>World Wide Web 27 (5), 60,
-                                                        2024</i>
       </p>
       <br>
     </div>
@@ -3684,7 +3752,7 @@
       <p>
         X Chen, C Qin, Z Wang, Y Cheng, C Wang, H Zhu, H
                                                     Xiong<br>
-        <i>Proceedings of the 33rd International Joint Conference on Artificial Intelligence, 2024 (<b>IJCAI</b>) <span class="ccf-a-badge">CCF-A</span></i>
+        <i>Proceedings of the International Joint Conference on Artificial Intelligence, 2024 (<b>IJCAI</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -3992,18 +4060,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:djft3U1LymYC">Method and apparatus for controlling traffic light,
-                                                    method and apparatus for navigating unmanned vehicle, and method and
-                                                    apparatus for training model</a></h5>
-      <p>
-        Q Sun, L Zhang, H Xiong, W Zhang, H Yu, Y Mei, W
-                                                    LING<br>
-        <i>US Patent App. 18/503,538,
-                                                        2024</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:vkz5F8TaVKkC">Towards urban general intelligence: A review and
                                                     outlook of urban foundation models</a></h5>
       <p>
@@ -4048,6 +4104,15 @@
       <p>
         LU Yunfan, G Liang, Y Wang, L Wang, H Xiong<br>
         <i>eccv, 2024</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:ZpgFv6i7Z4gC">Event camera demosaicing via swin transformer and
+                                                    pixel-focus loss</a></h5>
+      <p>
+        Y Lu, Y Xu, W Ma, W Guo, H Xiong<br>
+        <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2024 (<b>CVPR</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -4406,27 +4471,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:d6JCS5z0ckYC">Cross-regional talent flow intention analysis
-                                                    method, electronic device, and storage medium</a></h5>
-      <p>
-        Y Sun, H Zhu, C Qin, P Wang, H Xiong<br>
-        <i>US Patent App. 17/945,168,
-                                                        2023</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:7XUxBq3GufIC">Method and Apparatus for Training Information
-                                                    Adjustment Model of Charging Station, and Storage Medium</a></h5>
-      <p>
-        W Zhang, L Zhang, H Liu, J Han, C Qin, H Zhu, H
-                                                    Xiong<br>
-        <i>US Patent App. 18/125,327,
-                                                        2023</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:9o6PfxSMcEIC">Seq-HGNN: learning sequential node representation
                                                     on heterogeneous graph</a></h5>
       <p>
@@ -4519,17 +4563,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:E2bRg1zSkIsC">Method of training model and method of determining
-                                                    asset valuation</a></h5>
-      <p>
-        J Liu, YU Sunjie, W Zhang, H Liu, H Zhu, D Dou, H
-                                                    Xiong<br>
-        <i>US Patent App. 18/088,872,
-                                                        2023</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:WgvcDLhf7hwC">Resuformer: Semantic structure understanding for
                                                     resumes via multi-modal pre-training</a></h5>
       <p>
@@ -4557,26 +4590,6 @@
       <p>
         H Bai, Y Lyu, L Jiang, S Li, H Lu, X Lin, L Wang<br>
         <i>arXiv preprint arXiv:2303.13843, 2023</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:T_0gP6tLVL0C">Conversational recommendation method, method of
-                                                    training model, device and medium</a></h5>
-      <p>
-        Z Liu, H Liu, H Wu, H Wang, H Xiong<br>
-        <i>US Patent App. 18/059,386,
-                                                        2023</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:anDooRL1HQEC">Interpretation method for neural network model,
-                                                    electronic device and storage medium</a></h5>
-      <p>
-        Y Sun, H Zhu, C Qin, F Zhuang, H Xiong<br>
-        <i>US Patent App. 18/070,775,
-                                                        2023</i>
       </p>
       <br>
     </div>
@@ -4658,12 +4671,12 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:h9G0ZmjYpDoC">Method and apparatus for training path
-                                                    representation model</a></h5>
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:VBDT71xRUdcC">Cloth2body: Generating 3d human body mesh from 2d
+                                                    clothing</a></h5>
       <p>
-        Q Zhang, H Zhu, P Wang, H Liu, H Xiong<br>
-        <i>US Patent App. 17/900,649,
-                                                        2022</i>
+        L Dai, L Ma, S Qian, H Liu, Z Liu, H Xiong<br>
+        <i>Proceedings of the IEEE/CVF International
+                                                    Conference on Computer Vision, 2023 (<b>ICCV</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -4705,16 +4718,7 @@
       <p>
         M Chen, X Lu, T Xu, Y Li, Z Jingbo, D Dou, H Xiong<br>
         <i>Proceedings of the 2022 Conference on Empirical
-                                                    Methods in Natural Language, 2022</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:Oo_WeVVXg5wC">Information processing method and device</a></h5>
-      <p>
-        LI Shuangli, Z Jingbo<br>
-        <i>US Patent App. 17/565,910,
-                                                        2022</i>
+                                                    Methods in Natural Language ..., 2022</i>
       </p>
       <br>
     </div>
@@ -4974,26 +4978,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:gkldIfsazJcC">Method of training prediction model for determining
-                                                    molecular binding force</a></h5>
-      <p>
-        LI Shuangli, Z Jingbo<br>
-        <i>US Patent App. 17/570,416,
-                                                        2022</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:qSd0DAb9jMoC">Method and Device for Determining Correlation
-                                                    Between Drug and Target, and Electronic Device</a></h5>
-      <p>
-        LI Shuangli, Z Jingbo<br>
-        <i>US Patent App. 17/570,505,
-                                                        2022</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:Kqc1aDSOPooC">Method and apparatus for recommending travel
                                                     way</a></h5>
       <p>
@@ -5009,25 +4993,6 @@
       <p>
         Z Zheng, Z Qiu, T Xu, X Wu, X Zhao, E Chen, H Xiong<br>
         <i>Proceedings of the Web Conference, 2022 (<b>WWW</b>) <span class="ccf-a-badge">CCF-A</span></i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:dMpQl7XwOw4C">Point-of-interest recommendation</a></h5>
-      <p>
-        H Liu, W Zhang, D Dou, H Xiong<br>
-        <i>US Patent App. 17/531,132,
-                                                        2022</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:RgznTc0nqo4C">Travel recommendation method, electronic device,
-                                                    and storage medium</a></h5>
-      <p>
-        H Liu, D Zhou, T Xu, H Xiong<br>
-        <i>US Patent App. 17/533,441,
-                                                        2022</i>
       </p>
       <br>
     </div>
@@ -5072,17 +5037,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:9VeumLvkZSQC">Intelligent recommendation method and apparatus,
-                                                    model training method and apparatus, electronic device, and storage
-                                                    medium</a></h5>
-      <p>
-        W Zhang, H Liu, D Dou, H Xiong<br>
-        <i>US Patent App. 17/445,905,
-                                                        2021</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:3x-KLxxGyuUC">Fair graph auto-encoder for unbiased graph
                                                     representations with wasserstein distance</a></h5>
       <p>
@@ -5123,16 +5077,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:o-PowTg_VKEC">Method and apparatus for recommending point of
-                                                    interest, device, and medium</a></h5>
-      <p>
-        Z Jingbo, H Xiong<br>
-        <i>US Patent App. 17/386,302,
-                                                        2021</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:uEM9VtRl8xsC">An interactive neural network approach to keyphrase
                                                     extraction in talent recruitment</a></h5>
       <p>
@@ -5148,16 +5092,6 @@
       <p>
         D Shen, C Qin, C Wang, H Zhu, E Chen, H Xiong<br>
         <i>arXiv preprint arXiv:2110.12381, 2021</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:jKT558fuBk8C">Training method and apparatus of poi recommendation
-                                                    model of interest points, and electronic device</a></h5>
-      <p>
-        Z Jingbo, H Xiong<br>
-        <i>US Patent App. 17/347,418,
-                                                        2021</i>
       </p>
       <br>
     </div>
@@ -5285,32 +5219,11 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:yCjxvIMm6_oC">Parking lot free parking space predicting method,
-                                                    apparatus, electronic device and storage medium</a></h5>
-      <p>
-        W Zhang, H Liu, H Xiong<br>
-        <i>US Patent App. 17/024,421,
-                                                        2021</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:o9ULDYDKYbIC">Land usage property identification method,
-                                                    apparatus, electronic device and storage medium</a></h5>
-      <p>
-        LU Xinjiang, S Huang, H Xiong<br>
-        <i>US Patent App. 17/208,671,
-                                                        2021</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:KIRwYnRZzWQC">A trend-aware investment target recommendation
                                                     system with heterogeneous graph</a></h5>
       <p>
         M Chen, C Wang, C Qin, T Xu, J Ma, E Chen, H Xiong<br>
-        <i>2021 International Joint Conference on Neural
-                                                    Networks (IJCNN), 1-8, 2021</i>
+        <i>Proceedings of the International Joint Conference on Artificial Intelligence, 2021 (<b>IJCAI</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -5330,26 +5243,6 @@
       <p>
         Z Zhang, F Zhuang, M Qu, ZY Niu, H Xiong, Q He<br>
         <i>Neural Networks 139, 140-148,
-                                                        2021</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:NnTm98qLMbgC">Method, apparatus, device and storage medium for
-                                                    judging permanent area change</a></h5>
-      <p>
-        YY Li, J Duan, H Xiong<br>
-        <i>US Patent App. 17/022,269,
-                                                        2021</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:XeErXHja3Z8C">Quantitative analysis method and apparatus for user
-                                                    decision-making behavior</a></h5>
-      <p>
-        LU Xinjiang, HU Renjun<br>
-        <i>US Patent App. 17/128,904,
                                                         2021</i>
       </p>
       <br>
@@ -5503,42 +5396,12 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:uoRD4RTSUPoC">Method and apparatus for recommending a travel
-                                                    plan, device and storage medium</a></h5>
-      <p>
-        H Liu, H Xiong<br>
-        <i>US Patent App. 16/864,458,
-                                                        2021</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:J4E9jCG1tHUC">Method and apparatus for determining hybrid travel
-                                                    route, device and storage medium</a></h5>
-      <p>
-        H Liu, J Duan, H Xiong<br>
-        <i>US Patent App. 16/880,156,
-                                                        2021</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:s1ouQE5r0WUC">Transportation recommendation with fairness
                                                     consideration</a></h5>
       <p>
         D Zhou, H Liu, T Xu, L Zhang, R Zha, H Xiong<br>
         <i>International Conference on Database Systems for
                                                     Advanced Applications, 566-578, 2021 (<b>DASFAA</b>)</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:tgTmbKTkO1IC">Method, Apparatus, Computer Device and Readable
-                                                    Storage Medium for Processing Position Information</a></h5>
-      <p>
-        YY Li, J Duan, H Xiong<br>
-        <i>US Patent App. 16/813,782,
-                                                        2021</i>
       </p>
       <br>
     </div>
@@ -5891,25 +5754,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:W2uZP3ddy8sC">Matching of social events and users: a two-way
-                                                    selection perspective</a></h5>
-      <p>
-        Z Yin, T Xu, H Zhu, C Zhu, E Chen, H Xiong<br>
-        <i>World Wide Web 23 (2), 853-871, 2020</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:rOcdG6UcVlcC">Method for Building User Visit Inference Model,
-                                                    Apparatus and Storage Medium</a></h5>
-      <p>
-        YY Li, HU Renjun, J Duan, A JIANG, H Xiong<br>
-        <i>US Patent App. 16/654,343,
-                                                        2020</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:yeL6HyUMUGUC">Method, computer device and storage medium for
                                                     matching mobile hotspot with mobile point of interest</a></h5>
       <p>
@@ -5954,16 +5798,6 @@
         D Shen, Q Zhang, T Xu, H Zhu, W Zhao, Z Yin, P
                                                     Zhou, L Fang, E Chen, ...<br>
         <i>arXiv preprint arXiv:1911.09275, 2019</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:N4u4nq0IxgcC">Computer-assisted interview method and device based
-                                                    on artificial intelligence, and storage medium</a></h5>
-      <p>
-        D Shen, H Zhu, C Ma, C Zhu, H Xiong<br>
-        <i>US Patent App. 16/406,893,
-                                                        2019</i>
       </p>
       <br>
     </div>
@@ -6049,16 +5883,6 @@
         <i>Proceedings of the 27th ACM International
                                                     Conference on Multimedia, 1401-1409,
                                                         2019 (<b>ACM MM</b>) <span class="ccf-a-badge">CCF-A</span></i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:ijdKiLOsEJMC">Time-aware metric embedding with asymmetric
-                                                    projection for successive POI recommendation</a></h5>
-      <p>
-        H Ying, J Wu, G Xu, Y Liu, T Liang, X Zhang, H
-                                                    Xiong<br>
-        <i>World Wide Web 22 (5), 2209-2224, 2019</i>
       </p>
       <br>
     </div>
@@ -6255,25 +6079,6 @@
         J Liu, P Zhao, Y Liu, VS Sheng, F Zhuang, J Xu, X
                                                     Zhou, H Xiong<br>
         <i>arXiv preprint arXiv:1905.13030, 2019</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:DXE8ND7PrJAC">Recurrent convolutional neural network for
-                                                    sequential recommendation</a></h5>
-      <p>
-        C Xu, P Zhao, Y Liu, J Xu, VSS S. Sheng, Z Cui, X
-                                                    Zhou, H Xiong<br>
-        <i>Proceedings of the Web Conference, 2019 (<b>WWW</b>) <span class="ccf-a-badge">CCF-A</span></i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:z8nqeaKD1nsC">Large-scale talent flow forecast with dynamic
-                                                    latent factor model?</a></h5>
-      <p>
-        L Zhang, H Zhu, T Xu, C Zhu, C Qin, H Xiong, E Chen<br>
-        <i>Proceedings of the Web Conference, 2019 (<b>WWW</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -6527,25 +6332,6 @@
         X Du, Y Li, Y Guo, H Xiong<br>
         <i>2017 4th International Conference on Information
                                                     Science and Control, 2017</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:X9ykpCP0fEIC">Learning to recommend accurate and diverse
-                                                    items</a></h5>
-      <p>
-        P Cheng, S Wang, J Ma, J Sun, H Xiong<br>
-        <i>Proceedings of the 26th international conference on
-                                                    World Wide Web, 183-192, 2017</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=500&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:Hck25ST_3aIC">Discerning individual interests and shared
-                                                    interests for social user profiling</a></h5>
-      <p>
-        E Chen, G Zeng, P Luo, H Zhu, J Tian, H Xiong<br>
-        <i>World Wide Web 20 (2), 417-435, 2017</i>
       </p>
       <br>
     </div>
@@ -6805,7 +6591,7 @@
                                                     using human mobility patterns</a></h5>
       <p>
         X Lu, Z Yu, L Sun, C Liu, H Xiong, C Guan<br>
-        <i>Proceedings of the ACM International Joint Conference on Pervasive and Ubiquitous Computing, 2016</i>
+        <i>Proceedings of the International Joint Conference on Artificial Intelligence, 2016 (<b>IJCAI</b>) <span class="ccf-a-badge">CCF-A</span></i>
       </p>
       <br>
     </div>
@@ -6951,40 +6737,12 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:hrkNWuzUpWwC">Message from the Conference Chairs</a></h5>
-      <p>
-        A Tuzhilin, H Xiong<br>
-        <i>Proceedings-15th IEEE International Conference on
-                                                    Data Mining Workshop, 2016 (<b>ICDM</b>)</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:isU91gLudPYC">A discovery system for finding high-value homes</a></h5>
-      <p>
-        Y Fu, H Xiong<br>
-        <i>2015 IEEE International Conference on Data Mining
-                                                    Workshop (<b>ICDM</b>W), 1612-1615, 2015</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:Xz60mAmATU4C">Exploiting temporal and social factors for B2B
                                                     marketing campaign recommendations</a></h5>
       <p>
         J Yang, C Liu, M Teng, H Xiong, M Liao, V Zhu<br>
         <i>2015 IEEE International Conference on Data Mining,
                                                     499-508, 2015 (<b>ICDM</b>)</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:CYCckWUYoCcC">Modeling of geographic dependencies for real estate
-                                                    ranking on site selection</a></h5>
-      <p>
-        Y Fu, H Xiong<br>
-        <i>2015 IEEE International Conference on Data Mining
-                                                    Workshop (<b>ICDM</b>W), 1506-1513, 2015</i>
       </p>
       <br>
     </div>
@@ -7097,14 +6855,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:prdVHNxh-e8C">Locating targets through mention in Twitter</a></h5>
-      <p>
-        L Tang, Z Ni, H Xiong, H Zhu<br>
-        <i>World Wide Web 18 (4), 1019-1049, 2015</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:PkcyUWeTMh0C">Convex matrix completion: A trace-ball optimization
                                                     perspective</a></h5>
       <p>
@@ -7125,31 +6875,11 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:nPTYJWkExTIC">Remix in 3D printing: What your sources say about
-                                                    you</a></h5>
-      <p>
-        S Papadimitriou, E Papalexakis, B Liu, H Xiong<br>
-        <i>Proceedings of the 24th International Conference on
-                                                    World Wide Web, 367-368, 2015</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:KaMxkj08jr0C">Personalized mobile app recommendation: Reconciling
                                                     app functionality and user privacy preference</a></h5>
       <p>
         B Liu, D Kong, L Cen, NZ Gong, H Jin, H Xiong<br>
         <i>Proceedings of the ACM International Conference on Web Search and Data Mining, 2015</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:PuOEWVtPfzwC">Sequential Pattern Analysis with Right
-                                                    Granularity</a></h5>
-      <p>
-        C Liu, K Zhang, H Xiong<br>
-        <i>2014 IEEE International Conference on Data Mining
-                                                    Workshop, 1178-1184, 2014 (<b>ICDM</b>)</i>
       </p>
       <br>
     </div>
@@ -7242,25 +6972,6 @@
         X Jin, F Zhuang, H Xiong, C Du, P Luo, Q He<br>
         <i>Proceedings of the 23rd ACM international
                                                     conference on conference on, 2014</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:1DsIQWDZLl8C">Topic formation and development: a core-group
-                                                    evolving process</a></h5>
-      <p>
-        T Qian, Q Li, B Liu, H Xiong, J Srivastava, PCY
-                                                    Sheu<br>
-        <i>World Wide Web 17 (6), 1343-1373, 2014</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:LhH-TYMQEocC">Ranking user authority with relevant knowledge
-                                                    categories for expert finding</a></h5>
-      <p>
-        H Zhu, E Chen, H Xiong, H Cao, J Tian<br>
-        <i>World Wide Web 17 (5), 1081-1107, 2014</i>
       </p>
       <br>
     </div>
@@ -7484,42 +7195,12 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:PyEswDtIyv0C">Collaborative filtering with user ratings and
-                                                    tags</a></h5>
-      <p>
-        T Bao, Y Ge, E Chen, H Xiong, J Tian<br>
-        <i>Proceedings of the 1st International Workshop on
-                                                    Context Discovery and Data, 2012</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:WJVC3Jt7v1AC">BP-growth: Searching strategies for efficient
                                                     behavior pattern mining</a></h5>
       <p>
         X Li, H Cao, E Chen, H Xiong, J Tian<br>
         <i>2012 IEEE 13th International Conference on Mobile
                                                     Data Management, 238-247, 2012</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:L7CI7m0gUJcC">Stochastic unsupervised learning on unlabeled
-                                                    data</a></h5>
-      <p>
-        C Liu, J Xie, Y Ge, H Xiong<br>
-        <i>Proceedings of ICML Workshop on Unsupervised and
-                                                    Transfer Learning, 111-122, 2012</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:jU7OWUQzBzMC">Prediction for mobile application usage
-                                                    patterns</a></h5>
-      <p>
-        C Tan, Q Liu, E Chen, H Xiong<br>
-        <i>Nokia MDC Workshop 12, 1,
-                                                        2012</i>
       </p>
       <br>
     </div>
@@ -7858,16 +7539,6 @@
         X Jiang, H Xiong, C Wang, AH Tan<br>
         <i>Data & Knowledge Engineering 68 (10),
                                                     1034-1058, 2009</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:WAzi4Gm8nLoC">Three approximation algorithms for energy-efficient
-                                                    query dissemination in sensor database system</a></h5>
-      <p>
-        Z Zhang, X Gao, X Zhang, W Wu, H Xiong<br>
-        <i>International Conference on Database and Expert
-                                                    Systems Applications, 807-821, 2009</i>
       </p>
       <br>
     </div>
@@ -9583,15 +9254,6 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=900&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:pqnbT2bcN3wC">Enhancing privacy preservation of anonymous
-                                                    location sampling techniques in traffic monitoring systems</a></h5>
-      <p>
-        B Hoh, M Gruteser, H Xiong, A Alrabady<br>
-        <i>2006 Securecomm and Workshops, 1-3 Workshop, 2006</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=900&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:YsMSGLbcyi4C">K-means clustering versus validation measures: a
                                                     data distribution perspective</a></h5>
       <p>
@@ -9867,22 +9529,375 @@
       <br>
     </div>
     <div class="paper">
-      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=1000&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:polMJLZb0X8C">Towards Constraint-aware Learning for Resource
-                                                    Allocation in NFV Networks</a></h5>
-      <p>
-        T Wang, C Wang, C Qin, L Deng, L Shen, H Xiong<br>
-        <i>ICML 2025 Workshop on Machine Learning for Wireless
-                                                    Communication and , 0</i>
-      </p>
-      <br>
-    </div>
-    <div class="paper">
       <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=1000&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:Cy13deThEpcC">Neural Pontryagin Optimal Controller for Lossy
                                                     Energy Storage with Nonlinear Efficiency</a></h5>
       <p>
         C Gu, H Xiong, Y Chen<br>
         <i>Available at SSRN 5062952,
                                                         0</i>
+      </p>
+      <br>
+    </div>
+  </div>
+</div>
+<div class="row wow slideInUp pub-section" id="section-workshops">
+  <div class="col-md-2">
+    <h4 style="font-size:140%">Workshop Papers</h4>
+  </div>
+  <div class="col-md-10">
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:hrkNWuzUpWwC">Message from the Conference Chairs</a></h5>
+      <p>
+        A Tuzhilin, H Xiong<br>
+        <i>Proceedings-15th IEEE International Conference on
+                                                    Data Mining Workshop, 2016 (<b>ICDMW</b>)</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:isU91gLudPYC">A discovery system for finding high-value homes</a></h5>
+      <p>
+        Y Fu, H Xiong<br>
+        <i>2015 IEEE International Conference on Data Mining
+                                                    Workshop (<b>ICDMW</b>), 1612-1615, 2015</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:CYCckWUYoCcC">Modeling of geographic dependencies for real estate
+                                                    ranking on site selection</a></h5>
+      <p>
+        Y Fu, H Xiong<br>
+        <i>2015 IEEE International Conference on Data Mining
+                                                    Workshop (<b>ICDMW</b>), 1506-1513, 2015</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=600&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:PuOEWVtPfzwC">Sequential Pattern Analysis with Right
+                                                    Granularity</a></h5>
+      <p>
+        C Liu, K Zhang, H Xiong<br>
+        <i>2014 IEEE International Conference on Data Mining
+                                                    Workshop, 1178-1184, 2014 (<b>ICDMW</b>)</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:PyEswDtIyv0C">Collaborative filtering with user ratings and
+                                                    tags</a></h5>
+      <p>
+        T Bao, Y Ge, E Chen, H Xiong, J Tian<br>
+        <i>Proceedings of the 1st International Workshop on
+                                                    Context Discovery and Data, 2012</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:L7CI7m0gUJcC">Stochastic unsupervised learning on unlabeled
+                                                    data</a></h5>
+      <p>
+        C Liu, J Xie, Y Ge, H Xiong<br>
+        <i>Proceedings of ICML Workshop on Unsupervised and
+                                                    Transfer Learning, 111-122, 2012</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=700&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:jU7OWUQzBzMC">Prediction for mobile application usage
+                                                    patterns</a></h5>
+      <p>
+        C Tan, Q Liu, E Chen, H Xiong<br>
+        <i>Nokia MDC Workshop 12, 1,
+                                                        2012</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=900&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:pqnbT2bcN3wC">Enhancing privacy preservation of anonymous
+                                                    location sampling techniques in traffic monitoring systems</a></h5>
+      <p>
+        B Hoh, M Gruteser, H Xiong, A Alrabady<br>
+        <i>2006 Securecomm and Workshops, 1-3 Workshop, 2006</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=1000&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:polMJLZb0X8C">Towards Constraint-aware Learning for Resource
+                                                    Allocation in NFV Networks</a></h5>
+      <p>
+        T Wang, C Wang, C Qin, L Deng, L Shen, H Xiong<br>
+        <i>ICML 2025 Workshop on Machine Learning for Wireless
+                                                    Communication and</i>
+      </p>
+      <br>
+    </div>
+  </div>
+</div>
+<div class="row wow slideInUp pub-section" id="section-patents">
+  <div class="col-md-2">
+    <h4 style="font-size:140%">Patents</h4>
+  </div>
+  <div class="col-md-10">
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=20&amp;pagesize=80&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:jvrRlaHg2sAC">Deoforant ball for shoes</a></h5>
+      <p>
+        H Xiong<br>
+        <i>US Patent App. 19/094,225,
+                                                        2025</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:M7C5BM2v8n8C">Data processing method</a></h5>
+      <p>
+        HAO Siyuan, L Zhang, Z Jingbo, S Zhang, C Qin, H
+                                                    Xiong<br>
+        <i>US Patent App. 18/741,744,
+                                                        2024</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=100&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:djft3U1LymYC">Method and apparatus for controlling traffic light,
+                                                    method and apparatus for navigating unmanned vehicle, and method and
+                                                    apparatus for training model</a></h5>
+      <p>
+        Q Sun, L Zhang, H Xiong, W Zhang, H Yu, Y Mei, W
+                                                    LING<br>
+        <i>US Patent App. 18/503,538,
+                                                        2024</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:d6JCS5z0ckYC">Cross-regional talent flow intention analysis
+                                                    method, electronic device, and storage medium</a></h5>
+      <p>
+        Y Sun, H Zhu, C Qin, P Wang, H Xiong<br>
+        <i>US Patent App. 17/945,168,
+                                                        2023</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:7XUxBq3GufIC">Method and Apparatus for Training Information
+                                                    Adjustment Model of Charging Station, and Storage Medium</a></h5>
+      <p>
+        W Zhang, L Zhang, H Liu, J Han, C Qin, H Zhu, H
+                                                    Xiong<br>
+        <i>US Patent App. 18/125,327,
+                                                        2023</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:E2bRg1zSkIsC">Method of training model and method of determining
+                                                    asset valuation</a></h5>
+      <p>
+        J Liu, YU Sunjie, W Zhang, H Liu, H Zhu, D Dou, H
+                                                    Xiong<br>
+        <i>US Patent App. 18/088,872,
+                                                        2023</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:T_0gP6tLVL0C">Conversational recommendation method, method of
+                                                    training model, device and medium</a></h5>
+      <p>
+        Z Liu, H Liu, H Wu, H Wang, H Xiong<br>
+        <i>US Patent App. 18/059,386,
+                                                        2023</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:anDooRL1HQEC">Interpretation method for neural network model,
+                                                    electronic device and storage medium</a></h5>
+      <p>
+        Y Sun, H Zhu, C Qin, F Zhuang, H Xiong<br>
+        <i>US Patent App. 18/070,775,
+                                                        2023</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:h9G0ZmjYpDoC">Method and apparatus for training path
+                                                    representation model</a></h5>
+      <p>
+        Q Zhang, H Zhu, P Wang, H Liu, H Xiong<br>
+        <i>US Patent App. 17/900,649,
+                                                        2022</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=200&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:Oo_WeVVXg5wC">Information processing method and device</a></h5>
+      <p>
+        LI Shuangli, Z Jingbo<br>
+        <i>US Patent App. 17/565,910,
+                                                        2022</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:gkldIfsazJcC">Method of training prediction model for determining
+                                                    molecular binding force</a></h5>
+      <p>
+        LI Shuangli, Z Jingbo<br>
+        <i>US Patent App. 17/570,416,
+                                                        2022</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:qSd0DAb9jMoC">Method and Device for Determining Correlation
+                                                    Between Drug and Target, and Electronic Device</a></h5>
+      <p>
+        LI Shuangli, Z Jingbo<br>
+        <i>US Patent App. 17/570,505,
+                                                        2022</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:dMpQl7XwOw4C">Point-of-interest recommendation</a></h5>
+      <p>
+        H Liu, W Zhang, D Dou, H Xiong<br>
+        <i>US Patent App. 17/531,132,
+                                                        2022</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:RgznTc0nqo4C">Travel recommendation method, electronic device,
+                                                    and storage medium</a></h5>
+      <p>
+        H Liu, D Zhou, T Xu, H Xiong<br>
+        <i>US Patent App. 17/533,441,
+                                                        2022</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:9VeumLvkZSQC">Intelligent recommendation method and apparatus,
+                                                    model training method and apparatus, electronic device, and storage
+                                                    medium</a></h5>
+      <p>
+        W Zhang, H Liu, D Dou, H Xiong<br>
+        <i>US Patent App. 17/445,905,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:o-PowTg_VKEC">Method and apparatus for recommending point of
+                                                    interest, device, and medium</a></h5>
+      <p>
+        Z Jingbo, H Xiong<br>
+        <i>US Patent App. 17/386,302,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:jKT558fuBk8C">Training method and apparatus of poi recommendation
+                                                    model of interest points, and electronic device</a></h5>
+      <p>
+        Z Jingbo, H Xiong<br>
+        <i>US Patent App. 17/347,418,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:yCjxvIMm6_oC">Parking lot free parking space predicting method,
+                                                    apparatus, electronic device and storage medium</a></h5>
+      <p>
+        W Zhang, H Liu, H Xiong<br>
+        <i>US Patent App. 17/024,421,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:o9ULDYDKYbIC">Land usage property identification method,
+                                                    apparatus, electronic device and storage medium</a></h5>
+      <p>
+        LU Xinjiang, S Huang, H Xiong<br>
+        <i>US Patent App. 17/208,671,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:NnTm98qLMbgC">Method, apparatus, device and storage medium for
+                                                    judging permanent area change</a></h5>
+      <p>
+        YY Li, J Duan, H Xiong<br>
+        <i>US Patent App. 17/022,269,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=300&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:XeErXHja3Z8C">Quantitative analysis method and apparatus for user
+                                                    decision-making behavior</a></h5>
+      <p>
+        LU Xinjiang, HU Renjun<br>
+        <i>US Patent App. 17/128,904,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:uoRD4RTSUPoC">Method and apparatus for recommending a travel
+                                                    plan, device and storage medium</a></h5>
+      <p>
+        H Liu, H Xiong<br>
+        <i>US Patent App. 16/864,458,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:J4E9jCG1tHUC">Method and apparatus for determining hybrid travel
+                                                    route, device and storage medium</a></h5>
+      <p>
+        H Liu, J Duan, H Xiong<br>
+        <i>US Patent App. 16/880,156,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:tgTmbKTkO1IC">Method, Apparatus, Computer Device and Readable
+                                                    Storage Medium for Processing Position Information</a></h5>
+      <p>
+        YY Li, J Duan, H Xiong<br>
+        <i>US Patent App. 16/813,782,
+                                                        2021</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:rOcdG6UcVlcC">Method for Building User Visit Inference Model,
+                                                    Apparatus and Storage Medium</a></h5>
+      <p>
+        YY Li, HU Renjun, J Duan, A JIANG, H Xiong<br>
+        <i>US Patent App. 16/654,343,
+                                                        2020</i>
+      </p>
+      <br>
+    </div>
+    <div class="paper">
+      <h5><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=cVDF1tkAAAAJ&amp;cstart=400&amp;pagesize=100&amp;sortby=pubdate&amp;citation_for_view=cVDF1tkAAAAJ:N4u4nq0IxgcC">Computer-assisted interview method and device based
+                                                    on artificial intelligence, and storage medium</a></h5>
+      <p>
+        D Shen, H Zhu, C Ma, C Zhu, H Xiong<br>
+        <i>US Patent App. 16/406,893,
+                                                        2019</i>
       </p>
       <br>
     </div>
