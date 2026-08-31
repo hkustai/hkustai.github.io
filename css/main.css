@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/pt-serif-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Serif";
+  src: url("../fonts/pt-serif-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Set general fonts */
 html,
 h2,
@@ -11,7 +27,7 @@ div,
 p,
 th,
 td {
-  font-family: "PT Serif", "Quicksand", 'Hiragino Sans GB', Tahoma, Helvetica, Arial, sans-serif;
+  font-family: "PT Serif", 'Hiragino Sans GB', Tahoma, Helvetica, Arial, sans-serif;
 }
 
 body,
@@ -84,16 +100,6 @@ a:visited {
 .fa-bars {
   margin-top: 5px;
   color: grey;
-}
-
-/* Header */
-.header {
-  background-image: url("finalCover.jpeg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  display: block;
 }
 
 /* Description section */
@@ -416,9 +422,23 @@ a:visited {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .animate__animated {
-    animation: none !important;
-    transition: none !important;
-  }
+.paper-search-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 12px 0 8px;
+}
+
+.paper-search-wrap input {
+  width: min(420px, 90%);
+  border: 1px solid #ced4da;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+}
+
+.paper-search-wrap button {
+  border: none;
+  background: #f1f3f5;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
 }

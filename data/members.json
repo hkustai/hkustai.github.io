@@ -1,0 +1,2185 @@
+{
+  "postdocs": [
+    {
+      "name": "Runwei Guan",
+      "affiliation": "hkust",
+      "href": "https://sites.google.com/view/runwei-guan",
+      "photo": "guanrunwei.jpg",
+      "notes": []
+    },
+    {
+      "name": "Junpeng Liu",
+      "affiliation": "hkust",
+      "href": "https://scholar.google.com/citations?user=3Zvbs_QAAAAJ",
+      "photo": "liujunpeng.jpg",
+      "notes": []
+    },
+    {
+      "name": "Jiajun Yao",
+      "affiliation": "hkust",
+      "href": null,
+      "photo": "yaojiajun.jpg",
+      "notes": []
+    },
+    {
+      "name": "Keming Jiao",
+      "affiliation": "hkust",
+      "href": null,
+      "photo": "jiaokeming.jpg",
+      "notes": []
+    },
+    {
+      "name": "Yi Zhou",
+      "affiliation": "hkust",
+      "href": "https://zhouyi1023.github.io/",
+      "photo": "zhouyi.jpg",
+      "notes": []
+    }
+  ],
+  "phd": {
+    "2026": [
+      {
+        "name": "Siru Lin",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "linsiru.jpg",
+        "notes": []
+      },
+      {
+        "name": "Zimo Guo",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "guozimo.jpg",
+        "notes": []
+      },
+      {
+        "name": "Ziyang Rao",
+        "affiliation": "hkust",
+        "href": "https://www.ziyangrao.com/",
+        "photo": "raoziyang.jpg",
+        "notes": []
+      },
+      {
+        "name": "Xingbo Yao",
+        "affiliation": "hkust",
+        "href": "https://yaoxingbo.github.io/",
+        "photo": "yaoxingbo.jpg",
+        "notes": []
+      },
+      {
+        "name": "Shenghao Gao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": null,
+        "notes": []
+      }
+    ],
+    "2025": [
+      {
+        "name": "Heyi Lin",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "linheyi.jpg",
+        "notes": []
+      },
+      {
+        "name": "Haiyi Zhang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhanghaiyi.jpg",
+        "notes": []
+      },
+      {
+        "name": "David Louis Liu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "liudavid.jpg",
+        "notes": []
+      },
+      {
+        "name": "Jiangfeng Zhang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhangjiangfeng.jpg",
+        "notes": []
+      },
+      {
+        "name": "Tianfu Wang",
+        "affiliation": "hkust",
+        "href": "https://tianfuwang.tech/",
+        "photo": "wangtianfu.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yin Wu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "wuyin.jpg",
+        "notes": []
+      },
+      {
+        "name": "Junren Xiao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "xiaojunren.jpg",
+        "notes": []
+      },
+      {
+        "name": "Shu Chen",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "chenshu.jpg",
+        "notes": []
+      },
+      {
+        "name": "Zhijian Wen",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "wenzhijian.jpg",
+        "notes": []
+      },
+      {
+        "name": "Qianyi Cai",
+        "affiliation": "hkust",
+        "href": "https://openreview.net/profile?id=~Qianyi_Cai1",
+        "photo": "caiqianyi.jpg",
+        "notes": []
+      },
+      {
+        "name": "Ruiyao Miao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "miaoruiyao.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yuqing Zhang",
+        "affiliation": "hkust",
+        "href": "https://www.skye-designs.com/",
+        "photo": "zhangyuqing.jpg",
+        "notes": [
+          "Co-supervised by Prof. Mingming Fan"
+        ]
+      },
+      {
+        "name": "Shengzhe Zhang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "zhangshengzhe.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2023"
+        ]
+      },
+      {
+        "name": "Leilei Ding",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "dingleilei.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2022"
+        ]
+      }
+    ],
+    "2024": [
+      {
+        "name": "Cehao Yang",
+        "affiliation": "hkust",
+        "href": "https://cehao628.github.io/",
+        "photo": "yangcehao.jpg",
+        "notes": [
+          "Joint PhD with IDEA"
+        ]
+      },
+      {
+        "name": "Xueyuan Lin",
+        "affiliation": "hkust",
+        "href": "https://linxueyuan.online/",
+        "photo": "linxueyuan.jpg",
+        "notes": [
+          "Joint PhD with IDEA"
+        ]
+      },
+      {
+        "name": "Meixi Chen",
+        "affiliation": "hkust",
+        "href": "https://meixichentracy.github.io/",
+        "photo": "chenmeixi.jpg",
+        "notes": [
+          "Co-supervised by Prof. Ying-Cong Chen"
+        ]
+      },
+      {
+        "name": "Yi Cui",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "cuiyi.jpg",
+        "notes": []
+      },
+      {
+        "name": "Tiefu Cai",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "caitiefu.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yijie Xu",
+        "affiliation": "hkust",
+        "href": "https://yjx.me",
+        "photo": "xuyijie.jpg",
+        "notes": []
+      },
+      {
+        "name": "Zihan Wang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "wangzihan.jpg",
+        "notes": []
+      },
+      {
+        "name": "Jiujiu Chen",
+        "affiliation": "hkust",
+        "href": "https://openreview.net/profile?id=~Jiujiu_Chen1",
+        "photo": "chenjiujiu.jpg",
+        "notes": [
+          "Co-supervised by Prof. Sihong Xie"
+        ]
+      },
+      {
+        "name": "Zhaofan Zhang",
+        "affiliation": "hkust",
+        "href": "https://zhangzhaofan.github.io/",
+        "photo": "zhangzhaofan.jpg",
+        "notes": [
+          "Co-supervised by Prof. Sihong Xie"
+        ]
+      },
+      {
+        "name": "Huizai Yao",
+        "affiliation": "hkust",
+        "href": "https://huizaivictoryao.github.io/",
+        "photo": "yaohuizai.jpg",
+        "notes": []
+      },
+      {
+        "name": "Pengteng Li",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=u--xUoIAAAAJ",
+        "photo": "lipengteng.jpg",
+        "notes": []
+      },
+      {
+        "name": "Fan Liu",
+        "affiliation": "hkust",
+        "href": "https://luckyfan-cs.github.io/",
+        "photo": "liufan.jpg",
+        "notes": [
+          "Co-supervised by Prof. Hao Liu"
+        ]
+      },
+      {
+        "name": "Wei Wu",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "wuwei.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2022"
+        ]
+      },
+      {
+        "name": "Yunchu Bai",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "baiyunchu.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2022"
+        ]
+      }
+    ],
+    "2023": [
+      {
+        "name": "Shiya Zeng",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zengshiya.jpg",
+        "notes": []
+      },
+      {
+        "name": "Kaichen Zhang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhangkaichen.jpg",
+        "notes": []
+      },
+      {
+        "name": "Zidong Cao",
+        "affiliation": "hkust",
+        "href": "https://caozidong.github.io/",
+        "photo": "caozidong.jpg",
+        "notes": []
+      },
+      {
+        "name": "Selina Wong",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "wongselina.jpg",
+        "notes": []
+      },
+      {
+        "name": "Minghao Yang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "yangminghao.jpg",
+        "notes": []
+      },
+      {
+        "name": "Siyang Li",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=oXA7mVEAAAAJ",
+        "photo": "lisiyang.jpg",
+        "notes": [
+          "Co-supervised by Prof. Yize Chen"
+        ]
+      },
+      {
+        "name": "Haoran Xin",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=IIUxf68AAAAJ",
+        "photo": "xinhaoran.jpg",
+        "notes": [
+          "Co-supervised by Prof. Ying Sun"
+        ]
+      },
+      {
+        "name": "Zheng Gong",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=CQuOLaUAAAAJ",
+        "photo": "gongzheng.jpg",
+        "notes": [
+          "Co-supervised by Prof. Ying Sun"
+        ]
+      },
+      {
+        "name": "Haotian Bai",
+        "affiliation": "hkust",
+        "href": "https://hbai98.github.io/",
+        "photo": "baihaotian.jpg",
+        "notes": []
+      },
+      {
+        "name": "Wenzong Ma",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "mawenzong.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yinghui Xia",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "xiayinghui.jpg",
+        "notes": []
+      },
+      {
+        "name": "Dicong Qiu",
+        "affiliation": "hkust",
+        "href": "https://davidqiu.com",
+        "photo": "qiudicong.jpg",
+        "notes": [
+          "Co-supervised by Prof. Junwei Liang"
+        ]
+      },
+      {
+        "name": "Hao Xiong",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "xionghao.jpg",
+        "notes": [
+          "Co-supervised by Prof. Jiadong Yu"
+        ]
+      },
+      {
+        "name": "Shuyao Wang",
+        "affiliation": "ustc",
+        "href": "https://scholar.google.com/citations?user=wxZLbL0AAAAJ",
+        "photo": "wangshuyao.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2021"
+        ]
+      },
+      {
+        "name": "Xi Chen",
+        "affiliation": "ustc",
+        "href": "https://scholar.google.com/citations?user=ktpjw_EAAAAJ",
+        "photo": "chenxi.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2021"
+        ]
+      }
+    ],
+    "2022": [
+      {
+        "name": "Jinjing Zhu",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=EVpo9eQAAAAJ",
+        "photo": "zhujinjing.jpg",
+        "notes": []
+      },
+      {
+        "name": "Wenzhao Jiang",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=MxrzJswAAAAJ",
+        "photo": "jiangwenzhao.jpg",
+        "notes": [
+          "Co-supervised by Prof. Hao Liu"
+        ]
+      },
+      {
+        "name": "Fuling Wang",
+        "affiliation": "hkust",
+        "href": "https://openreview.net/profile?id=~Fuling_WANG3",
+        "photo": "wangfuling.jpg",
+        "notes": [
+          "Co-supervised by Prof. Ying Sun"
+        ]
+      },
+      {
+        "name": "He Zhang",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=SnTE2BYAAAAJ",
+        "photo": "zhanghe.jpg",
+        "notes": [
+          "Co-supervised by Prof. Ying Sun"
+        ]
+      },
+      {
+        "name": "Weiyu Guo",
+        "affiliation": "hkust",
+        "href": "https://weiyuguo.com",
+        "photo": "guoweiyu.jpg",
+        "notes": [
+          "Co-supervised by Prof. Ying Sun"
+        ]
+      },
+      {
+        "name": "Yunfan Lu",
+        "affiliation": "hkust",
+        "href": "https://yunfanlu.github.io/",
+        "photo": "luyunfan.jpg",
+        "notes": []
+      },
+      {
+        "name": "Weijia Zhang",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=lSi3CIoAAAAJ",
+        "photo": "zhangweijia.jpg",
+        "notes": [
+          "Co-supervised by Prof. Hao Liu"
+        ]
+      },
+      {
+        "name": "Chengyang Gu",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=sDZf3BgAAAAJ",
+        "photo": "guchengyang.jpg",
+        "notes": [
+          "Co-supervised by Prof. Yize Chen"
+        ]
+      },
+      {
+        "name": "Lu Dai",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=_A6E8eEAAAAJ",
+        "photo": "dailu.jpg",
+        "notes": [
+          "Co-supervised by Prof. Hao Liu"
+        ]
+      },
+      {
+        "name": "Yuyang Wang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "wangyuyang.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2020"
+        ]
+      },
+      {
+        "name": "Congxi Xiao",
+        "affiliation": "ustc",
+        "href": "https://scholar.google.com/citations?user=Sw9j0rIAAAAJ",
+        "photo": "xiaocongxi.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2020"
+        ]
+      }
+    ],
+    "2021": [
+      {
+        "name": "Hao Wu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "wuhao.jpg",
+        "notes": []
+      },
+      {
+        "name": "Qian Sun",
+        "affiliation": "hkust",
+        "href": "https://openreview.net/profile?id=~Qian_Sun4",
+        "photo": "sunqian.jpg",
+        "notes": []
+      },
+      {
+        "name": "Chen Zhu",
+        "affiliation": "ustc",
+        "href": "https://zczc.github.io/",
+        "photo": "zhuchen.jpg",
+        "notes": [
+          "M.S. 2015",
+          "Ph.D. Student (Part-time)"
+        ]
+      }
+    ]
+  },
+  "masters": {
+    "2026": [
+      {
+        "name": "Zongyang Qiu",
+        "affiliation": "hkust",
+        "href": "https://zane-zyqiu.github.io/",
+        "photo": "qiuzongyang.jpg",
+        "notes": []
+      },
+      {
+        "name": "Junyi Zhang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhangjunyi.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yilin Jiang",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=jQgjkBwAAAAJ",
+        "photo": "jiangyilin.jpg",
+        "notes": []
+      },
+      {
+        "name": "Zhenye Lou",
+        "affiliation": "hkust",
+        "href": "https://leonlou921.github.io/",
+        "photo": "louzhenye.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yuhan Li",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "liyuhan.jpg",
+        "notes": []
+      },
+      {
+        "name": "Jialong Zheng",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": null,
+        "notes": []
+      },
+      {
+        "name": "Zhiyi Li",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "lizhiyi.jpg",
+        "notes": []
+      },
+      {
+        "name": "Tianle Mei",
+        "affiliation": "hkust",
+        "href": "https://rafe.one",
+        "photo": "meitianle.jpg",
+        "notes": []
+      },
+      {
+        "name": "Menglong Li",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "limenglong.jpg",
+        "notes": []
+      },
+      {
+        "name": "Liang Sun",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "sunliang.jpg",
+        "notes": []
+      },
+      {
+        "name": "Jingxuan Xiao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "xiaojingxuan.jpg",
+        "notes": []
+      }
+    ],
+    "2025": [
+      {
+        "name": "Haiqi Jiang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "jianghaiqi.jpg",
+        "notes": []
+      },
+      {
+        "name": "Fanpu Cao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "caofanpu.jpg",
+        "notes": []
+      },
+      {
+        "name": "Xiaoyu Chen",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "chenxiaoyu.jpg",
+        "notes": []
+      },
+      {
+        "name": "Hanqing Wang",
+        "affiliation": "hkust",
+        "href": "https://hq-king.github.io/",
+        "photo": "wanghanqing.jpg",
+        "notes": []
+      },
+      {
+        "name": "Chengwei Ma",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "machengwei.jpg",
+        "notes": []
+      },
+      {
+        "name": "Songyang Gao",
+        "affiliation": "hkust",
+        "href": "https://songyang0603.github.io/",
+        "photo": "gaosongyang.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yanzong Zheng",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhengyanzong.jpg",
+        "notes": []
+      },
+      {
+        "name": "Donglong Lin",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "lindonglong.jpg",
+        "notes": []
+      },
+      {
+        "name": "Tengjun Huang",
+        "affiliation": "hkust",
+        "href": "https://seekerhuang.github.io/",
+        "photo": "huangtengjun.jpg",
+        "notes": []
+      },
+      {
+        "name": "Linxiao Gong",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "gonglinxiao.jpg",
+        "notes": []
+      },
+      {
+        "name": "Miao Zhang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhangmiao.jpg",
+        "notes": []
+      },
+      {
+        "name": "Ziluo Lin",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "linziluo.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yuhan Xu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "xuyuhan.jpg",
+        "notes": []
+      },
+      {
+        "name": "Xiaomin Yu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "yuxiaomin.jpg",
+        "notes": []
+      },
+      {
+        "name": "Bochen Ye",
+        "affiliation": "hkust",
+        "href": "https://codeebots.com",
+        "photo": "yebochen.jpg",
+        "notes": []
+      },
+      {
+        "name": "Luyu Zhu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhuluyu.jpg",
+        "notes": []
+      },
+      {
+        "name": "Junjie Meng",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "mengjunjie.jpg",
+        "notes": []
+      },
+      {
+        "name": "Hongzuo Shi",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "shihongzuo.jpg",
+        "notes": []
+      },
+      {
+        "name": "Xiaoguang Wu",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "wuxiaoguang.jpg",
+        "notes": []
+      },
+      {
+        "name": "Hanlin Wang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "wanghanlin.jpg",
+        "notes": []
+      }
+    ],
+    "2024": [
+      {
+        "name": "Sisuo Lyu",
+        "affiliation": "hkust",
+        "href": "https://sisuolv.github.io/",
+        "photo": "lyusisuo.jpg",
+        "notes": []
+      },
+      {
+        "name": "Sirong Lu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "lusirong.jpg",
+        "notes": []
+      },
+      {
+        "name": "Hao Wang",
+        "affiliation": "hkust",
+        "href": "https://figerhaowang.github.io/",
+        "photo": "wanghao.jpg",
+        "notes": []
+      },
+      {
+        "name": "Shaoguang Wang",
+        "affiliation": "hkust",
+        "href": "https://shaoguangwang.github.io/",
+        "photo": "wangshaoguang.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yusen Ma",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "mayusen.jpg",
+        "notes": []
+      },
+      {
+        "name": "Chenhui Cui",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "cuichenhui.jpg",
+        "notes": []
+      },
+      {
+        "name": "Yu Shi",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "shiyu.jpg",
+        "notes": []
+      },
+      {
+        "name": "Jinghong Liu",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "liujinghong.jpg",
+        "notes": []
+      },
+      {
+        "name": "Wenyuan Jiang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "jiangwenyuan.jpg",
+        "notes": []
+      }
+    ],
+    "2023": [
+      {
+        "name": "Yiyan Shen",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "yiyanshen.jpg",
+        "notes": []
+      }
+    ]
+  },
+  "placementsPhd": {
+    "2023": [
+      {
+        "name": "Jiechao Guan",
+        "affiliation": "hkust",
+        "href": "https://cse.sysu.edu.cn/en/teacher/GuanJiechao",
+        "photo": "guanjiechao.jpg",
+        "notes": [
+          "Associate Professor",
+          "Sun Yat-sen University"
+        ]
+      },
+      {
+        "name": "Shuai Jiang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "jiangshuai.jpg",
+        "notes": [
+          "Professor",
+          "Northwestern Polytechnical University"
+        ]
+      }
+    ],
+    "2022": [
+      {
+        "name": "Chao Wang",
+        "affiliation": "hkust",
+        "href": "https://chaowang-ustc.github.io/",
+        "photo": "wangchao.jpg",
+        "notes": [
+          "Tenure-track Associate Professor",
+          "USTC"
+        ]
+      },
+      {
+        "name": "Ziyue Qiao",
+        "affiliation": "hkust",
+        "href": "https://qiaoziyue.com/",
+        "photo": "qiaoziyue.jpg",
+        "notes": [
+          "Assistant Professor",
+          "Great Bay University"
+        ]
+      },
+      {
+        "name": "Jinliang Deng",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com.hk/citations?user=4lqwlQ0AAAAJ&oi=ao",
+        "photo": "dengjinliang.jpg",
+        "notes": [
+          "Tenure-Track Professor",
+          "Beihang University"
+        ]
+      },
+      {
+        "name": "Liyi Chen",
+        "affiliation": "ustc",
+        "href": "https://home.ustc.edu.cn/~liyichen/",
+        "photo": "chenliyi.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2020",
+          "Xiaohongshu Inc., Beijing"
+        ]
+      }
+    ],
+    "2021": [
+      {
+        "name": "Jindong Han",
+        "affiliation": "hkust",
+        "href": "https://hanjindong.github.io/",
+        "photo": "hanjindong.jpg",
+        "notes": [
+          "Associate Professor",
+          "Shandong University"
+        ]
+      },
+      {
+        "name": "Shuangli Li",
+        "affiliation": "ustc",
+        "href": "https://agave233.github.io/",
+        "photo": "lishuangli.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2019",
+          "ByteDance",
+          "Shanghai"
+        ]
+      },
+      {
+        "name": "Zhi Zheng",
+        "affiliation": "ustc",
+        "href": "https://zhengzhi-1997.github.io/",
+        "photo": "zhengzhi.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2019",
+          "Postdoctoral Researcher",
+          "USTC"
+        ]
+      }
+    ],
+    "2020": [
+      {
+        "name": "Yuyang Ye",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "yeyuyang.jpg",
+        "notes": [
+          "Data Scientist",
+          "Tiktok, San Jose"
+        ]
+      },
+      {
+        "name": "Le Dai",
+        "affiliation": "ustc",
+        "href": "https://scholar.google.com/citations?user=isVr4tUAAAAJ",
+        "photo": "daile.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2018",
+          "Tencent",
+          "Shenzhen"
+        ]
+      },
+      {
+        "name": "Dazhong Shen",
+        "affiliation": "ustc",
+        "href": "https://www.shendazhong.com/",
+        "photo": "shendazhong.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2018",
+          "Associate Professor",
+          "Nanjing University of Aeronautics and Astronautics"
+        ]
+      }
+    ],
+    "2019": [
+      {
+        "name": "Qi Zhang",
+        "affiliation": "ustc",
+        "href": "https://scholar.google.com/citations?user=slNK5d0AAAAJ",
+        "photo": "zhangqi.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2017",
+          "Postdoc",
+          "Shanghai AI Lab"
+        ]
+      },
+      {
+        "name": "Shengming Zhang",
+        "affiliation": "rutgers",
+        "href": "https://openreview.net/profile?id=~Shengming_Zhang1",
+        "photo": "zhangshengming.jpg",
+        "notes": [
+          "Postdoc",
+          "Chinese Academy of Medical Sciences & Peking Union Medical College",
+          "Hospital"
+        ]
+      }
+    ],
+    "2018": [
+      {
+        "name": "Le Zhang",
+        "affiliation": "ustc",
+        "href": "https://zhangle09.github.io/",
+        "photo": "zhangle.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2016",
+          "Baidu Research, Beijing"
+        ]
+      },
+      {
+        "name": "Chao Wang",
+        "affiliation": "hkust",
+        "href": "https://chaowang-ustc.github.io/",
+        "photo": "wangchao.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2016",
+          "Tenure-track Associate Professor",
+          "USTC"
+        ]
+      },
+      {
+        "name": "Zixuan Yuan",
+        "affiliation": "rutgers",
+        "href": "https://yuanzx33033.github.io/zixuan/",
+        "photo": "yuanzixuan.jpg",
+        "notes": [
+          "Assistant Professor",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Denghui Zhang",
+        "affiliation": "rutgers",
+        "href": "https://zhangdenghui.site/",
+        "photo": "zhangdenghui.jpg",
+        "notes": [
+          "Assistant Professor",
+          "Stevens Institute of Technology"
+        ]
+      }
+    ],
+    "2017": [
+      {
+        "name": "Chuan Qin",
+        "affiliation": "ustc",
+        "href": "https://dylan-qin.github.io/",
+        "photo": "qinchuan.jpg",
+        "notes": [
+          "Master–PhD program",
+          "Master entry 2015",
+          "Associate Professor",
+          "Computer Network Information Center, CAS"
+        ]
+      }
+    ],
+    "2016": [
+      {
+        "name": "Mingfei Teng",
+        "affiliation": "rutgers",
+        "href": null,
+        "photo": "tengmingfei.jpg",
+        "notes": [
+          "Applied Scientist",
+          "Amazon"
+        ]
+      },
+      {
+        "name": "Yanchi Liu",
+        "affiliation": "rutgers",
+        "href": "https://yanchiliu.github.io/",
+        "photo": "liuyanchi.jpg",
+        "notes": [
+          "Research Staff Member",
+          "NEC Research Lab"
+        ]
+      }
+    ],
+    "2015": [
+      {
+        "name": "Junming Liu",
+        "affiliation": "rutgers",
+        "href": "https://www.is.cityu.edu.hk/staff/junmiliu/",
+        "photo": "liujunming.jpg",
+        "notes": [
+          "Associate Professor",
+          "City University of Hong Kong"
+        ]
+      }
+    ],
+    "2014": [
+      {
+        "name": "Qingxin Meng",
+        "affiliation": "rutgers",
+        "href": "https://research.nottingham.edu.cn/en/persons/qingxin-meng",
+        "photo": "mengqingxin.jpg",
+        "notes": [
+          "Assistant Professor",
+          "University of Nottingham Ningbo",
+          "China"
+        ]
+      }
+    ],
+    "2013": [
+      {
+        "name": "Farid Razzak",
+        "affiliation": "rutgers",
+        "href": null,
+        "photo": "razzakfarid.jpg",
+        "notes": [
+          "Financial Quantitative Data Scientist (SME)",
+          "U.S. SEC"
+        ]
+      },
+      {
+        "name": "Hao Zhong",
+        "affiliation": "rutgers",
+        "href": "https://hzhong.site/",
+        "photo": "zhonghao.jpg",
+        "notes": [
+          "Associate Professor",
+          "ESCP Business School (Paris)"
+        ]
+      },
+      {
+        "name": "Can Chen",
+        "affiliation": "rutgers",
+        "href": null,
+        "photo": "chencan.jpg",
+        "notes": [
+          "Chairperson of the Board",
+          "LineZone Data"
+        ]
+      }
+    ],
+    "2012": [
+      {
+        "name": "Constantine Vitt",
+        "affiliation": "rutgers",
+        "href": null,
+        "photo": "vittconstantine.jpg",
+        "notes": [
+          "Vice President of Data Science",
+          "Relay Delivery"
+        ]
+      },
+      {
+        "name": "Jingyuan Yang",
+        "affiliation": "rutgers",
+        "href": "https://business.gmu.edu/profiles/jyang53",
+        "photo": "yangjingyuan.jpg",
+        "notes": [
+          "Assistant Professor",
+          "George Mason University"
+        ]
+      },
+      {
+        "name": "Yanjie Fu",
+        "affiliation": "rutgers",
+        "href": "https://faculty.engineering.asu.edu/yanjiefu/",
+        "photo": "fuyanjie.jpg",
+        "notes": [
+          "Associate Professor",
+          "Arizona State University"
+        ]
+      }
+    ],
+    "2011": [
+      {
+        "name": "Zijun Yao",
+        "affiliation": "rutgers",
+        "href": "https://ittc.ku.edu/~zyao/",
+        "photo": "yaozijun.jpg",
+        "notes": [
+          "Assistant Professor",
+          "University of Kansas",
+          "Formally IBM",
+          "Research"
+        ]
+      },
+      {
+        "name": "Bin Liu",
+        "affiliation": "rutgers",
+        "href": "https://binbenliu.github.io/",
+        "photo": "liubin.jpg",
+        "notes": [
+          "Associate Professor",
+          "West Virginia University"
+        ]
+      },
+      {
+        "name": "Chuanren Liu",
+        "affiliation": "rutgers",
+        "href": "https://datamining.utk.edu/",
+        "photo": "liuchuanren.jpg",
+        "notes": [
+          "Associate Professor",
+          "University of Tennessee"
+        ]
+      }
+    ],
+    "2010": [
+      {
+        "name": "Meng Qu",
+        "affiliation": "rutgers",
+        "href": "https://www.business.rutgers.edu/faculty/meng-qu",
+        "photo": "qumeng.jpg",
+        "notes": [
+          "Assistant Professor of Professional Practice",
+          "Rutgers University",
+          "University"
+        ]
+      }
+    ],
+    "2009": [
+      {
+        "name": "Zhongmou Li",
+        "affiliation": "rutgers",
+        "href": null,
+        "photo": "lizhongmou.jpg",
+        "notes": [
+          "Staff ML Engineer",
+          "Reddit"
+        ]
+      },
+      {
+        "name": "Keli Xiao",
+        "affiliation": "rutgers",
+        "href": "https://www.stonybrook.edu/commcms/business/about/_faculty/profile/kxiao",
+        "photo": "xiaokeli.jpg",
+        "notes": [
+          "Associate Professor",
+          "Stony Brook University"
+        ]
+      }
+    ],
+    "2008": [
+      {
+        "name": "Yong Ge",
+        "affiliation": "rutgers",
+        "href": "https://eller.arizona.edu/people/yong-ge",
+        "photo": "geyong.jpg",
+        "notes": [
+          "Associate Professor",
+          "University of Arizona"
+        ]
+      }
+    ],
+    "2006": [
+      {
+        "name": "Wenjun Zhou",
+        "affiliation": "rutgers",
+        "href": "https://volweb.utk.edu/~wzhou4/",
+        "photo": "zhouwenjun.jpg",
+        "notes": [
+          "Professor",
+          "University of Tennessee"
+        ]
+      }
+    ]
+  },
+  "placementsMaster": {
+    "2024": [
+      {
+        "name": "Jianxiang He",
+        "affiliation": "hkust",
+        "href": "https://jacksonha7.github.io/",
+        "photo": "hejianxiang.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "MBZUAI"
+        ]
+      },
+      {
+        "name": "Zeyun Deng",
+        "affiliation": "hkust",
+        "href": "https://zeyun-deng.github.io/",
+        "photo": "dengzeyun.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "UC Berkeley"
+        ]
+      },
+      {
+        "name": "Xingbo Yao",
+        "affiliation": "hkust",
+        "href": "https://yaoxingbo.github.io/",
+        "photo": "yaoxingbo.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      }
+    ],
+    "2023": [
+      {
+        "name": "Yin Wu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "wuyin.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Shu Chen",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "chenshu.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Qianyi Cai",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "caiqianyi.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Junren Xiao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "xiaojunren.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Mingze Gao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "gaomingze.jpg",
+        "notes": [
+          "Data Scientist",
+          "Xiaohongshu (Rednote)"
+        ]
+      },
+      {
+        "name": "Yiqian Yang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": null,
+        "notes": []
+      },
+      {
+        "name": "Shenghao Gao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": null,
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Yuqi Zhou",
+        "affiliation": "hkust",
+        "href": "https://wobbly-aster-254.notion.site/YUQI-ZHOU-s-Portfolio-207884458793808099bde7447609af98",
+        "photo": "zhouyuqi.jpg",
+        "notes": [
+          "Investment Analyst",
+          "Plum Ventures (Beijing & Shenzhen)"
+        ]
+      },
+      {
+        "name": "Shuang Wang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "wangshuang.jpg",
+        "notes": [
+          "Digital Systems & Software Development Engineer",
+          "ZTE (Shenzhen)"
+        ]
+      },
+      {
+        "name": "Ziyang Rao",
+        "affiliation": "hkust",
+        "href": "https://www.ziyangrao.com/",
+        "photo": "raoziyang.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Yiyu Chen",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "chenyiyu.jpg",
+        "notes": [
+          "Information & Communications",
+          "China Southern Power Grid"
+        ]
+      },
+      {
+        "name": "Yuqi Hu",
+        "affiliation": "hkust",
+        "href": "https://aleeehu.github.io/",
+        "photo": "huyuqi.jpg",
+        "notes": []
+      },
+      {
+        "name": "Junyi Li",
+        "affiliation": "hkust",
+        "href": "https://terrylee77.github.io/",
+        "photo": "lijunyi.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Ting Zeng",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zengting.jpg",
+        "notes": []
+      },
+      {
+        "name": "Ruochong Li",
+        "affiliation": "hkust",
+        "href": "https://openreview.net/profile?id=~Ruochong_Li1",
+        "photo": "liruochong.jpg",
+        "notes": [
+          "Embodied AI Algorithm Engineer & PM",
+          "Lingchu Intelligence"
+        ]
+      },
+      {
+        "name": "Ling Wang",
+        "affiliation": "hkust",
+        "href": "https://daviswang0.github.io/",
+        "photo": "wangling.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "The Hong Kong Polytechnic University"
+        ]
+      },
+      {
+        "name": "Zhengyu Hu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "huzhengyu.jpg",
+        "notes": [
+          "Visiting Student",
+          "University of Cambridge"
+        ]
+      },
+      {
+        "name": "Zhao Xu",
+        "affiliation": "hkust",
+        "href": "https://zhaohsu.top/",
+        "photo": "xuzhao.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "University of California",
+          "Los Angeles"
+        ]
+      },
+      {
+        "name": "Hongbin Lin",
+        "affiliation": "hkust",
+        "href": "https://openreview.net/profile?id=~Hongbin_Lin4",
+        "photo": "linhongbin.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Tianhui Ma",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "matianhui.jpg",
+        "notes": [
+          "Kuaishou Inc."
+        ]
+      },
+      {
+        "name": "Yongwen Ren",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "renyongwen.jpg",
+        "notes": [
+          "Tencent",
+          "AI Data Department",
+          "Hunyuan Data Team"
+        ]
+      }
+    ],
+    "2022": [
+      {
+        "name": "Cehao Yang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "yangcehao.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Tiefu Cai",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "caitiefu.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Yijie Xu",
+        "affiliation": "hkust",
+        "href": "https://yjx.me",
+        "photo": "xuyijie.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Yiran Chen",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "chenyiran.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "Fudan University"
+        ]
+      },
+      {
+        "name": "Liangliang Qiang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "qiangliangliang.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "Tsinghua",
+          "University"
+        ]
+      },
+      {
+        "name": "Kai Zhao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhaokai.jpg",
+        "notes": [
+          "Data Scientist",
+          "Cigna Healthcare"
+        ]
+      },
+      {
+        "name": "Junjie Zhao",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhaojunjie.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "University of Hong",
+          "Kong"
+        ]
+      },
+      {
+        "name": "Zhouyi Zhang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "zhangzhouyi.jpg",
+        "notes": [
+          "AIGC Algorithm Engineer",
+          "Miracle",
+          "Miles"
+        ]
+      },
+      {
+        "name": "Jinhui Ye",
+        "affiliation": "hkust",
+        "href": "https://jhuiye.com/",
+        "photo": "yejinhui.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST"
+        ]
+      },
+      {
+        "name": "Wenzhi Li",
+        "affiliation": "hkust",
+        "href": "https://wenzhilics.github.io/",
+        "photo": "liwenzhi.jpg",
+        "notes": [
+          "Visiting Masters' Student",
+          "Ph.D. Student",
+          "Cornell University"
+        ]
+      },
+      {
+        "name": "Shasha Hu",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "hushasha.jpg",
+        "notes": [
+          "Gap Year"
+        ]
+      },
+      {
+        "name": "Tianfu Wang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "wangtianfu.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      }
+    ],
+    "2021": [
+      {
+        "name": "Siyuan Hao",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "haosiyuan.jpg",
+        "notes": [
+          "Tencent Shenzhen"
+        ]
+      },
+      {
+        "name": "Feihu Jiang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "jiangfeihu.jpg",
+        "notes": [
+          "Alibaba International"
+        ]
+      },
+      {
+        "name": "Yuhan Ye",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": null,
+        "notes": [
+          "Baidu"
+        ]
+      },
+      {
+        "name": "Haoyang Duan",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "duanhaoyang.jpg",
+        "notes": [
+          "Kuaishou"
+        ]
+      }
+    ],
+    "2020": [
+      {
+        "name": "Lijun Zha",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "zhalijun.jpg",
+        "notes": [
+          "Meituan"
+        ]
+      },
+      {
+        "name": "Xiangyang Liu",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "liuxiangyang.jpg",
+        "notes": [
+          "JD.com"
+        ]
+      },
+      {
+        "name": "Yucheng Liu",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "liuyucheng.jpg",
+        "notes": [
+          "Joint program, SJTU & NUS"
+        ]
+      },
+      {
+        "name": "Haoran Xin",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "xinhaoran.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Linlang Jiang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "jianglinlang.jpg",
+        "notes": [
+          "Kunlunxin; Alibaba Cloud"
+        ]
+      }
+    ],
+    "2019": [
+      {
+        "name": "Zhe Zhang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "zhangzhe.jpg",
+        "notes": [
+          "Wuxi Municipal Medical Security Bureau"
+        ]
+      },
+      {
+        "name": "Miao Chen",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "chenmiao.jpg",
+        "notes": [
+          "Future Life Lab, Taobao and Tmall Group"
+        ]
+      },
+      {
+        "name": "Linkang Hu",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": null,
+        "notes": [
+          "Huawei"
+        ]
+      }
+    ],
+    "2018": [
+      {
+        "name": "Ding Zhou",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "zhouding.jpg",
+        "notes": [
+          "Tencent WeChat"
+        ]
+      },
+      {
+        "name": "Weijia Zhang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "zhangweijia.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      }
+    ],
+    "2017": [
+      {
+        "name": "Yuyang Ye",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "yeyuyang.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "Rutgers University"
+        ]
+      },
+      {
+        "name": "Yanan Wang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": null,
+        "notes": [
+          "Ph.D. Student",
+          "University of Arizona"
+        ]
+      }
+    ],
+    "2016": [
+      {
+        "name": "Xunxian Wu",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "wuxunxian.jpg",
+        "notes": [
+          "Shopee Shanghai"
+        ]
+      }
+    ]
+  },
+  "visiting": [
+    {
+      "name": "Huijie Liu",
+      "year": "2024",
+      "position": "Visiting Student"
+    },
+    {
+      "name": "Wen Gao",
+      "year": "2024",
+      "position": "Visiting Student"
+    },
+    {
+      "name": "Jianping Zhu",
+      "year": "2024",
+      "position": "Visiting Student"
+    },
+    {
+      "name": "Yuanbo Xu",
+      "year": "2017-2019",
+      "position": "Visiting Student, Jilin University; Now Assistant Professor"
+    },
+    {
+      "name": "Ning Fu",
+      "year": "2018-2019",
+      "position": "Visiting Professor, Northwestern Polytechnical University"
+    },
+    {
+      "name": "Yang Yang",
+      "year": "2018-2019",
+      "position": "Visiting Professor, Nanjing University of Science and Technology"
+    },
+    {
+      "name": "Nengjun Zhu",
+      "year": "2018-2019",
+      "position": "Visiting Student, Shanghai Jiao Tong University"
+    },
+    {
+      "name": "Dawen Xia",
+      "year": "2019",
+      "position": "Visiting Professor, Guizhou Minzu University"
+    },
+    {
+      "name": "Yunfeng Xu",
+      "year": "2019",
+      "position": "Visiting Professor"
+    },
+    {
+      "name": "Haoyi Zhou",
+      "year": "2019",
+      "position": "Visiting Student, Beihang University"
+    },
+    {
+      "name": "Xiaonan Gao",
+      "year": "2019",
+      "position": "Visiting Student, Beijing Institute of Technology"
+    },
+    {
+      "name": "Shan Jiang",
+      "year": "2019",
+      "position": "Visiting Student, Tianjin University"
+    },
+    {
+      "name": "Xiaolong Deng",
+      "year": "2018",
+      "position": "Visiting Professor, Beijing University of Posts and Telecommunications"
+    },
+    {
+      "name": "Fei Yi",
+      "year": "2017-2018",
+      "position": "Visiting Student, Huawei; Now Researcher"
+    },
+    {
+      "name": "Jingjing Gu",
+      "year": "2017-2018",
+      "position": "Visiting Professor, Nanjing University of Aeronautics & Astronautics"
+    },
+    {
+      "name": "Fuzhen Zhuang",
+      "year": "2017-2018",
+      "position": "Visiting Professor, Institute of Computing Technology, CAS"
+    },
+    {
+      "name": "Xiping Liu",
+      "year": "2017-2018",
+      "position": "Visiting Professor, Jiangxi University of Finance and Economics"
+    },
+    {
+      "name": "Ya Yang",
+      "year": "2017-2018",
+      "position": "Visiting Professor, Beijing University of Posts and Telecommunications"
+    },
+    {
+      "name": "Xiaoyi Deng",
+      "year": "2017-2018",
+      "position": "Visiting Professor, Huaqiao University"
+    },
+    {
+      "name": "Xiao Zhang",
+      "year": "2017-2018",
+      "position": "Visiting Student, PhD, Nanjing University"
+    },
+    {
+      "name": "Kun Yuan",
+      "year": "2017-2018",
+      "position": "Visiting Student, PhD, Beihang University"
+    },
+    {
+      "name": "Renjun Hu",
+      "year": "2017-2018",
+      "position": "Visiting Student, PhD, Beihang University"
+    },
+    {
+      "name": "Haochao Ying",
+      "year": "2017-2018",
+      "position": "Visiting Student, PhD, Zhejiang University"
+    },
+    {
+      "name": "Huang Xu",
+      "year": "2015-2017",
+      "position": "Visiting Student, PhD, Northwestern Polytechnical University"
+    },
+    {
+      "name": "Pengpeng Zhao",
+      "year": "2016-2017",
+      "position": "Visiting Professor, Soochow University"
+    },
+    {
+      "name": "Deqing Wang",
+      "year": "2016-2017",
+      "position": "Visiting Professor, Beihang University"
+    },
+    {
+      "name": "Chen Zhang",
+      "year": "2016-2017",
+      "position": "Visiting Professor, Institute of Software, CAS"
+    },
+    {
+      "name": "Huang Li",
+      "year": "2016-2017",
+      "position": "Visiting Professor, South-Central University for Nationalities"
+    },
+    {
+      "name": "Rui Ding",
+      "year": "2016-2017",
+      "position": "Visiting Student (Master)"
+    },
+    {
+      "name": "Shuying Liu",
+      "year": "2017",
+      "position": "Master"
+    },
+    {
+      "name": "Xinjiang Lu",
+      "year": "2014-2016",
+      "position": "Visiting Student, PhD, Northwestern Polytechnical University"
+    },
+    {
+      "name": "Jie Liu",
+      "year": "2015-2016",
+      "position": "Visiting Professor, Nankai University"
+    },
+    {
+      "name": "Yaoyao Zuo",
+      "year": "2015-2016",
+      "position": "Visiting Professor, Guangdong University of Technology"
+    },
+    {
+      "name": "Yanhong Guo",
+      "year": "2015-2016",
+      "position": "Visiting Professor, Dalian University of Technology"
+    },
+    {
+      "name": "Dowen Du (Bowen Du)",
+      "year": "2015-2016",
+      "position": "Visiting Professor, Beihang University"
+    },
+    {
+      "name": "Leilei Sun",
+      "year": "2015-2016",
+      "position": "Visiting Student, PhD, Dalian University of Technology"
+    },
+    {
+      "name": "Gayathri Sridharan",
+      "year": "2015",
+      "position": "Master, Credit Suisse"
+    },
+    {
+      "name": "Namratha Nandyal",
+      "year": "2015",
+      "position": "Master, PwC"
+    },
+    {
+      "name": "Ling Yin",
+      "year": "2014-2015",
+      "position": "Visiting Professor, South China Agricultural University"
+    },
+    {
+      "name": "Xiaolin Li",
+      "year": "2014-2015",
+      "position": "Visiting Professor, Nanjing University"
+    },
+    {
+      "name": "Chu Guan",
+      "year": "2014-2015",
+      "position": "Visiting Student"
+    },
+    {
+      "name": "Jiadi Du",
+      "year": "2014-2015",
+      "position": "Master Student"
+    },
+    {
+      "name": "Jing Sun",
+      "year": "2014-2015",
+      "position": "Visiting Student"
+    },
+    {
+      "name": "Hongting Niu",
+      "year": "2013-2014",
+      "position": "Visiting Professor, Beihang University"
+    },
+    {
+      "name": "Bo Jin",
+      "year": "2013-2014",
+      "position": "Visiting Professor, Dalian University of Technology"
+    },
+    {
+      "name": "Yuanchun Zhou",
+      "year": "2013-2014",
+      "position": "Visiting Student, PhD"
+    },
+    {
+      "name": "Tong Xu",
+      "year": "2013-2014",
+      "position": "Visiting Student, PhD, University of Science and Technology of China"
+    },
+    {
+      "name": "Guannan Liu",
+      "year": "2013-2014",
+      "position": "Visiting Student, PhD, Tsinghua University"
+    },
+    {
+      "name": "Xue Bai",
+      "year": "2012-2013",
+      "position": "Visiting Student, PhD, Fudan University"
+    },
+    {
+      "name": "Hengshu Zhu",
+      "year": "2012-2013",
+      "position": "Visiting Student, PhD, University of Science and Technology of China"
+    },
+    {
+      "name": "LiYang Tang",
+      "year": "2012-2013",
+      "position": "Visiting Student, PhD"
+    },
+    {
+      "name": "Aimin Feng",
+      "year": "2011-2012",
+      "position": "Visiting Professor, Nanjing University of Aeronautics and Astronautics"
+    },
+    {
+      "name": "Chang Tan",
+      "year": "2011-2012",
+      "position": "Visiting Student, PhD, University of Science and Technology of China"
+    },
+    {
+      "name": "Mr. Ramin Kholoussi",
+      "year": "2012",
+      "position": "Master"
+    },
+    {
+      "name": "Ms. Jing Li",
+      "year": "2012",
+      "position": "Master"
+    },
+    {
+      "name": "Ms. Liwen Xing",
+      "year": "2012",
+      "position": "Master"
+    },
+    {
+      "name": "Ms. Srideepthi Narla",
+      "year": "2012",
+      "position": "Master"
+    },
+    {
+      "name": "Ishita Chokshi",
+      "year": "2009-2011",
+      "position": "Master"
+    },
+    {
+      "name": "Chunyu Luo",
+      "year": "2010-2011",
+      "position": "Visiting Student, PhD, Dalian University of Technology"
+    },
+    {
+      "name": "Qi Liu",
+      "year": "2010-2011",
+      "position": "Visiting Student, PhD, University of Science and Technology of China"
+    },
+    {
+      "name": "Mengjia Wang",
+      "year": "2008-2010",
+      "position": "Master"
+    },
+    {
+      "name": "Yanchi Liu",
+      "year": "2009-2010",
+      "position": "Visiting Ph.D. Student"
+    },
+    {
+      "name": "Qi Yan",
+      "year": "-",
+      "position": "Visiting Student, Beihang University"
+    },
+    {
+      "name": "Xuehua Wang",
+      "year": "-",
+      "position": "Visiting Professor, Dalian University of Technology"
+    },
+    {
+      "name": "Xiaojun Quan",
+      "year": "-",
+      "position": "Visiting Student, PhD"
+    },
+    {
+      "name": "Huikai Ma",
+      "year": "-",
+      "position": "Master"
+    },
+    {
+      "name": "Elinor Volansky",
+      "year": "-",
+      "position": "Master"
+    },
+    {
+      "name": "Jyotsna Sahirdayan",
+      "year": "-",
+      "position": "Master"
+    },
+    {
+      "name": "Lakshmi Sahithi Dantu",
+      "year": "-",
+      "position": "Master"
+    },
+    {
+      "name": "UmaMaheswari Jayapalan",
+      "year": "-",
+      "position": "Master"
+    },
+    {
+      "name": "Rachana Ravi",
+      "year": "-",
+      "position": "Master"
+    },
+    {
+      "name": "Sadaf Hussain",
+      "year": "-",
+      "position": "Master, IEEE"
+    },
+    {
+      "name": "Yili He",
+      "year": "-",
+      "position": "Visiting Student, Master"
+    },
+    {
+      "name": "Angela Chen",
+      "year": "-",
+      "position": "Undergraduate"
+    },
+    {
+      "name": "Islam Taman",
+      "year": "-",
+      "position": "Undergraduate"
+    }
+  ]
+}
