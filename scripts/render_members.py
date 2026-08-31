@@ -41,7 +41,13 @@ def card(member: dict) -> str:
         f"<img loading=\"lazy\" width=\"120\" height=\"120\" "
         f"src=\"{escape(photo_src(member.get('photo')))}\" alt=\"{name}\" "
         f"onerror=\"this.onerror=null;this.src='members/images/default.jpg'\" /></div>\n"
-        f"            <p>{name}</p>\n"
+        f"            <p>{name}"
+        + (
+            ' <i class="fa fa-external-link member-home" aria-hidden="true"></i>'
+            if href
+            else ""
+        )
+        + "</p>\n"
         f"{note_html}"
         f"          </div>\n"
     )
