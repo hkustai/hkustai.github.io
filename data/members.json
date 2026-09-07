@@ -425,13 +425,6 @@
     ],
     "2022": [
       {
-        "name": "Jinjing Zhu",
-        "affiliation": "hkust",
-        "href": "https://scholar.google.com/citations?user=EVpo9eQAAAAJ",
-        "photo": "zhujinjing.jpg",
-        "notes": []
-      },
-      {
         "name": "Wenzhao Jiang",
         "affiliation": "hkust",
         "href": "https://scholar.google.com/citations?user=MxrzJswAAAAJ",
@@ -456,31 +449,6 @@
         "photo": "zhanghe.jpg",
         "notes": [
           "Co-supervised by Prof. Ying Sun"
-        ]
-      },
-      {
-        "name": "Weiyu Guo",
-        "affiliation": "hkust",
-        "href": "https://weiyuguo.com",
-        "photo": "guoweiyu.jpg",
-        "notes": [
-          "Co-supervised by Prof. Ying Sun"
-        ]
-      },
-      {
-        "name": "Yunfan Lu",
-        "affiliation": "hkust",
-        "href": "https://yunfanlu.github.io/",
-        "photo": "luyunfan.jpg",
-        "notes": []
-      },
-      {
-        "name": "Weijia Zhang",
-        "affiliation": "hkust",
-        "href": "https://scholar.google.com/citations?user=lSi3CIoAAAAJ",
-        "photo": "zhangweijia.jpg",
-        "notes": [
-          "Co-supervised by Prof. Hao Liu"
         ]
       },
       {
@@ -523,20 +491,6 @@
       }
     ],
     "2021": [
-      {
-        "name": "Hao Wu",
-        "affiliation": "hkust",
-        "href": null,
-        "photo": "wuhao.jpg",
-        "notes": []
-      },
-      {
-        "name": "Qian Sun",
-        "affiliation": "hkust",
-        "href": "https://openreview.net/profile?id=~Qian_Sun4",
-        "photo": "sunqian.jpg",
-        "notes": []
-      },
       {
         "name": "Chen Zhu",
         "affiliation": "ustc",
@@ -794,13 +748,6 @@
         "notes": []
       },
       {
-        "name": "Shaoguang Wang",
-        "affiliation": "hkust",
-        "href": "https://shaoguangwang.github.io/",
-        "photo": "wangshaoguang.jpg",
-        "notes": []
-      },
-      {
         "name": "Yusen Ma",
         "affiliation": "hkust",
         "href": null,
@@ -847,6 +794,67 @@
     ]
   },
   "placementsPhd": {
+    "2026": [
+      {
+        "name": "Weiyu Guo",
+        "affiliation": "hkust",
+        "href": "https://weiyuguo.com",
+        "photo": "guoweiyu.jpg",
+        "notes": [
+          "Technical Lead",
+          "AI² Robotics"
+        ]
+      },
+      {
+        "name": "Weijia Zhang",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=lSi3CIoAAAAJ",
+        "photo": "zhangweijia.jpg",
+        "notes": [
+          "Senior AI Researcher",
+          "Ant Group"
+        ]
+      },
+      {
+        "name": "Jinjing Zhu",
+        "affiliation": "hkust",
+        "href": "https://scholar.google.com/citations?user=EVpo9eQAAAAJ",
+        "photo": "zhujinjing.jpg",
+        "notes": [
+          "Postdoc",
+          "CUHK"
+        ]
+      },
+      {
+        "name": "Hao Wu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "wuhao.jpg",
+        "notes": [
+          "Postdoc",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Yunfan Lu",
+        "affiliation": "hkust",
+        "href": "https://yunfanlu.github.io/",
+        "photo": "luyunfan.jpg",
+        "notes": [
+          "TBD"
+        ]
+      },
+      {
+        "name": "Qian Sun",
+        "affiliation": "hkust",
+        "href": "https://openreview.net/profile?id=~Qian_Sun4",
+        "photo": "sunqian.jpg",
+        "notes": [
+          "Postdoc",
+          "Johns Hopkins University"
+        ]
+      }
+    ],
     "2023": [
       {
         "name": "Jiechao Guan",
@@ -1274,6 +1282,18 @@
     ]
   },
   "placementsMaster": {
+    "2026": [
+      {
+        "name": "Shaoguang Wang",
+        "affiliation": "hkust",
+        "href": "https://shaoguangwang.github.io/",
+        "photo": "wangshaoguang.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "University of Alberta"
+        ]
+      }
+    ],
     "2024": [
       {
         "name": "Jianxiang He",
@@ -1511,6 +1531,16 @@
       }
     ],
     "2022": [
+      {
+        "name": "Weijia Zhang",
+        "affiliation": "ustc",
+        "href": "https://scholar.google.com/citations?user=lSi3CIoAAAAJ",
+        "photo": "zhangweijia.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST (Guangzhou)"
+        ]
+      },
       {
         "name": "Cehao Yang",
         "affiliation": "hkust",
@@ -1758,16 +1788,6 @@
         "photo": "zhouding.jpg",
         "notes": [
           "Tencent WeChat"
-        ]
-      },
-      {
-        "name": "Weijia Zhang",
-        "affiliation": "ustc",
-        "href": "https://scholar.google.com/citations?user=lSi3CIoAAAAJ",
-        "photo": "zhangweijia.jpg",
-        "notes": [
-          "Ph.D. Student",
-          "HKUST (Guangzhou)"
         ]
       }
     ],
