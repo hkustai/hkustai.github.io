@@ -725,57 +725,6 @@
         "notes": []
       }
     ],
-    "2024": [
-      {
-        "name": "Sirong Lu",
-        "affiliation": "hkust",
-        "href": null,
-        "photo": "lusirong.jpg",
-        "notes": []
-      },
-      {
-        "name": "Hao Wang",
-        "affiliation": "hkust",
-        "href": "https://figerhaowang.github.io/",
-        "photo": "wanghao.jpg",
-        "notes": []
-      },
-      {
-        "name": "Yusen Ma",
-        "affiliation": "hkust",
-        "href": null,
-        "photo": "mayusen.jpg",
-        "notes": []
-      },
-      {
-        "name": "Chenhui Cui",
-        "affiliation": "ustc",
-        "href": null,
-        "photo": "cuichenhui.jpg",
-        "notes": []
-      },
-      {
-        "name": "Yu Shi",
-        "affiliation": "ustc",
-        "href": null,
-        "photo": "shiyu.jpg",
-        "notes": []
-      },
-      {
-        "name": "Jinghong Liu",
-        "affiliation": "ustc",
-        "href": null,
-        "photo": "liujinghong.jpg",
-        "notes": []
-      },
-      {
-        "name": "Wenyuan Jiang",
-        "affiliation": "ustc",
-        "href": null,
-        "photo": "jiangwenyuan.jpg",
-        "notes": []
-      }
-    ],
     "2023": [
       {
         "name": "Yiyan Shen",
@@ -846,7 +795,7 @@
         "href": "https://yunfanlu.github.io/",
         "photo": "luyunfan.jpg",
         "notes": [
-          "TBD"
+          "CBD"
         ]
       },
       {
@@ -1322,6 +1271,70 @@
         "notes": [
           "Ph.D. Student",
           "HKUST"
+        ]
+      },
+      {
+        "name": "Hao Wang",
+        "affiliation": "hkust",
+        "href": "https://figerhaowang.github.io/",
+        "photo": "wanghao.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "CityU HK"
+        ]
+      },
+      {
+        "name": "Sirong Lu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "lusirong.jpg",
+        "notes": [
+          "CBD"
+        ]
+      },
+      {
+        "name": "Yusen Ma",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "mayusen.jpg",
+        "notes": [
+          "CBD"
+        ]
+      },
+      {
+        "name": "Chenhui Cui",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "cuichenhui.jpg",
+        "notes": [
+          "CBD"
+        ]
+      },
+      {
+        "name": "Yu Shi",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "shiyu.jpg",
+        "notes": [
+          "CBD"
+        ]
+      },
+      {
+        "name": "Jinghong Liu",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "liujinghong.jpg",
+        "notes": [
+          "CBD"
+        ]
+      },
+      {
+        "name": "Wenyuan Jiang",
+        "affiliation": "ustc",
+        "href": null,
+        "photo": "jiangwenyuan.jpg",
+        "notes": [
+          "CBD"
         ]
       }
     ],
