@@ -727,13 +727,6 @@
     ],
     "2024": [
       {
-        "name": "Sisuo Lyu",
-        "affiliation": "hkust",
-        "href": "https://sisuolv.github.io/",
-        "photo": "lyusisuo.jpg",
-        "notes": []
-      },
-      {
         "name": "Sirong Lu",
         "affiliation": "hkust",
         "href": null,
@@ -794,7 +787,29 @@
     ]
   },
   "placementsPhd": {
-    "2026": [
+    "2023": [
+      {
+        "name": "Jiechao Guan",
+        "affiliation": "hkust",
+        "href": "https://cse.sysu.edu.cn/en/teacher/GuanJiechao",
+        "photo": "guanjiechao.jpg",
+        "notes": [
+          "Associate Professor",
+          "Sun Yat-sen University"
+        ]
+      },
+      {
+        "name": "Shuai Jiang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "jiangshuai.jpg",
+        "notes": [
+          "Professor",
+          "Northwestern Polytechnical University"
+        ]
+      }
+    ],
+    "2022": [
       {
         "name": "Weiyu Guo",
         "affiliation": "hkust",
@@ -826,16 +841,6 @@
         ]
       },
       {
-        "name": "Hao Wu",
-        "affiliation": "hkust",
-        "href": null,
-        "photo": "wuhao.jpg",
-        "notes": [
-          "Postdoc",
-          "HKUST (Guangzhou)"
-        ]
-      },
-      {
         "name": "Yunfan Lu",
         "affiliation": "hkust",
         "href": "https://yunfanlu.github.io/",
@@ -844,40 +849,6 @@
           "TBD"
         ]
       },
-      {
-        "name": "Qian Sun",
-        "affiliation": "hkust",
-        "href": "https://openreview.net/profile?id=~Qian_Sun4",
-        "photo": "sunqian.jpg",
-        "notes": [
-          "Postdoc",
-          "Johns Hopkins University"
-        ]
-      }
-    ],
-    "2023": [
-      {
-        "name": "Jiechao Guan",
-        "affiliation": "hkust",
-        "href": "https://cse.sysu.edu.cn/en/teacher/GuanJiechao",
-        "photo": "guanjiechao.jpg",
-        "notes": [
-          "Associate Professor",
-          "Sun Yat-sen University"
-        ]
-      },
-      {
-        "name": "Shuai Jiang",
-        "affiliation": "hkust",
-        "href": null,
-        "photo": "jiangshuai.jpg",
-        "notes": [
-          "Professor",
-          "Northwestern Polytechnical University"
-        ]
-      }
-    ],
-    "2022": [
       {
         "name": "Chao Wang",
         "affiliation": "hkust",
@@ -921,6 +892,26 @@
       }
     ],
     "2021": [
+      {
+        "name": "Hao Wu",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "wuhao.jpg",
+        "notes": [
+          "Postdoc",
+          "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Qian Sun",
+        "affiliation": "hkust",
+        "href": "https://openreview.net/profile?id=~Qian_Sun4",
+        "photo": "sunqian.jpg",
+        "notes": [
+          "Postdoc",
+          "Johns Hopkins University"
+        ]
+      },
       {
         "name": "Jindong Han",
         "affiliation": "hkust",
@@ -1282,18 +1273,6 @@
     ]
   },
   "placementsMaster": {
-    "2026": [
-      {
-        "name": "Shaoguang Wang",
-        "affiliation": "hkust",
-        "href": "https://shaoguangwang.github.io/",
-        "photo": "wangshaoguang.jpg",
-        "notes": [
-          "Ph.D. Student",
-          "University of Alberta"
-        ]
-      }
-    ],
     "2024": [
       {
         "name": "Jianxiang He",
@@ -1323,6 +1302,26 @@
         "notes": [
           "Ph.D. Student",
           "HKUST (Guangzhou)"
+        ]
+      },
+      {
+        "name": "Shaoguang Wang",
+        "affiliation": "hkust",
+        "href": "https://shaoguangwang.github.io/",
+        "photo": "wangshaoguang.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "University of Alberta"
+        ]
+      },
+      {
+        "name": "Sisuo Lyu",
+        "affiliation": "hkust",
+        "href": "https://sisuolv.github.io/",
+        "photo": "lyusisuo.jpg",
+        "notes": [
+          "Ph.D. Student",
+          "HKUST"
         ]
       }
     ],
