@@ -529,7 +529,7 @@
       {
         "name": "Yuhan Li",
         "affiliation": "hkust",
-        "href": null,
+        "href": "https://yuhan-leee.github.io/",
         "photo": "liyuhan.jpg",
         "notes": []
       },
@@ -537,7 +537,7 @@
         "name": "Jialong Zheng",
         "affiliation": "hkust",
         "href": null,
-        "photo": null,
+        "photo": "zhengjialong.jpg",
         "notes": []
       },
       {
@@ -571,8 +571,36 @@
       {
         "name": "Jingxuan Xiao",
         "affiliation": "hkust",
-        "href": null,
+        "href": "https://scholar.google.com/citations?hl=zh-CN&user=2htL4WsAAAAJ",
         "photo": "xiaojingxuan.jpg",
+        "notes": []
+      },
+      {
+        "name": "Qi Shi",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "shiqi.jpg",
+        "notes": []
+      },
+      {
+        "name": "Ruijie Tang",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "tangruijie.jpg",
+        "notes": []
+      },
+      {
+        "name": "Ying Chai",
+        "affiliation": "hkust",
+        "href": null,
+        "photo": "chaiying.jpg",
+        "notes": []
+      },
+      {
+        "name": "Cheng Zhang",
+        "affiliation": "hkust",
+        "href": "https://zhiliangzhang.github.io/ZHILIANGZHANG/",
+        "photo": "zhangcheng.jpg",
         "notes": []
       }
     ],
